@@ -5,43 +5,37 @@
 
     <!-- GOOGLE FONTS -->
     <link href='https://fonts.googleapis.com/css?family=Lato:400,700' rel='stylesheet' type='text/css'>
-    <link href='https://fonts.googleapis.com/css?family=Ubuntu:400,500' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Roboto:400,700' rel='stylesheet' type='text/css'>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
 
     <!-- CSS -->
     <link rel="stylesheet" type="text/css" href="/assets/css/normalize.css">
+    <link rel="stylesheet" type="text/css" href="/assets/css/template.css">
     <link rel="stylesheet" type="text/css" href="/assets/css/global_style.css">
     <link rel="stylesheet" type="text/css" href="/assets/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="/assets/css/ionicons.min.css">
 
-    <style type="text/css">
-    	html, body { height: 100%; }
-	    body { background-color: #ecf0f1; color: #353535; font-family: 'Lato', sans-serif; font-size: 18px;line-height: 24px; }
-	    h1, h2, h3, h4, h5, h6 { margin-top: 0; }
-		h1, h2 { font-family: 'Ubuntu', sans-serif; }
-		#wrapper { margin-top: 30px; }
-		.container { margin: 0 auto; max-width: 1170px; min-width: 980px; }
-    	/*#static-nav { background: rgba(255, 255, 255, .2); }*/
-    	.subtitle { margin: 30px 0; }
-    </style>
-
-    <!-- JS -->
-    <script src="/vendors/angular/angular.min.js"></script>
-    <script src="//cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.2.8/angular-ui-router.min.js"></script>
-    <script src="/assets/js/state.js"></script>
-    
 </head>
 <body ng-app="routerApp">
-    <nav class="navbar default">
+    <nav class="navbar default fixed">
     	<div class="container">
     		<div class="head-nav"><a ui-sref="#">Design Components</a></div>
 	    	<ul class="hr_nav">
-	    		<li><a ui-sref="start">Getting started</a></li>
-	    		<li><a ui-sref="css">CSS</a></li>
-	    		<li><a ui-sref="js">JavaScript</a></li>
+	    		<li><a ui-sref="start" ui-sref-active="current">Getting started</a></li>
+	    		<li><a ui-sref="css" ui-sref-active="current">CSS</a></li>
+	    		<li><a ui-sref="js" ui-sref-active="current">JavaScript</a></li>
 	    	</ul>
 	    </div>
     </nav>
     <div id="wrapper">
     	<div class="container" ui-view></div>
     </div>
+
+    <!-- JS -->
+    <script src="/vendors/angular/angular.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.2.8/angular-ui-router.min.js"></script>
+    <script src="/assets/js/state.js"></script>     
+    <script src="https://google-code-prettify.googlecode.com/svn/loader/run_prettify.js?skin=default"></script>
 </body>
 </html> 

@@ -21,7 +21,14 @@ routerApp.config(function($stateProvider, $urlRouterProvider) {
         // CSS STATES =========================================
         .state('css', {
             url: '/css',
-            templateUrl: 'app/views/templates/css.html'
+
+            //NESTED VIEWS ====================================
+            views: {
+
+            	'': { templateUrl: 'app/views/templates/css.html' },
+
+            	'buttons@css': { templateUrl: 'app/views/css_elements/buttons.html' },
+        	}
         })
         
 });

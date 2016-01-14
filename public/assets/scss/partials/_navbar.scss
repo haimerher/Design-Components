@@ -5,6 +5,7 @@
 	font-size: 16px;
 	line-height: 18px;
 	width: 100%; 
+	z-index: 999;
 
 	a { 
 		color: $black;
@@ -62,7 +63,7 @@
 	}
 
 	&.simple-sidebar {
-		a { margin-bottom: 8px; padding: 10px; }
+		a { margin-bottom: 2px; padding: 10px; }
 
 		li {
 			@include transition(.3s);
