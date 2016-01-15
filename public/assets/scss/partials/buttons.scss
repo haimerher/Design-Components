@@ -1,24 +1,62 @@
 /*===================================================
 ====================== BUTTONS ======================
 ===================================================*/
-%ds-btn { 
+%ds-btn,  %ds-btn-flat { 
 	border: 0;
 	border-radius: 3px; 
 	color: $white;
 	display: inline-block;
+	font-size: 16px !important;
 	outline: 0;
 	padding: 4px 12px; 
 	vertical-align: bottom;
 	@include transition(.2s);
+	text-decoration: none;
 
-	&:hover { opacity: 0.9; }
+	&:hover { opacity: 0.9; text-decoration: none; }
+	&:active { opacity: 1; }
 }
 
 .ds-btn-default { @extend %ds-btn; background-color: $white; border: 1px solid #B9B9B9;	color: $black; }
+// -----------------------------------------------------------------------------------------------------
 .ds-btn-success { @extend %ds-btn; background-color: $green; border: 1px solid #1E9651; }
+// -----------------------------------------------------------------------------------------------------
 .ds-btn-primary { @extend %ds-btn; background-color: $blue; border: 1px solid #206B9C; }
+// -----------------------------------------------------------------------------------------------------
 .ds-btn-warning { @extend %ds-btn; background-color: $orange; border: 1px solid #D48C19; }
+// -----------------------------------------------------------------------------------------------------
 .ds-btn-danger { @extend %ds-btn; background-color: $red; border: 1px solid #C53F31; }
+// -----------------------------------------------------------------------------------------------------
+.ds-btn-violet { @extend %ds-btn; background-color: $wisteria; border: 1px solid #773592; }
+// -----------------------------------------------------------------------------------------------------
+
+//flat buttons
+%ds-btn-flat {
+	background-color: transparent;
+	opacity: 1 !important;
+}
+
+.ds-btn-flat-blue { @extend %ds-btn-flat; color: $blue; }
+.ds-btn-flat-blue:hover { background-color: $blue; color: $white; }
+// -----------------------------------------------------------------------------------------------------
+.ds-btn-flat-red { @extend %ds-btn-flat; color: $red; }
+.ds-btn-flat-red:hover { background-color: $red; color: $white; }
+// -----------------------------------------------------------------------------------------------------
+.ds-btn-flat-orange { @extend %ds-btn-flat; color: $orange; }
+.ds-btn-flat-orange:hover { background-color: $orange; color: $white; }
+// -----------------------------------------------------------------------------------------------------
+.ds-btn-flat-green { @extend %ds-btn-flat; color: $green; }
+.ds-btn-flat-green:hover { background-color: $green; color: $white; }
+// -----------------------------------------------------------------------------------------------------
+.ds-btn-flat-wisteria { @extend %ds-btn-flat; color: $wisteria; }
+.ds-btn-flat-wisteria:hover { background-color: $wisteria; color: $white; }
+// -----------------------------------------------------------------------------------------------------
+.ds-btn-flat-regal-blue { @extend %ds-btn-flat; color: $regal-blue; }
+.ds-btn-flat-regal-blue:hover { background-color: $regal-blue; color: $white; }
+// -----------------------------------------------------------------------------------------------------
+.ds-btn-flat-green-sea { @extend %ds-btn-flat; color: $green-sea; }
+.ds-btn-flat-green-sea:hover { background-color: $green-sea; color: $white; }
+// -----------------------------------------------------------------------------------------------------
 
 //size buttons
 .ds-btn-sm { font-size: 14px; padding: 0 6px; }

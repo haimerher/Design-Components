@@ -102,11 +102,12 @@ a {
 /*===================================================
 ====================== BUTTONS ======================
 ===================================================*/
-.ds-btn-default, .ds-btn-success, .ds-btn-primary, .ds-btn-warning, .ds-btn-danger {
+.ds-btn-default, .ds-btn-success, .ds-btn-primary, .ds-btn-warning, .ds-btn-danger, .ds-btn-violet, .ds-btn-flat-blue, .ds-btn-flat-red, .ds-btn-flat-orange, .ds-btn-flat-green, .ds-btn-flat-wisteria, .ds-btn-flat-regal-blue, .ds-btn-flat-green-sea {
   border: 0;
   border-radius: 3px;
   color: #fafafa;
   display: inline-block;
+  font-size: 16px !important;
   outline: 0;
   padding: 4px 12px;
   vertical-align: bottom;
@@ -114,9 +115,13 @@ a {
   -webkit-transition: 0.2s;
   -moz-transition: 0.2s;
   -ms-transition: 0.2s;
-  -o-transition: 0.2s; }
-  .ds-btn-default:hover, .ds-btn-success:hover, .ds-btn-primary:hover, .ds-btn-warning:hover, .ds-btn-danger:hover {
-    opacity: 0.9; }
+  -o-transition: 0.2s;
+  text-decoration: none; }
+  .ds-btn-default:hover, .ds-btn-success:hover, .ds-btn-primary:hover, .ds-btn-warning:hover, .ds-btn-danger:hover, .ds-btn-violet:hover, .ds-btn-flat-blue:hover, .ds-btn-flat-red:hover, .ds-btn-flat-orange:hover, .ds-btn-flat-green:hover, .ds-btn-flat-wisteria:hover, .ds-btn-flat-regal-blue:hover, .ds-btn-flat-green-sea:hover {
+    opacity: 0.9;
+    text-decoration: none; }
+  .ds-btn-default:active, .ds-btn-success:active, .ds-btn-primary:active, .ds-btn-warning:active, .ds-btn-danger:active, .ds-btn-violet:active, .ds-btn-flat-blue:active, .ds-btn-flat-red:active, .ds-btn-flat-orange:active, .ds-btn-flat-green:active, .ds-btn-flat-wisteria:active, .ds-btn-flat-regal-blue:active, .ds-btn-flat-green-sea:active {
+    opacity: 1; }
 
 .ds-btn-default {
   background-color: #fafafa;
@@ -138,6 +143,63 @@ a {
 .ds-btn-danger {
   background-color: #e74c3c;
   border: 1px solid #C53F31; }
+
+.ds-btn-violet {
+  background-color: #8e44ad;
+  border: 1px solid #773592; }
+
+.ds-btn-flat-blue, .ds-btn-flat-red, .ds-btn-flat-orange, .ds-btn-flat-green, .ds-btn-flat-wisteria, .ds-btn-flat-regal-blue, .ds-btn-flat-green-sea {
+  background-color: transparent;
+  opacity: 1 !important; }
+
+.ds-btn-flat-blue {
+  color: #2980b9; }
+
+.ds-btn-flat-blue:hover {
+  background-color: #2980b9;
+  color: #fafafa; }
+
+.ds-btn-flat-red {
+  color: #e74c3c; }
+
+.ds-btn-flat-red:hover {
+  background-color: #e74c3c;
+  color: #fafafa; }
+
+.ds-btn-flat-orange {
+  color: #f39c12; }
+
+.ds-btn-flat-orange:hover {
+  background-color: #f39c12;
+  color: #fafafa; }
+
+.ds-btn-flat-green {
+  color: #27ae60; }
+
+.ds-btn-flat-green:hover {
+  background-color: #27ae60;
+  color: #fafafa; }
+
+.ds-btn-flat-wisteria {
+  color: #8e44ad; }
+
+.ds-btn-flat-wisteria:hover {
+  background-color: #8e44ad;
+  color: #fafafa; }
+
+.ds-btn-flat-regal-blue {
+  color: #274058; }
+
+.ds-btn-flat-regal-blue:hover {
+  background-color: #274058;
+  color: #fafafa; }
+
+.ds-btn-flat-green-sea {
+  color: #16a085; }
+
+.ds-btn-flat-green-sea:hover {
+  background-color: #16a085;
+  color: #fafafa; }
 
 .ds-btn-sm {
   font-size: 14px;
