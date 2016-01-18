@@ -102,7 +102,7 @@ a {
 /*===================================================
 ====================== BUTTONS ======================
 ===================================================*/
-.ds-btn-default, .ds-btn-success, .ds-btn-primary, .ds-btn-warning, .ds-btn-danger, .ds-btn-violet, .ds-btn-flat-blue, .ds-btn-flat-red, .ds-btn-flat-orange, .ds-btn-flat-green, .ds-btn-flat-wisteria, .ds-btn-flat-regal-blue, .ds-btn-flat-green-sea {
+.ds-btn-default, .ds-btn-success, .ds-btn-primary, .ds-btn-warning, .ds-btn-danger, .ds-btn-wisteria, .ds-btn-regal-blue, .ds-btn-green-sea, .ds-btn-flat-blue, .ds-btn-flat-red, .ds-btn-flat-orange, .ds-btn-flat-green, .ds-btn-flat-wisteria, .ds-btn-flat-regal-blue, .ds-btn-flat-green-sea {
   border: 0;
   border-radius: 3px;
   color: #fafafa;
@@ -117,10 +117,10 @@ a {
   -ms-transition: 0.2s;
   -o-transition: 0.2s;
   text-decoration: none; }
-  .ds-btn-default:hover, .ds-btn-success:hover, .ds-btn-primary:hover, .ds-btn-warning:hover, .ds-btn-danger:hover, .ds-btn-violet:hover, .ds-btn-flat-blue:hover, .ds-btn-flat-red:hover, .ds-btn-flat-orange:hover, .ds-btn-flat-green:hover, .ds-btn-flat-wisteria:hover, .ds-btn-flat-regal-blue:hover, .ds-btn-flat-green-sea:hover {
+  .ds-btn-default:hover, .ds-btn-success:hover, .ds-btn-primary:hover, .ds-btn-warning:hover, .ds-btn-danger:hover, .ds-btn-wisteria:hover, .ds-btn-regal-blue:hover, .ds-btn-green-sea:hover, .ds-btn-flat-blue:hover, .ds-btn-flat-red:hover, .ds-btn-flat-orange:hover, .ds-btn-flat-green:hover, .ds-btn-flat-wisteria:hover, .ds-btn-flat-regal-blue:hover, .ds-btn-flat-green-sea:hover {
     opacity: 0.9;
     text-decoration: none; }
-  .ds-btn-default:active, .ds-btn-success:active, .ds-btn-primary:active, .ds-btn-warning:active, .ds-btn-danger:active, .ds-btn-violet:active, .ds-btn-flat-blue:active, .ds-btn-flat-red:active, .ds-btn-flat-orange:active, .ds-btn-flat-green:active, .ds-btn-flat-wisteria:active, .ds-btn-flat-regal-blue:active, .ds-btn-flat-green-sea:active {
+  .ds-btn-default:active, .ds-btn-success:active, .ds-btn-primary:active, .ds-btn-warning:active, .ds-btn-danger:active, .ds-btn-wisteria:active, .ds-btn-regal-blue:active, .ds-btn-green-sea:active, .ds-btn-flat-blue:active, .ds-btn-flat-red:active, .ds-btn-flat-orange:active, .ds-btn-flat-green:active, .ds-btn-flat-wisteria:active, .ds-btn-flat-regal-blue:active, .ds-btn-flat-green-sea:active {
     opacity: 1; }
 
 .ds-btn-default {
@@ -144,9 +144,17 @@ a {
   background-color: #e74c3c;
   border: 1px solid #C53F31; }
 
-.ds-btn-violet {
+.ds-btn-wisteria {
   background-color: #8e44ad;
   border: 1px solid #773592; }
+
+.ds-btn-regal-blue {
+  background-color: #274058;
+  border: 1px solid #253748; }
+
+.ds-btn-green-sea {
+  background-color: #16a085;
+  border: 1px solid #118E75; }
 
 .ds-btn-flat-blue, .ds-btn-flat-red, .ds-btn-flat-orange, .ds-btn-flat-green, .ds-btn-flat-wisteria, .ds-btn-flat-regal-blue, .ds-btn-flat-green-sea {
   background-color: transparent;
@@ -200,6 +208,26 @@ a {
 .ds-btn-flat-green-sea:hover {
   background-color: #16a085;
   color: #fafafa; }
+
+.rounded {
+  border: 0;
+  border-radius: 30px;
+  padding: 6px 26px; }
+
+.border {
+  border-width: 0 0 4px;
+  transition: 0.1s;
+  -webkit-transition: 0.1s;
+  -moz-transition: 0.1s;
+  -ms-transition: 0.1s;
+  -o-transition: 0.1s; }
+  .border:active {
+    border: 0;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3) inset;
+    -webkit-box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3) inset;
+    -moz-box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3) inset;
+    -ms-box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3) inset;
+    -o-box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3) inset; }
 
 .ds-btn-sm {
   font-size: 14px;

@@ -27,7 +27,11 @@
 // -----------------------------------------------------------------------------------------------------
 .ds-btn-danger { @extend %ds-btn; background-color: $red; border: 1px solid #C53F31; }
 // -----------------------------------------------------------------------------------------------------
-.ds-btn-violet { @extend %ds-btn; background-color: $wisteria; border: 1px solid #773592; }
+.ds-btn-wisteria { @extend %ds-btn; background-color: $wisteria; border: 1px solid #773592; }
+// -----------------------------------------------------------------------------------------------------
+.ds-btn-regal-blue { @extend %ds-btn; background-color: $regal-blue; border: 1px solid #253748; }
+// -----------------------------------------------------------------------------------------------------
+.ds-btn-green-sea { @extend %ds-btn; background-color: $green-sea; border: 1px solid #118E75; }
 // -----------------------------------------------------------------------------------------------------
 
 //flat buttons
@@ -57,6 +61,24 @@
 .ds-btn-flat-green-sea { @extend %ds-btn-flat; color: $green-sea; }
 .ds-btn-flat-green-sea:hover { background-color: $green-sea; color: $white; }
 // -----------------------------------------------------------------------------------------------------
+
+//rounded buttons
+.rounded { 
+	border: 0;
+	border-radius: 30px; 
+	padding: 6px 26px;
+}
+
+//border buttons
+.border { 
+	border-width: 0 0 4px; 
+	@include transition(.1s); 
+
+	&:active { 
+		border: 0; 
+		@include box-shadow(2px 2px 4px rgba(0, 0, 0, 0.3) inset);
+	}
+}
 
 //size buttons
 .ds-btn-sm { font-size: 14px; padding: 0 6px; }
