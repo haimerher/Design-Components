@@ -3,12 +3,13 @@
 ===================================================*/
 %ds-btn,  %ds-btn-flat { 
 	border: 0;
-	border-radius: 3px; 
+	border-radius: .2em; 
 	color: $white;
+	cursor: pointer;
 	display: inline-block;
 	font-size: 16px !important;
 	outline: 0;
-	padding: 4px 12px; 
+	padding: 6px 14px; 
 	vertical-align: bottom;
 	@include transition(.2s);
 	text-decoration: none;

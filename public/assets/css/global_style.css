@@ -104,12 +104,13 @@ a {
 ===================================================*/
 .ds-btn-default, .ds-btn-success, .ds-btn-primary, .ds-btn-warning, .ds-btn-danger, .ds-btn-wisteria, .ds-btn-regal-blue, .ds-btn-green-sea, .ds-btn-flat-blue, .ds-btn-flat-red, .ds-btn-flat-orange, .ds-btn-flat-green, .ds-btn-flat-wisteria, .ds-btn-flat-regal-blue, .ds-btn-flat-green-sea {
   border: 0;
-  border-radius: 3px;
+  border-radius: .2em;
   color: #fafafa;
+  cursor: pointer;
   display: inline-block;
   font-size: 16px !important;
   outline: 0;
-  padding: 4px 12px;
+  padding: 6px 14px;
   vertical-align: bottom;
   transition: 0.2s;
   -webkit-transition: 0.2s;
