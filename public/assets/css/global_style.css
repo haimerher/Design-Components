@@ -231,8 +231,12 @@ a {
     -o-box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3) inset; }
 
 .ds-btn-sm {
-  font-size: 14px;
-  padding: 0 6px; }
+  font-size: 13px !important;
+  padding: 2px 6px; }
+
+.ds-btn-lg {
+  font-size: 20px !important;
+  padding: 14px 28px; }
 
 /*===================================================
 ==================== CONTAINERS =====================
