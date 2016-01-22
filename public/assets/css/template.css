@@ -27,6 +27,18 @@ h1 { color: #274058; }
 
 .subtitle { margin: 20px 0; }
 
+.false_img {
+    background-color: #CCC;
+    float: left;
+    font-size: 14px;
+    font-weight: bold;
+    height: 100px;
+    line-height: 95px;
+    margin: 0 10px 10px 0;
+    padding: 0 20px;
+    width: 100px;
+}
+
 .code { 
     background-color: #313233 !important; 
     border-radius: 3px; 

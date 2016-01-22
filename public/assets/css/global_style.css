@@ -248,6 +248,7 @@ a {
   -webkit-box-shadow: 0 4px 5px 0 rgba(0, 0, 0, 0.14);
   -moz-box-shadow: 0 4px 5px 0 rgba(0, 0, 0, 0.14);
   -ms-box-shadow: 0 4px 5px 0 rgba(0, 0, 0, 0.14);
-  -o-box-shadow: 0 4px 5px 0 rgba(0, 0, 0, 0.14); }
+  -o-box-shadow: 0 4px 5px 0 rgba(0, 0, 0, 0.14);
+  padding: 30px; }
 
 /*# sourceMappingURL=global_style.css.map */
