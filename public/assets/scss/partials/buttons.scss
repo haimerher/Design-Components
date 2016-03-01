@@ -1,24 +1,119 @@
 /*===================================================
 ====================== BUTTONS ======================
 ===================================================*/
-%ds-btn { 
+%ds-btn,  %ds-btn-flat { 
 	border: 0;
-	border-radius: 3px; 
+	border-radius: .2em; 
 	color: $white;
+	cursor: pointer;
 	display: inline-block;
+	font-size: 16px !important;
 	outline: 0;
-	padding: 4px 12px; 
+	padding: 6px 14px; 
 	vertical-align: bottom;
 	@include transition(.2s);
+	text-decoration: none;
 
-	&:hover { opacity: 0.9; }
+	&:hover { opacity: 0.9; text-decoration: none; }
+	&:active { opacity: 1; }
 }
 
-.ds-btn-default { @extend %ds-btn; background-color: $white; border: 1px solid #B9B9B9;	color: $black; }
-.ds-btn-success { @extend %ds-btn; background-color: $green; border: 1px solid #1E9651; }
-.ds-btn-primary { @extend %ds-btn; background-color: $blue; border: 1px solid #206B9C; }
-.ds-btn-warning { @extend %ds-btn; background-color: $orange; border: 1px solid #D48C19; }
-.ds-btn-danger { @extend %ds-btn; background-color: $red; border: 1px solid #C53F31; }
+//flat buttons
+%ds-btn-flat { background-color: transparent; opacity: 1 !important; }
+
+//rounded buttons
+.rounded { 
+	border-radius: 30px; 
+	padding: 6px 26px; 
+
+	&.btn-sm { padding: 0px 14px; }
+	&.btn-lg { padding: 10px 34px; }
+}
+
+//circle buttons
+.circle { 
+	border-radius: 30px; 
+	font-size: 22px !important;
+	height: 45px;
+	padding: 0;
+	text-align: center;
+	width: 45px;
+
+	.btn-sm {
+		font-size: 15px !important;
+		height: 30px; 
+		width: 30px;
+	}
+
+	.btn-lg { 
+		font-size: 26px !important;
+		height: 60px; 
+		width: 60px;
+	}
+}
+
+//Raised buttons
+.raised { 
+	border-width: 0 0 4px !important; 
+	@include transition(.1s); 
+
+	&:active { 
+		border: 0; 
+		@include box-shadow(2px 2px 4px rgba(0, 0, 0, 0.3) inset);
+	}
+}
 
 //size buttons
-.ds-btn-sm { font-size: 14px; padding: 0 6px; }
+.btn-sm { font-size: 13px !important; padding: 2px 6px; }
+.btn-lg { font-size: 20px !important; padding: 14px 28px; }
+
+//Colors
+.ds-btn-default { @extend %ds-btn; background-color: $white; border: 1px solid #B9B9B9;	color: $black; }
+// -----------------------------------------------------------------------------------------------------
+.ds-btn-success { @extend %ds-btn; background-color: $green; border: 1px solid #1E9651; }
+// -----------------------------------------------------------------------------------------------------
+.ds-btn-primary { @extend %ds-btn; background-color: $blue; border: 1px solid #206B9C; }
+// -----------------------------------------------------------------------------------------------------
+.ds-btn-warning { @extend %ds-btn; background-color: $orange; border: 1px solid #D48C19; }
+// -----------------------------------------------------------------------------------------------------
+.ds-btn-danger { @extend %ds-btn; background-color: $red; border: 1px solid #C53F31; }
+// -----------------------------------------------------------------------------------------------------
+.ds-btn-wisteria { @extend %ds-btn; background-color: $wisteria; border: 1px solid #773592; }
+// -----------------------------------------------------------------------------------------------------
+.ds-btn-regal-blue { @extend %ds-btn; background-color: $regal-blue; border: 1px solid #253748; }
+// -----------------------------------------------------------------------------------------------------
+.ds-btn-green-sea { @extend %ds-btn; background-color: $green-sea; border: 1px solid #118E75; }
+// -----------------------------------------------------------------------------------------------------
+.ds-btn-flat-blue { @extend %ds-btn-flat; color: $blue; }
+.ds-btn-flat-blue:hover { background-color: $blue; color: $white; }
+// -----------------------------------------------------------------------------------------------------
+.ds-btn-flat-red { @extend %ds-btn-flat; color: $red; }
+.ds-btn-flat-red:hover { background-color: $red; color: $white; }
+// -----------------------------------------------------------------------------------------------------
+.ds-btn-flat-orange { @extend %ds-btn-flat; color: $orange; }
+.ds-btn-flat-orange:hover { background-color: $orange; color: $white; }
+// -----------------------------------------------------------------------------------------------------
+.ds-btn-flat-green { @extend %ds-btn-flat; color: $green; }
+.ds-btn-flat-green:hover { background-color: $green; color: $white; }
+// -----------------------------------------------------------------------------------------------------
+.ds-btn-flat-wisteria { @extend %ds-btn-flat; color: $wisteria; }
+.ds-btn-flat-wisteria:hover { background-color: $wisteria; color: $white; }
+// -----------------------------------------------------------------------------------------------------
+.ds-btn-flat-regal-blue { @extend %ds-btn-flat; color: $regal-blue; }
+.ds-btn-flat-regal-blue:hover { background-color: $regal-blue; color: $white; }
+// -----------------------------------------------------------------------------------------------------
+.ds-btn-flat-green-sea { @extend %ds-btn-flat; color: $green-sea; }
+.ds-btn-flat-green-sea:hover { background-color: $green-sea; color: $white; }
+// -----------------------------------------------------------------------------------------------------
+.ds-social-tt { @extend %ds-btn; background-color: $tt-blue; }
+// -----------------------------------------------------------------------------------------------------
+.ds-social-fb { @extend %ds-btn; background-color: $fb-blue; }
+// -----------------------------------------------------------------------------------------------------
+.ds-social-gg { @extend %ds-btn; background-color: $gg-red; }
+// -----------------------------------------------------------------------------------------------------
+.ds-social-ig { @extend %ds-btn; background-color: $ig-brown; }
+// -----------------------------------------------------------------------------------------------------
+.ds-social-pt { @extend %ds-btn; background-color: $pt-red; }
+// -----------------------------------------------------------------------------------------------------
+.ds-social-yt { @extend %ds-btn; background-color: $yt-red; }
+// -----------------------------------------------------------------------------------------------------

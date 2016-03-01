@@ -43,6 +43,7 @@
 		color: $white; 
 
 		a { 
+			@include transition(.3s);
 			color: $white;
 			opacity: 0.7;
 
