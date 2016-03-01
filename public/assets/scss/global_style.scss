@@ -10,6 +10,10 @@
 
 a { color: $blue; }
 
+.pull-left { float: left !important }
+.pull-right { float: right !important }
+.full-width { width: 100% !important; }
+
 .navbar:after, .sidebar:after { 
 	content: ''; 
 	clear: both; 
@@ -39,8 +43,46 @@ a { color: $blue; }
 	}
 }
 
-//================== IMPORT FILES ===========-=======
+/*images*/
+.img {
+	height: 110px;
+	width: 120px;
+
+	&.circleBox { 
+		border-radius: 60px; 
+		height: 100px;
+		overflow: hidden;
+		width: 100px;
+	}
+
+	&.border {
+		border: 1px solid #C1C1C1;
+		border-radius: 3px;
+		padding: 4px;
+	}
+
+	&.pull-left { margin: 0 15px 15px 0; }
+	&.pull-right { margin: 0 0 15px 15px; }
+
+	img { 
+		background: {
+			color: #C1C1C1;
+			image: url(../img/svg/image.svg);
+			position: center;
+			repeat: no-repeat;
+			size: 60%;
+		} 
+		display: block; 
+		height: 100%;
+		width: 100%; 
+
+		&.user { background-image: url(../img/svg/user.svg); }
+	}
+}
+
+//================== IMPORT FILES ===================
 @import "partials/navbar";
 @import "partials/buttons";
 @import "partials/container";
+@import "partials/grid";
 //===================================================
