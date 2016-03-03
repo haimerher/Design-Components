@@ -28,14 +28,16 @@ routerApp.config(function($stateProvider, $urlRouterProvider) {
             url: '/css',
             templateUrl: 'app/views/templates/css.html'      	
         })
-
         .state('css.buttons', {
             url: '/buttons',
             templateUrl: 'app/views/css_elements/buttons.html'
         })
-        
         .state('css.container', {
             url: '/container',
             templateUrl: 'app/views/css_elements/container.html'
+        })
+        .state('css.images', {
+            url: '/images',
+            templateUrl: 'app/views/css_elements/images.html'
         })
 });

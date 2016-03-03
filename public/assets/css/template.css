@@ -1,61 +1,16 @@
-body { 
-    background-color: #ecf0f1; 
-    color: #353535; 
-    font-family: 'Lato', sans-serif; 
-    font-size: 18px;
-    line-height: 24px; padding-top: 80px !important; 
-}
-
+body { background-color: #ecf0f1; color: #353535; font-family: 'Lato', sans-serif; font-size: 18px; line-height: 24px; padding-top: 80px !important; }
 h1, h2, h3, h4, h5, h6 { font-family: 'Roboto', sans-serif; margin-top: 0 !important; }
 h1 { color: #274058; }
-
 #wrapper { padding-bottom: 60px; }
-
-.container { 
-    margin: 0 auto; 
-    max-width: 1170px; 
-    min-width: 990px; 
-}
-
+.container { margin: 0 auto; max-width: 1170px; min-width: 990px; }
 .section-desc { margin: 0 0 40px; }
-
 .fixed { position: fixed !important; top: 0; }
-
 .col-md-2.fixed { top: 80px; }
-
 #static-nav { background: rgba(255, 255, 255, .2); }
-
 .subtitle { margin: 20px 0; }
-
-.code { 
-    background-color: #313233 !important; 
-    border-radius: 3px; 
-    margin: 20px 0 40px; 
-    overflow: hidden; 
-    width: 100%; 
-}
-    
-    .code h5 { 
-        background-color: #5D5D5D; 
-        color: #FFF; 
-        margin: 0;
-        padding: 8px 20px; 
-    }
-
-    .code .content { 
-        color: #fafafa;
-        margin: 0; 
-        padding: 20px; 
-    }
-
-        /*.code .content li { 
-            background: none; 
-            color: #FFF;
-            list-style-type: decimal !important;
-        }
-
-        .code .content li:first-child { display: none; }
-
-            .code .content .tag { color: #F97B3D !important; }
-            .code .content .atn, .conde .content .pun { color: #8AE5FB !important; }
-            .code .content .atv { color: #EBFFBC !important; }*/
+.code { background-color: #313233 !important; border-radius: 3px; margin: 20px 0 40px; overflow: hidden; width: 100%; }
+.code h5 { background-color: #5D5D5D; color: #FFF; margin: 0; padding: 8px 20px; }
+.code .content { color: #fafafa; margin: 0; padding: 20px; }
+.clear:before, .clear:after { clear: both; content: ""; display: block; }
+.list-grid .img { height: 120px; }
+#images-section .size-img-position .img { display: inline-block; margin: 0 10px 10px 0; vertical-align: bottom; }
