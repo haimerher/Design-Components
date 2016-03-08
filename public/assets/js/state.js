@@ -40,4 +40,8 @@ routerApp.config(function($stateProvider, $urlRouterProvider) {
             url: '/images',
             templateUrl: 'app/views/css_elements/images.html'
         })
+        .state('css.table', {
+            url: '/table',
+            templateUrl: 'app/views/css_elements/table.html'
+        })
 });

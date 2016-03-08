@@ -14,3 +14,4 @@ h1 { color: #274058; }
 .clear:before, .clear:after { clear: both; content: ""; display: block; }
 .list-grid .img { height: 120px; }
 #images-section .size-img-position .img { display: inline-block; margin: 0 10px 10px 0; vertical-align: bottom; }
+table.striped tbody tr:nth-child(2n){ background-color: #ccc !important; }

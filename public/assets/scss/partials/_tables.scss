@@ -1,0 +1,16 @@
+/*===================================================
+====================== TABLES ================-======
+===================================================*/
+table {
+	width: 100%; 
+
+	th, td { padding: 5px 15px; }
+	th { font-size: 16px; }
+	td { font-size: 15px; }
+	thead { border-bottom: 2px solid $grey; border-top: 2px solid $grey; }
+	tbody tr { border-bottom: 1px solid $grey; }
+
+	&.striped {
+		tbody tr:nth-child(2n) { background-color: $light_grey; }
+	}
+}
