@@ -1,13 +1,15 @@
 <h1>Tables</h1>
 <div class="bread-crumbs">
 	<ul>
-		<li><a href="#/css/container#basic">Basic</a></li>
-		<li><a href="#/css/container#list">Grid List</a></li>
-		<li><a href="#/css/container#cards">Cards</a></li>
+		<li><a href="#/css/container#simple">Simple</a></li>
+		<li><a href="#/css/container#striped">Striped</a></li>
+		<li><a href="#/css/container#custom">Custom</a></li>
+		<li><a href="#/css/container#full">Full-Color</a></li>
 	</ul>
 </div>
 
-<h2 lass="subtitle" id="">Standard</h2>
+<h2 lass="subtitle" id="simple">Simple</h2>
+<p>Donec nec justo eget felis facilisis fermentum. Aliquam porttitor mauris sit amet orci. Aenean dignissim pellentesque felis.</p>
 <table>
 	<thead>
 		<tr>
@@ -38,8 +40,25 @@
 		</tr>
 	</tbody>
 </table>
+<div class="code">
+	<h5>HTML Code</h5>
+	<pre class="content"><span style="color:#e0c589">&lt;<span style="color:#e0c589">table</span>></span>
+   <span style="color:#e0c589">&lt;<span style="color:#e0c589">thead</span>></span>
+      <span style="color:#e0c589">&lt;<span style="color:#e0c589">tr</span>></span>
+         <span style="color:#e0c589">&lt;<span style="color:#e0c589">th</span>></span>...<span style="color:#e0c589">&lt;/<span style="color:#e0c589">th</span>></span>
+      <span style="color:#e0c589">&lt;/<span style="color:#e0c589">tr</span>></span>
+   <span style="color:#e0c589">&lt;/<span style="color:#e0c589">thead</span>></span>
+   <span style="color:#e0c589">&lt;<span style="color:#e0c589">tbody</span>></span>
+      <span style="color:#e0c589">&lt;<span style="color:#e0c589">tr</span>></span>
+         <span style="color:#e0c589">&lt;<span style="color:#e0c589">td</span>></span>...<span style="color:#e0c589">&lt;/<span style="color:#e0c589">td</span>></span>
+      <span style="color:#e0c589">&lt;/<span style="color:#e0c589">tr</span>></span>
+   <span style="color:#e0c589">&lt;/<span style="color:#e0c589">tbody</span>></span>
+<span style="color:#e0c589">&lt;/<span style="color:#e0c589">table</span>></span>
+</pre>
+</div>
 
-<h2 lass="subtitle" id="">Striped</h2>
+<h2 lass="subtitle" id="striped">Striped</h2>
+<p>Donec nec justo eget felis facilisis fermentum. Aliquam porttitor mauris sit amet orci. Aenean dignissim pellentesque felis.</p>
 <table class="striped">
 	<thead>
 		<tr>
@@ -70,3 +89,88 @@
 		</tr>
 	</tbody>
 </table>
+<div class="code">
+	<h5>HTML Code</h5>
+	<pre class="content"><span style="color:#e0c589">&lt;<span style="color:#e0c589">table</span> <span style="color:#e0c589">class</span>=<span style="color:#8f9d6a">"striped"</span>></span> [...] <span style="color:#e0c589">&lt;/<span style="color:#e0c589">table</span>></span>
+</pre>
+</div>
+
+<h2 lass="subtitle" id="custom">Custom</h2>
+<p>Donec nec justo eget felis facilisis fermentum. Aliquam porttitor mauris sit amet orci. Aenean dignissim pellentesque felis.</p>
+<table class="custom-table">
+	<thead>
+		<tr>
+			<th>Item</th>
+			<th>Amount</th>
+			<th>Description</th>
+			<th style="width: 12%">Actions</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td>Fermentum Dolor</td>
+			<td>200</td>
+			<td>Morbi est est, blandit sit amet, sagittis vel, euismod vel, velit. Pellentesque egestas sem. Suspendisse commodo ullamcorper magna.</td>
+			<td>
+				<button class="ds-btn-flat-orange btn-sm"><i class="ion-edit"></i></button>
+				<button class="ds-btn-flat-red btn-sm"><i class="ion-close"></i></button>
+			</td>
+		</tr>
+		<tr>
+			<td>Fermentum Dolor</td>
+			<td>200</td>
+			<td>Morbi est est, blandit sit amet, sagittis vel, euismod vel, velit. Pellentesque egestas sem. Suspendisse commodo ullamcorper magna.</td>
+			<td>
+				<button class="ds-btn-flat-orange btn-sm"><i class="ion-edit"></i></button>
+				<button class="ds-btn-flat-red btn-sm"><i class="ion-close"></i></button>
+			</td>
+		</tr>
+	</tbody>
+</table>
+<div class="code">
+	<h5>HTML Code</h5>
+	<pre class="content"><span style="color:#e0c589">&lt;<span style="color:#e0c589">table</span> <span style="color:#e0c589">class</span>=<span style="color:#8f9d6a">"custom-table"</span>></span> [...] <span style="color:#e0c589">&lt;/<span style="color:#e0c589">table</span>></span>
+</pre>
+</div>
+
+<h2 lass="subtitle" id="full">Full-Color</h2>
+<p>Donec nec justo eget felis facilisis fermentum. Aliquam porttitor mauris sit amet orci. Aenean dignissim pellentesque felis.</p>
+<table class="custom-table-fcolor striped">
+	<thead class="nocenter">
+		<tr>
+			<th>Item</th>
+			<th>Amount</th>
+			<th>Description</th>
+			<th style="width: 12%">Actions</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td>
+				<div class="img circleBox small"><img src="https://colorlib.com/wp/wp-content/uploads/sites/2/2013/10/smart-owl-flat-logo.png" class="user" alt="" style="margin-left: -30px; width: auto;" /></div>
+			</td>
+			<td>200</td>
+			<td>Morbi est est, blandit sit amet, sagittis vel, euismod vel, velit. Pellentesque egestas sem. Suspendisse commodo ullamcorper magna.</td>
+			<td>
+				<button class="ds-btn-flat-orange btn-sm"><i class="ion-edit"></i></button>
+				<button class="ds-btn-flat-red btn-sm"><i class="ion-close"></i></button>
+			</td>
+		</tr>
+		<tr>
+			<td>
+				<div class="img circleBox small"><img src="https://colorlib.com/wp/wp-content/uploads/sites/2/2013/10/smart-owl-flat-logo.png" class="user" alt="" style="margin-left: -30px; width: auto;" /></div>
+			</td>
+			<td>200</td>
+			<td>Morbi est est, blandit sit amet, sagittis vel, euismod vel, velit. Pellentesque egestas sem. Suspendisse commodo ullamcorper magna.</td>
+			<td>
+				<button class="ds-btn-flat-orange btn-sm"><i class="ion-edit"></i></button>
+				<button class="ds-btn-flat-red btn-sm"><i class="ion-close"></i></button>
+			</td>
+		</tr>
+	</tbody>
+</table>
+<div class="code">
+	<h5>HTML Code</h5>
+	<pre class="content"><span style="color:#e0c589">&lt;<span style="color:#e0c589">table</span> <span style="color:#e0c589">class</span>=<span style="color:#8f9d6a">"custom-table-fcolor"</span>></span> [...] <span style="color:#e0c589">&lt;/<span style="color:#e0c589">table</span>></span>
+</pre>
+</div>

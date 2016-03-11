@@ -1,0 +1,56 @@
+/*===================================================
+===================== MESSAGES ======================
+===================================================*/
+%alert {
+	border-radius: 4px;
+	font-size: 15px;
+	margin-bottom: 20px;
+	overflow: hidden;
+
+	h4.head-message { 
+		color: $white;
+		font-weight: normal;
+		margin: 0; 
+		padding: 3px 15px;
+
+		.ion { margin-right: 4px; }
+	}
+
+	p { margin: 0; padding: 10px 15px; }
+}
+
+.info-alert {
+	@extend %alert;
+	background-color: rgba($blue, .1);
+	border: 1px solid rgba($blue, .6);
+	color: $blue;
+
+	h4 { background-color: rgba($blue, .6); }
+}
+
+.success-alert {
+	@extend %alert;
+	background-color: rgba($green, .1);
+	border: 1px solid rgba($green, .7);
+	color: $green;
+
+	h4 { background-color: rgba($green, .7); }
+}
+
+.warning-alert {
+	@extend %alert;
+	background-color: rgba($orange, .1);
+	border: 1px solid rgba($orange, .6);
+	color: $orange;
+
+	h4 { background-color: rgba($orange, .6); }
+}
+
+.danger-alert {
+	@extend %alert;
+	background-color: rgba($red, .1);
+	border: 1px solid rgba($red, .9);
+	color: $red;
+
+	h4 { background-color: rgba($red, .9); }
+}

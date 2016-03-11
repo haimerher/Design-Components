@@ -36,6 +36,10 @@ routerApp.config(function($stateProvider, $urlRouterProvider) {
             url: '/container',
             templateUrl: 'app/views/css_elements/container.html'
         })
+        .state('css.message', {
+            url: '/message',
+            templateUrl: 'app/views/css_elements/message.html'
+        })
         .state('css.images', {
             url: '/images',
             templateUrl: 'app/views/css_elements/images.html'
