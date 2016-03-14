@@ -17,7 +17,7 @@ table {
 
 
 	&.striped {
-		tbody tr:nth-child(2n) { background-color: rgba($light_grey, .6); }
+		tbody tr:nth-child(2n) { background-color: rgba($light-grey, .6); }
 	}
 
 	&.custom-table {

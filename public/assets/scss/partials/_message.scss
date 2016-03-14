@@ -54,3 +54,31 @@
 
 	h4 { background-color: rgba($red, .9); }
 }
+
+%dialog {
+	background-color: $white;
+	border: 1px solid;
+	border-left-width: 6px;
+	border-radius: 4px;
+	margin-bottom: 30px;
+	padding: 15px;
+
+	h3 { margin: 0 0 10px }
+
+	p { margin: 0; }
+}
+
+.dialog-black { @extend %dialog; border-color: $black; }
+.dialog-blue { @extend %dialog; border-color: $blue; }
+.dialog-clouds { @extend %dialog; border-color: $clouds; }
+.dialog-midnight-blue { @extend %dialog; border-color: $midnight-blue; }
+.dialog-green { @extend %dialog; border-color: $green; }
+.dialog-green-sea { @extend %dialog; border-color: $green-sea; }
+.dialog-orange { @extend %dialog; border-color: $orange; }
+.dialog-regal-blue { @extend %dialog; border-color: $regal-blue; }
+.dialog-red { @extend %dialog; border-color: $red; }
+.dialog-silver { @extend %dialog; border-color: $silver; }
+.dialog-wisteria { @extend %dialog; border-color: $wisteria; }
+.dialog-yellow { @extend %dialog; border-color: $yellow; }
+.dialog-grey { @extend %dialog; border-color: $grey; }
+.dialog-light-grey { @extend %dialog; border-color: $light-grey; }
