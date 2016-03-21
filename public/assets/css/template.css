@@ -1,5 +1,4 @@
-body { background-color: #ecf0f1; color: #353535; font-family: 'Lato', sans-serif; font-size: 18px; line-height: 24px; padding-top: 80px !important; }
-h1, h2, h3, h4, h5, h6 { font-family: 'Roboto', sans-serif; margin-top: 0 !important; }
+body { padding-top: 80px !important; }
 h1 { color: #274058; }
 #wrapper { padding-bottom: 60px; }
 .container { margin: 0 auto; max-width: 1170px; min-width: 990px; }
@@ -16,3 +15,4 @@ h1 { color: #274058; }
 #images-section .size-img-position .img { display: inline-block; margin: 0 10px 10px 0; vertical-align: bottom; }
 table.striped tbody tr:nth-child(2n){ background-color: #ccc !important; }
 .dialog-message { margin-bottom: 20px !important; }
+nav.xample { border-radius: 4px; }

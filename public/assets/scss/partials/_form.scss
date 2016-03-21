@@ -1,0 +1,172 @@
+/*===================================================
+=================== FORM ELEMENTS ===================
+===================================================*/
+input[type="text"], input[type="password"], input[type="number"], select, textarea, .upload-file {
+    background-color: $white;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    height: 40px;
+    padding: 0 12px;
+}
+
+*:disabled {
+    cursor: not-allowed !important;
+    opacity: .6;
+
+    &:hover { opacity: .6; }
+}
+
+input:disabled, select:disabled, textarea:disabled { 
+    background-color: rgba($grey, .4); 
+    border: 1px solid rgba($regal-blue, .4); 
+}
+
+textarea { height: 80px; padding: 8px 12px; }
+
+.error { background-color: #FFF6DC !important; border-color: #FF7B54 !important; }
+.col { input[type="text"], input[type="password"], select, textarea { width: 100%; } } 
+.form-label { display: block; font-size: 14px; }
+
+.search-box {
+    position: relative;
+    margin-bottom: 20px;
+
+    &.small { width: 350px; }
+    &.medium { width: 500px; }
+    &.full { width: 100%; }
+
+    input { width: 100%; }
+
+    .submit {
+        border-radius: 0 3px 3px 0;
+        position: absolute;
+        right: 0;
+        top: 0;
+        height: 100%;
+    }
+}
+
+/* DATE PICKER
+ * @package     PickMeUp - jQuery datepicker plugin
+ * @author      Nazar Mokrynskyi <nazar@mokrynskyi.com>
+ * @author      Stefan Petre <www.eyecon.ro>
+ * @copyright   Copyright (c) 2013-2015, Nazar Mokrynskyi
+ * @copyright   Copyright (c) 2008-2009, Stefan Petre
+ * @license     MIT License, see license.txt
+ */
+
+.date-picker {
+    background-color: $white;
+    border-radius: 4px;
+    height: 40px;
+    overflow: hidden;
+    position: relative;
+
+    span {
+        background-color: rgba($grey, .4);
+        border-left: 1px solid $grey;
+        color: rgba($black, .6);
+        display: block;
+        font-size: 18px;
+        height: 100%;
+        line-height: 2.2em;
+        padding: 0 14px;
+        position: absolute;
+        right: 0;
+        top: 0;
+    }
+}
+
+.pickmeup {
+    @include box-shadow(0 4px 5px 0 rgba(0,0,0,.14));
+    background: $white;
+    border: 1px solid $grey;
+    border-radius: 0.4em;
+    display: none;
+    margin-top: 2px;
+    position: absolute; 
+
+    .pmu-month { font-weight: bold; }
+
+    .pmu-instance {
+        display: inline-block;
+        height: 14em;
+        padding: .3em .5em;
+        text-align: center;
+        width: 15em; 
+
+        .pmu-button {
+            color: rgba($black, .8);
+            cursor: pointer;
+            outline: none;
+            text-decoration: none; 
+
+            &:hover { background: "transparent"; color: $blue; }
+        }
+
+        .pmu-today { color: $blue; font-weight: bold; }
+
+        .pmu-selected {
+            background: $blue;
+            color: $white;
+            font-weight: normal;
+            
+            &:hover { color: $white; } 
+        }
+
+        .pmu-not-in-month { color: $grey; } 
+
+        .pmu-disabled, .pmu-disabled:hover { color: $black; cursor: default; }
+
+        .pmu-not-in-month.pmu-selected { background: $regal-blue; }
+
+        nav {
+            color: $light_grey;
+            display: -ms-flexbox;
+            display: -webkit-flex;
+            display: flex;
+            line-height: 2em; 
+
+            *:first-child :hover { color: rgba($blue, .6); } 
+
+            .pmu-prev, .pmu-next {
+                display: none;
+                height: 2em;
+                width: 1em; 
+            }
+
+            .pmu-month { color: $blue; width: 14em; }
+
+            &.pmu-day-of-week { 
+                color: $black; 
+                cursor: default; 
+
+               * { 
+                    display: inline-block;
+                    line-height: 1.8em; 
+                    width: 2em; 
+                }
+            }
+        }
+
+        .pmu-years *, .pmu-months * {
+            display: inline-block;
+            line-height: 3.6em;
+            width: 3.5em;
+        }
+
+        .pmu-days * {
+            display: inline-block;
+            font-size: 13px;
+            line-height: inherit;
+            width: 2.4em; 
+        }
+
+        &:first-child .pmu-prev, &:last-child .pmu-next { display: block; }
+        &:first-child .pmu-month, &:last-child .pmu-month { width: 13em; }
+        &:first-child:last-child .pmu-month { width: 12em; }
+    }
+
+    &:not(.pmu-view-days) .pmu-days, &:not(.pmu-view-days) .pmu-day-of-week, 
+    &:not(.pmu-view-months) .pmu-months, &:not(.pmu-view-years) .pmu-years { display: none; }
+}

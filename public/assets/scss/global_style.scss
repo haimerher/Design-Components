@@ -1,59 +1,11 @@
 //================== IMPORT FILES ===========-=======
 @import "partials/variables";
 @import "partials/mixins";
-//===================================================
-
-/*===================================================
-====================== GENERAL ======================
-===================================================*/
-
-*::selection {
-   background: $grey;
-   color: $white;
-}
-
-* { box-sizing: border-box; }
-
-a { color: $blue; }
-
-.pull-left { float: left !important }
-.pull-right { float: right !important }
-.full-img { height: auto; width: 100% !important }
-.full-width { width: 100% !important; }
-
-.navbar:after, .sidebar:after { 
-	content: ''; 
-	clear: both; 
-	display: block; 
-}
-
-.bread-crumbs {
-	margin: -10px 0 30px;
-
-	ul { 
-		margin: 0; 
-		padding: 0; 
-
-		li {
-			border-right: 1px solid $blue; 
-			font-size: 14px;
-			line-height: normal;
-			list-style: none; 
-			display: inline-block;
-			padding: 0 10px;
-
-			&:first-child { padding-left: 0; }
-			&:last-child { border: 0 }
-
-			a:hover { opacity: 0.8; }
-		}
-	}
-}
-
-//================== IMPORT FILES ===================
+@import "partials/general";
 @import "partials/navbar";
 @import "partials/buttons";
 @import "partials/container";
+@import "partials/form";
 @import "partials/grid";
 @import "partials/message";
 @import "partials/images";

@@ -1,0 +1,110 @@
+/*===================================================
+====================== GENERAL ======================
+===================================================*/
+* { box-sizing: border-box; }
+
+body { 
+	background-color: $light_grey; 
+	color: $black; 
+	font: {
+		family: 'Lato', sans-serif;
+		size: 16px;
+	}
+	line-height: 24px; 
+
+	//preventload css3 transition
+	&.preventload * { @include transition(none !important); }
+}
+
+h1, h2, h3, h4, h5, h6 { font-family: 'Roboto', sans-serif; margin-top: 0 !important; }
+
+a { color: $blue; }
+
+.pull-left { float: left !important }
+.pull-right { float: right !important }
+.full-img { height: auto; width: 100% !important }
+.full-width { width: 100% !important; }
+.col { margin-bottom: 15px; }
+
+.ion { margin-right: 3px; }
+
+.navbar:after, .sidebar:after, .clear:after { 
+	content: ''; 
+	clear: both; 
+	display: block; 
+}
+
+.bread-crumbs {
+	margin: -10px 0 30px;
+
+	ul { 
+		margin: 0; 
+		padding: 0; 
+
+		li {
+			border-right: 1px solid $blue; 
+			font-size: 14px;
+			line-height: normal;
+			list-style: none; 
+			display: inline-block;
+			padding: 0 10px;
+
+			&:first-child { padding-left: 0; }
+			&:last-child { border: 0 }
+
+			a:hover { opacity: 0.8; }
+		}
+	}
+}
+
+#wrapper { position: relative; }
+
+.container {
+	margin: 0 auto;
+	width: 95%;
+	min-width: 980px; 
+	padding: 0 20px;
+}
+
+#content-page {
+	background-color: $white;
+	margin-bottom: 30px;
+	padding: 25px 30px 30px;
+}
+
+.back-page { 
+	background-color: $white; 
+	height: 50px;
+	left: -50%;
+	margin: 0 auto;
+	position: absolute;
+	right: -50%;
+	top: -14px;
+	width: 93%;
+	z-index: -1;
+}
+
+.header-page {
+	border-bottom: 1px dashed $grey;
+	margin-bottom: 30px;
+	padding-bottom: 15px;
+	position: relative;
+
+	#back {
+		margin-right: 14px;
+    	padding: 0 12px;
+    	position: relative;
+    	top: -2px;
+	}
+
+	h2 { margin: 0; }
+
+	.button { 
+		padding: 5px 12px !important; 
+		position: absolute;
+		right: 0;
+		top: -5px;
+	}
+}
+
+.btn-options { margin-top: 30px; }
