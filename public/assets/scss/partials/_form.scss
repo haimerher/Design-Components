@@ -1,14 +1,29 @@
 /*===================================================
 =================== FORM ELEMENTS ===================
 ===================================================*/
+.col { input[type="text"], input[type="password"], select, textarea { width: 100%; } } 
+.form-label { display: block; font-size: 14px; }
+input:-webkit-autofill { padding-left: 16px !important; -webkit-box-shadow: 0 0 0px 1000px #fff inset; }
+
+/*BASICS*/
 input[type="text"], input[type="password"], input[type="number"], select, textarea, .upload-file {
     background-color: $white;
     border: 1px solid #ccc;
     border-radius: 4px;
     height: 40px;
+    margin-bottom: 15px;
     padding: 0 12px;
+    position: relative;
 }
 
+textarea { 
+    display: block;
+    height: 80px; 
+    margin-bottom: 15px;
+    padding: 8px 12px; 
+}
+
+/*DISABLED ELEMENTS*/
 *:disabled {
     cursor: not-allowed !important;
     opacity: .6;
@@ -21,12 +36,146 @@ input:disabled, select:disabled, textarea:disabled {
     border: 1px solid rgba($regal-blue, .4); 
 }
 
-textarea { height: 80px; padding: 8px 12px; }
+/*ERROR STYLE*/
+.error, .error input, .error textarea, .error select { 
+    background-color: #FFF6DC !important; 
+    border-color: rgba($red, .7) !important; 
+    color: $red;
+}
 
-.error { background-color: #FFF6DC !important; border-color: #FF7B54 !important; }
-.col { input[type="text"], input[type="password"], select, textarea { width: 100%; } } 
-.form-label { display: block; font-size: 14px; }
+/*ESPECIAL FIELDS*/
+.inp-user { 
+    background: {
+        image: url('../img/svg/account.svg'); 
+        repeat: no-repeat;
+        position: 12px 7px;
+    }
+    padding-left: 45px !important; 
+}
+.inp-pass {     
+    background: {
+        image: url('../img/svg/lock.svg'); 
+        repeat: no-repeat;
+        position: 12px 7px;
+    }
+    padding-left: 45px !important;  
+}
+.inp-phone { 
+    background: {
+        image: url('../img/svg/phone.svg'); 
+        repeat: no-repeat;
+        position: 12px 7px;
+    }
+    padding-left: 45px !important; 
+}
+.inp-mail { 
+    background: {
+        image: url('../img/svg/mail.svg'); 
+        repeat: no-repeat;
+        position: 12px 7px;
+    }
+    padding-left: 45px !important; 
+}
+.inp-loaction { 
+    background: {
+        image: url('../img/svg/location.svg'); 
+        repeat: no-repeat;
+        position: 12px 7px;
+    }
+    padding-left: 45px !important; 
+}
+.inp-job {
+    background: {
+        image: url('../img/svg/job.svg'); 
+        repeat: no-repeat;
+        position: 12px 7px;
+    }
+    padding-left: 45px !important; 
+}
+.inp-message { 
+    background: {
+        image: url('../img/svg/message.svg'); 
+        repeat: no-repeat;
+        position: 12px 7px;
+    }
+    padding-left: 45px !important; 
+}
+.inp-edit { 
+    background: {
+        image: url('../img/svg/pencil.svg'); 
+        repeat: no-repeat;
+        position: 12px 7px;
+    }
+    padding-left: 45px !important; 
+}
+.inp-list { 
+    background: {
+        image: url('../img/svg/list.svg'); 
+        repeat: no-repeat;
+        position: 12px 7px;
+    }
+    padding-left: 45px !important;
+}
+.inp-link { 
+    background: {
+        image: url('../img/svg/link.svg'); 
+        repeat: no-repeat;
+        position: 12px 7px;
+    }
+    padding-left: 45px !important;
+}
+.inp-cloud { 
+    background: {
+        image: url('../img/svg/cloud.svg'); 
+        repeat: no-repeat;
+        position: 12px 7px;
+    }
+    padding-left: 45px !important;
+}
+.inp-key { 
+    background: {
+        image: url('../img/svg/key.svg'); 
+        repeat: no-repeat;
+        position: 12px 7px;
+    }
+    padding-left: 45px !important;
+}
+.inp-bar { 
+    background: {
+        image: url('../img/svg/barcode.svg'); 
+        repeat: no-repeat;
+        position: 12px 7px;
+    }
+    padding-left: 45px !important;
+}
 
+.box-inp {
+    margin-bottom: 15px;
+    position: relative;
+
+    i.ion {
+        background-color: rgba($black, .8);
+        border-radius: 4px 0 0 4px;
+        border-right: 1px solid rgba($black, .7);
+        color: $white;
+        font-size: 20px;
+        height: 100%;
+        left: 0;
+        line-height: 40px;
+        position: absolute;
+        text-align: center;
+        top: 0;
+        width: 42px;
+        z-index: 1;
+    }
+
+    input, textarea, select { margin-bottom: 0; padding-left: 50px; }
+
+    .error + i.ion { background-color: rgba($red, .9); border-right-color: rgba($red, .7); }
+
+}
+
+/*SEARCH*/
 .search-box {
     position: relative;
     margin-bottom: 20px;

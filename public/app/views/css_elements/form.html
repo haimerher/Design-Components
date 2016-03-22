@@ -1,14 +1,17 @@
 <h1>Form</h1>
 <div class="bread-crumbs">
 	<ul>
-		<li><a href="#/css/container#alert">Elements</a></li>
-		<li><a href="#/css/container#dialog">Dark</a></li>
+		<li><a href="#/css/form#basic">Basic Components</a></li>
+		<li><a href="#/css/form#disabled">Disabled Elements</a></li>
+		<li><a href="#/css/form#disabled">Error</a></li>
+		<li><a href="#/css/form#custom">Custom Fields</a></li>
+		<li><a href="#/css/form#icustom2">Custom Fields 2</a></li>
 	</ul>
 </div>
 
-<h2 lass="subtitle" id="default">Default</h2>
+<!-- BASIC COMPONENTS -->
+<h2 lass="subtitle" id="basic">Basic Components</h2>
 <p>Donec nec justo eget felis facilisis fermentum. Aliquam porttitor mauris sit amet orci. Aenean dignissim pellentesque felis.</p>
-
 <div class="row">
 	<div class="col col-ds-4"><input type="text" placeholder="Text" /></div>
 	<div class="col col-ds-4"><input type="password" placeholder="Password" /></div>
@@ -20,8 +23,178 @@
 		</select>
 	</div>
 </div>
-<div class="row">
+<div class="row" style="margin-bottom: 20px;">
 	<div class="col col-ds-12">
 		<textarea placeholder="Textarea"></textarea>
 	</div>
+</div>
+
+<!-- DISABLED ELEMENTS -->
+<h2 lass="subtitle" id="disabled">Disabled Elements</h2>
+<p>Donec nec justo eget felis facilisis fermentum. Aliquam porttitor mauris sit amet orci. Aenean dignissim pellentesque felis.</p>
+<div class="row" style="margin-bottom: 20px;">
+	<div class="col col-ds-4">
+		<input type="text" disabled="disabled">
+	</div>
+	<div class="col col-ds-4">
+		<select disabled="disabled">
+			<option>Option 1</option>	
+			<option>Option 2</option>	
+			<option>Option 3</option>	
+		</select>
+	</div>
+	<div class="col col-ds-4">
+		<button class="ds-btn-primary" disabled="disabled">Enviar</button>
+	</div>
+</div>
+
+<!-- ERROR -->
+<h2 lass="subtitle" id="disabled">Error</h2>
+<p>Donec nec justo eget felis facilisis fermentum. Aliquam porttitor mauris sit amet orci. Aenean dignissim pellentesque felis.</p>
+<input type="text" class="error" style="width: 300px">
+<div class="code">
+	<h5>HTML Code</h5>
+	<pre class="content"><span style="color:#e0c589">&lt;<span style="color:#e0c589">input</span> <span style="color:#e0c589">type</span>=<span style="color:#8f9d6a">"text"</span> <span style="color:#e0c589">class</span>=<span style="color:#8f9d6a">"error"</span>/></span>
+</pre>
+</div>
+
+<!-- CUSTOM FIELDS -->
+<h2 lass="subtitle" id="icons">Custom Fields</h2>
+<p>Donec nec justo eget felis facilisis fermentum. Aliquam porttitor mauris sit amet orci. Aenean dignissim pellentesque felis.</p>
+<div class="row">
+	<div class="col col-ds-4"><input type="text" class="inp-user" placeholder=".inp-user"/></div>
+	<div class="col col-ds-4"><input type="password" class="inp-pass" placeholder=".inp-pass"/></div>
+	<div class="col col-ds-4"><input type="text" class="inp-phone" placeholder=".inp-phone"/></div>
+</div>
+<div class="row">
+	<div class="col col-ds-4"><input type="text" class="inp-mail" placeholder=".inp-mail"/></div>
+	<div class="col col-ds-4"><input type="text" class="inp-address" placeholder=".inp-location"/></div>
+	<div class="col col-ds-4"><input type="text" class="inp-job" placeholder=".inp-job"/></div>
+</div>
+<div class="row">
+	<div class="col col-ds-4"><input type="text" class="inp-edit" placeholder=".inp-edit"/></div>
+	<div class="col col-ds-4"><input type="text" class="inp-key" placeholder=".inp-key"/></div>
+	<div class="col col-ds-4">
+		<select class="inp-list">
+			<option>.inp-list</option>
+			<option>.inp-list (second)</option>
+		</select>
+	</div>
+</div>
+<div class="row">
+	<div class="col col-ds-4"><input type="text" class="inp-cloud" placeholder=".inp-cloud"/></div>
+	<div class="col col-ds-4"><input type="text" class="inp-bar" placeholder=".inp-bar"/></div>
+	<div class="col col-ds-4"><input type="text" class="inp-link" placeholder=".inp-link"/></div>
+</div>
+<div class="row">
+	<div class="col col-ds-12"><textarea class="inp-message" placeholder=".inp-message"></textarea></div>
+</div>
+<div class="code">
+	<h5>HTML Code</h5>
+	<pre class="content"><span style="color:#e0c589">&lt;<span style="color:#e0c589">input</span> <span style="color:#e0c589">type</span>=<span style="color:#8f9d6a">"text"</span> <span style="color:#e0c589">class</span>=<span style="color:#8f9d6a">"inp-user"</span>/></span>
+</pre>
+</div>
+
+<!-- CUSTOM FIELDS 2 -->
+<h2 lass="subtitle" id="icons2">Custom Fields 2</h2>
+<p>Donec nec justo eget felis facilisis fermentum. Aliquam porttitor mauris sit amet orci. Aenean dignissim pellentesque felis.</p>
+
+<div class="row">
+	<div class="col col-ds-4">
+		<div class="box-inp">
+			<input type="text"/>
+			<i class="ion ion-android-person"></i>
+		</div>
+	</div>
+	<div class="col col-ds-4">
+		<div class="box-inp">
+			<input type="password"/>
+			<i class="ion ion-android-lock"></i>
+		</div>
+	</div>
+	<div class="col col-ds-4">
+		<div class="box-inp">
+			<input type="text"/>
+			<i class="ion ion-android-call"></i>
+		</div>
+	</div>
+</div>
+<div class="row">
+	<div class="col col-ds-4">
+		<div class="box-inp">
+			<input type="text"/>
+			<i class="ion ion-android-mail"></i>
+		</div>
+	</div>
+	<div class="col col-ds-4">
+		<div class="box-inp">
+			<input type="text"/>
+			<i class="ion ion-android-pin"></i>
+		</div>
+	</div>
+	<div class="col col-ds-4">
+		<div class="box-inp">
+			<input type="text"/>
+			<i class="ion ion-briefcase"></i>
+		</div>
+	</div>
+</div>
+<div class="row">
+	<div class="col col-ds-4">
+		<div class="box-inp">
+			<input type="text"/>
+			<i class="ion ion-android-pin"></i>
+		</div>
+	</div>
+	<div class="col col-ds-4">
+		<div class="box-inp">
+			<select>
+				<option>.box-inp-list</option>
+				<option>.box-inp-list (second)</option>
+			</select>
+			<i class="ion ion-android-list"></i>
+		</div>
+	</div>
+	<div class="col col-ds-4">
+		<div class="box-inp">
+			<i class="ion ion-edit"></i>
+			<input type="text"/>
+		</div>
+	</div>
+</div>
+<div class="row">
+	<div class="col col-ds-4">
+		<div class="box-inp">
+			<input type="text"/>
+			<i class="ion ion-link"></i>
+		</div>
+	</div>
+	<div class="col col-ds-4">
+		<div class="box-inp">
+			<input type="text"/>
+			<i class="ion ion-android-cloud"></i>
+		</div>
+	</div>
+	<div class="col col-ds-4">
+		<div class="box-inp">
+			<input type="text" class="error" placeholder=".error"/>
+			<i class="ion ion-android-bookmark"></i>
+		</div>
+	</div>
+</div>
+<div class="row">
+	<div class="col col-ds-12">
+		<div class="box-inp">
+			<textarea></textarea>
+			<i class="ion ion-android-textsms"></i>
+		</div>
+	</div>
+</div>
+<div class="code">
+	<h5>HTML Code</h5>
+	<pre class="content"><span style="color:#ac885b">&lt;<span style="color:#ac885b">div</span> <span style="color:#ac885b">class</span>=<span style="color:#8f9d6a">"box-inp"</span>></span>
+   <span style="color:#e0c589">&lt;<span style="color:#e0c589">input</span> <span style="color:#e0c589">type</span>=<span style="color:#8f9d6a">"text"</span>/></span>
+   <span style="color:#ac885b">&lt;<span style="color:#ac885b">i</span> <span style="color:#ac885b">class</span>=<span style="color:#8f9d6a">"ion ion-android-person"</span>>&lt;/<span style="color:#ac885b">i</span>></span>
+<span style="color:#ac885b">&lt;/<span style="color:#ac885b">div</span>></span>
+</pre>
 </div>
