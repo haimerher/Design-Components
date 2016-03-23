@@ -1,8 +1,9 @@
 /*===================================================
 =================== FORM ELEMENTS ===================
 ===================================================*/
-.col { input[type="text"], input[type="password"], select, textarea { width: 100%; } } 
-.form-label { display: block; font-size: 14px; }
+.form-inp { width: 100%; } 
+.form-label { display: block; font-size: 14px; font-weight: bold; }
+
 input:-webkit-autofill { padding-left: 16px !important; -webkit-box-shadow: 0 0 0px 1000px #fff inset; }
 
 /*BASICS*/
@@ -15,6 +16,8 @@ input[type="text"], input[type="password"], input[type="number"], select, textar
     padding: 0 12px;
     position: relative;
 }
+
+input[type="radio"], input[type="checkbox"] { margin-bottom: 15px; }
 
 textarea { 
     display: block;
@@ -45,107 +48,55 @@ input:disabled, select:disabled, textarea:disabled {
 
 /*ESPECIAL FIELDS*/
 .inp-user { 
-    background: {
-        image: url('../img/svg/account.svg'); 
-        repeat: no-repeat;
-        position: 12px 7px;
-    }
+    background: { image: url('../img/svg/account.svg'); repeat: no-repeat; position: 12px 7px; }
     padding-left: 45px !important; 
 }
 .inp-pass {     
-    background: {
-        image: url('../img/svg/lock.svg'); 
-        repeat: no-repeat;
-        position: 12px 7px;
-    }
+    background: { image: url('../img/svg/lock.svg'); repeat: no-repeat; position: 12px 7px; }
     padding-left: 45px !important;  
 }
 .inp-phone { 
-    background: {
-        image: url('../img/svg/phone.svg'); 
-        repeat: no-repeat;
-        position: 12px 7px;
-    }
+    background: { image: url('../img/svg/phone.svg'); repeat: no-repeat; position: 12px 7px; }
     padding-left: 45px !important; 
 }
 .inp-mail { 
-    background: {
-        image: url('../img/svg/mail.svg'); 
-        repeat: no-repeat;
-        position: 12px 7px;
-    }
+    background: { image: url('../img/svg/mail.svg'); repeat: no-repeat; position: 12px 7px; }
     padding-left: 45px !important; 
 }
-.inp-loaction { 
-    background: {
-        image: url('../img/svg/location.svg'); 
-        repeat: no-repeat;
-        position: 12px 7px;
-    }
+.inp-location { 
+    background: { image: url('../img/svg/location.svg'); repeat: no-repeat; position: 12px 7px; }
     padding-left: 45px !important; 
 }
 .inp-job {
-    background: {
-        image: url('../img/svg/job.svg'); 
-        repeat: no-repeat;
-        position: 12px 7px;
-    }
+    background: { image: url('../img/svg/job.svg'); repeat: no-repeat; position: 12px 7px; }
     padding-left: 45px !important; 
 }
 .inp-message { 
-    background: {
-        image: url('../img/svg/message.svg'); 
-        repeat: no-repeat;
-        position: 12px 7px;
-    }
+    background: { image: url('../img/svg/message.svg'); repeat: no-repeat; position: 12px 7px; }
     padding-left: 45px !important; 
 }
 .inp-edit { 
-    background: {
-        image: url('../img/svg/pencil.svg'); 
-        repeat: no-repeat;
-        position: 12px 7px;
-    }
+    background: { image: url('../img/svg/pencil.svg'); repeat: no-repeat; position: 12px 7px; }
     padding-left: 45px !important; 
 }
 .inp-list { 
-    background: {
-        image: url('../img/svg/list.svg'); 
-        repeat: no-repeat;
-        position: 12px 7px;
-    }
+    background: { image: url('../img/svg/list.svg'); repeat: no-repeat; position: 12px 7px; }
     padding-left: 45px !important;
 }
 .inp-link { 
-    background: {
-        image: url('../img/svg/link.svg'); 
-        repeat: no-repeat;
-        position: 12px 7px;
-    }
+    background: { image: url('../img/svg/link.svg'); repeat: no-repeat; position: 12px 7px; }
     padding-left: 45px !important;
 }
 .inp-cloud { 
-    background: {
-        image: url('../img/svg/cloud.svg'); 
-        repeat: no-repeat;
-        position: 12px 7px;
-    }
+    background: { image: url('../img/svg/cloud.svg'); repeat: no-repeat; position: 12px 7px; }
     padding-left: 45px !important;
 }
 .inp-key { 
-    background: {
-        image: url('../img/svg/key.svg'); 
-        repeat: no-repeat;
-        position: 12px 7px;
-    }
+    background: { image: url('../img/svg/key.svg'); repeat: no-repeat; position: 12px 7px; } 
     padding-left: 45px !important;
 }
 .inp-bar { 
-    background: {
-        image: url('../img/svg/barcode.svg'); 
-        repeat: no-repeat;
-        position: 12px 7px;
-    }
+    background: { image: url('../img/svg/barcode.svg'); repeat: no-repeat; position: 12px 7px; }
     padding-left: 45px !important;
 }
 
@@ -153,7 +104,7 @@ input:disabled, select:disabled, textarea:disabled {
     margin-bottom: 15px;
     position: relative;
 
-    i.ion {
+    i {
         background-color: rgba($black, .8);
         border-radius: 4px 0 0 4px;
         border-right: 1px solid rgba($black, .7);
@@ -171,7 +122,7 @@ input:disabled, select:disabled, textarea:disabled {
 
     input, textarea, select { margin-bottom: 0; padding-left: 50px; }
 
-    .error + i.ion { background-color: rgba($red, .9); border-right-color: rgba($red, .7); }
+    .error + i { background-color: rgba($red, .9); border-right-color: rgba($red, .7); }
 
 }
 
@@ -192,6 +143,80 @@ input:disabled, select:disabled, textarea:disabled {
         right: 0;
         top: 0;
         height: 100%;
+    }
+}
+
+/*RADIOBTN*/
+.form-chk, .form-rdb {
+    display: inline-block;
+    cursor: pointer;
+    margin: 0 10px 10px 0;
+    position: relative;
+
+    &:last-child { margin-right: 0; }
+
+    input { 
+        margin-right: 6px;
+        opacity: 0;
+
+        &:checked + span.elem {
+            border-color: $green-sea;
+
+            &:before {
+                background-color: rgba($green-sea, 1);
+                border-radius: 1px; 
+                display: block;
+                content: "";
+                height: 98%;
+                width: 98%;
+            }
+        } 
+    }
+
+    span.elem {
+        background-color: $white;
+        border: 1px solid rgba($black, .4);
+        border-radius: 4px;
+        box-shadow: 0 0 6px rgba($black, .2) inset;
+        display: block;
+        height: 16px;
+        left: 0;
+        padding: 2px;
+        position: absolute;
+        top: 4px;
+        width: 16px;
+    }
+
+    //color styles
+    &.orange { 
+        input:checked + span.elem { 
+            border-color: $orange; 
+            &:before { background-color: rgba($orange, .8) } 
+        } 
+    }
+    &.regal-blue { 
+        input:checked + span.elem { 
+            border-color: $regal-blue; 
+            &:before { background-color: rgba($regal-blue, .8) } 
+        } 
+    }
+    &.red { 
+        input:checked + span.elem { 
+            border-color: $midnight-blue; 
+            &:before { background-color: rgba($midnight-blue, .8) } 
+        } 
+    }
+    &.wisteria { 
+        input:checked + span.elem { 
+            border-color: $wisteria; 
+            &:before { background-color: rgba($wisteria, .8) } 
+        } 
+    }
+    &.regal-blue { 
+        input:checked + span.elem { 
+            border-color: $regal-blue; 
+            &:before { background-color: rgba($regal-blue, .8) } 
+        } 
     }
 }
 
