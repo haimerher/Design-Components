@@ -54,7 +54,7 @@
 
 //Raised buttons
 .raised { 
-	@include transition(.1s); 
+	@include transition(none); 
 	border-width: 0 0 4px !important; 
 	position: relative;
 

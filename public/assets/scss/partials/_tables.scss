@@ -1,7 +1,7 @@
 /*===================================================
 ====================== TABLES =======================
 ===================================================*/
-table {
+table.ds-table {
 	width: 100%; 
 
 	th, td { padding: 5px 15px; }
@@ -20,7 +20,7 @@ table {
 		tbody tr:nth-child(2n) { background-color: $light-grey; }
 	}
 
-	&.custom-table {
+	&.bgheader {
 		background-color: $white;
 		border: 1px solid $grey;
 		border-bottom: 0;
@@ -38,7 +38,7 @@ table {
 		td { border-bottom: 1px solid $grey; }
 	}
 
-	&.custom-table-fcolor {
+	&.fcolor {
 		background-color: $regal-blue;
 		border-radius: 5px;
 		color: $white;
@@ -46,8 +46,24 @@ table {
 
 		thead, tbody tr { border: 1px solid rgba($white, .1); }
 
-		&.custom-table-fcolor.striped {
+		&.fcolor.striped {
 			tbody tr:nth-child(2n) { background-color: #3A546D !important; }
 		}
+	}
+
+	&.column {
+		thead { border: 0; }
+		th {
+			&:after { 
+				border-bottom: 2px solid $blue;
+				display: block;
+				content: "";
+				margin: 10px auto 0;
+				width: 100%; 
+			}
+			&:first-child { padding-left: 0; } 
+			&:last-child { padding-right: 0; } 
+		}
+		tbody tr { border: 0; }
 	}
 }

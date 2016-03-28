@@ -2,11 +2,12 @@ body { padding-top: 80px !important; }
 h1 { color: #274058; }
 #wrapper { padding-bottom: 60px; }
 .container { margin: 0 auto; max-width: 1170px; min-width: 990px; }
-.section-desc { margin: 0 0 40px; }
+.section-desc { margin: 0 0 30px; }
 .fixed { position: fixed !important; top: 0; }
 .col-md-2.fixed { top: 80px; }
 #static-nav { background: rgba(255, 255, 255, .4); }
-.subtitle { margin: 20px 0; }
+.subtitle { margin: 10px 0; }
+h3.category { color: #274058; margin-bottom: 10px; }
 .code { background-color: #313233 !important; border-radius: 3px; margin: 20px 0 40px; overflow: hidden; width: 100%; }
 .code h5 { background-color: #5D5D5D; color: #FFF; font-size: 15px; margin: 0; padding: 8px 20px; }
 .code .content { color: #fafafa; margin: 0; padding: 20px; }

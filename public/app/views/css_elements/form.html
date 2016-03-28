@@ -3,15 +3,16 @@
 	<ul>
 		<li><a href="#/css/form#basic">Basic Components</a></li>
 		<li><a href="#/css/form#disabled">Disabled Elements</a></li>
-		<li><a href="#/css/form#disabled">Error</a></li>
+		<li><a href="#/css/form#error">Error</a></li>
 		<li><a href="#/css/form#custom">Custom Fields</a></li>
-		<li><a href="#/css/form#icustom2">Custom Fields 2</a></li>
+		<li><a href="#/css/form#radio-check">Radio Button &amp; Checkbox</a></li>
+		<li><a href="#/css/form#radio-check">Search</a></li>
 	</ul>
 </div>
 
 <!-- BASIC COMPONENTS -->
-<h2 lass="subtitle" id="basic">Basic Components</h2>
-<p>Donec nec justo eget felis facilisis fermentum. Aliquam porttitor mauris sit amet orci. Aenean dignissim pellentesque felis.</p>
+<h2 class="subtitle" id="basic">Basic Components</h2>
+<p class="section-desc">Donec nec justo eget felis facilisis fermentum. Aliquam porttitor mauris sit amet orci. Aenean dignissim pellentesque felis.</p>
 <div class="row">
 	<div class="col-ds-4"><input type="text" placeholder="Text" class="form-inp"/></div>
 	<div class="col-ds-4"><input type="password" placeholder="Password" class="form-inp"/></div>
@@ -30,8 +31,8 @@
 </div>
 
 <!-- DISABLED ELEMENTS -->
-<h2 lass="subtitle" id="disabled">Disabled Elements</h2>
-<p>Donec nec justo eget felis facilisis fermentum. Aliquam porttitor mauris sit amet orci. Aenean dignissim pellentesque felis.</p>
+<h2 class="subtitle" id="disabled">Disabled Elements</h2>
+<p class="section-desc">Donec nec justo eget felis facilisis fermentum. Aliquam porttitor mauris sit amet orci. Aenean dignissim pellentesque felis.</p>
 <div class="row" style="margin-bottom: 20px;">
 	<div class="col-ds-4">
 		<input type="text" class="form-inp" disabled="disabled">
@@ -49,8 +50,8 @@
 </div>
 
 <!-- ERROR -->
-<h2 lass="subtitle" id="disabled">Error</h2>
-<p>Donec nec justo eget felis facilisis fermentum. Aliquam porttitor mauris sit amet orci. Aenean dignissim pellentesque felis.</p>
+<h2 class="subtitle" id="error">Error</h2>
+<p class="section-desc">Donec nec justo eget felis facilisis fermentum. Aliquam porttitor mauris sit amet orci. Aenean dignissim pellentesque felis.</p>
 <input type="text" class="error" style="width: 300px">
 <div class="code">
 	<h5>HTML Code</h5>
@@ -59,8 +60,9 @@
 </div>
 
 <!-- CUSTOM FIELDS -->
-<h2 lass="subtitle" id="icons">Custom Fields</h2>
-<p>Donec nec justo eget felis facilisis fermentum. Aliquam porttitor mauris sit amet orci. Aenean dignissim pellentesque felis.</p>
+<h2 class="subtitle" id="custom">Custom Fields</h2>
+<p class="section-desc">Donec nec justo eget felis facilisis fermentum. Aliquam porttitor mauris sit amet orci. Aenean dignissim pellentesque felis.</p>
+
 <div class="row">
 	<div class="col-ds-4"><input type="text" class="inp-user form-inp" placeholder=".inp-user"/></div>
 	<div class="col-ds-4"><input type="password" class="inp-pass form-inp" placeholder=".inp-pass"/></div>
@@ -95,26 +97,23 @@
 </pre>
 </div>
 
-<!-- CUSTOM FIELDS 2 -->
-<h2 lass="subtitle" id="icons2">Custom Fields 2</h2>
-<p>Donec nec justo eget felis facilisis fermentum. Aliquam porttitor mauris sit amet orci. Aenean dignissim pellentesque felis.</p>
-
+<h3 class="category">Other Style</h3>
 <div class="row">
 	<div class="col-ds-4">
 		<div class="box-inp">
-			<input type="text" class="form-inp"/>
+			<input type="text" class="form-inp" placeholder="Username"/>
 			<i class="ion-android-person"></i>
 		</div>
 	</div>
 	<div class="col-ds-4">
 		<div class="box-inp">
-			<input type="password" class="form-inp"/>
+			<input type="password" class="form-inp" placeholder="Password"/>
 			<i class="ion-android-lock"></i>
 		</div>
 	</div>
 	<div class="col-ds-4">
 		<div class="box-inp">
-			<input type="text" class="form-inp"/>
+			<input type="text" class="form-inp" placeholder="Phone"/>
 			<i class="ion-android-call"></i>
 		</div>
 	</div>
@@ -122,28 +121,8 @@
 <div class="row">
 	<div class="col-ds-4">
 		<div class="box-inp">
-			<input type="text" class="form-inp"/>
+			<input type="text" class="form-inp" placeholder="Email"/>
 			<i class="ion-android-mail"></i>
-		</div>
-	</div>
-	<div class="col-ds-4">
-		<div class="box-inp">
-			<input type="text" class="form-inp"/>
-			<i class="ion-android-pin"></i>
-		</div>
-	</div>
-	<div class="col-ds-4">
-		<div class="box-inp">
-			<input type="text" class="form-inp"/>
-			<i class="ion-briefcase"></i>
-		</div>
-	</div>
-</div>
-<div class="row">
-	<div class="col-ds-4">
-		<div class="box-inp">
-			<input type="text" class="form-inp"/>
-			<i class="ion-android-pin"></i>
 		</div>
 	</div>
 	<div class="col-ds-4">
@@ -153,26 +132,6 @@
 				<option>.box-inp-list (second)</option>
 			</select>
 			<i class="ion-android-list"></i>
-		</div>
-	</div>
-	<div class="col-ds-4">
-		<div class="box-inp">
-			<input type="text" class="form-inp"/>
-			<i class="ion-edit"></i>
-		</div>
-	</div>
-</div>
-<div class="row">
-	<div class="col-ds-4">
-		<div class="box-inp">
-			<input type="text" class="form-inp"/>
-			<i class="ion-link"></i>
-		</div>
-	</div>
-	<div class="col-ds-4">
-		<div class="box-inp">
-			<input type="text" class="form-inp"/>
-			<i class="ion-android-cloud"></i>
 		</div>
 	</div>
 	<div class="col-ds-4">
@@ -199,23 +158,55 @@
 </pre>
 </div>
 
-<h2 lass="subtitle" id="radio">Radio Buttons</h2>
-<p>Donec nec justo eget felis facilisis fermentum. Aliquam porttitor mauris sit amet orci. Aenean dignissim pellentesque felis.</p>
+<!-- RADIO BUTTONS & CHECKBOX -->
+<h2 class="subtitle" id="radio-check">Radio Buttons &amp; Checkbox</h2>
+<p class="section-desc">Donec nec justo eget felis facilisis fermentum. Aliquam porttitor mauris sit amet orci. Aenean dignissim pellentesque felis.</p>
 
-<span class="form-label">Aliquam porttitor mauris sit amet orci?</span>
+<h3 class="category">Radio Buttons</h3>
+<span class="form-label">¿What's your academic level?</span>
+<label class="form-rdb"><input type="radio" name="educacion"/><span class="elem"></span>Primary</label>
+<label class="form-rdb"><input type="radio" name="educacion"/><span class="elem"></span>Secondary</label>
+<label class="form-rdb"><input type="radio" name="educacion"/><span class="elem"></span>Technical</label>
+<label class="form-rdb"><input type="radio" name="educacion"/><span class="elem"></span>University</label>
 
-<label class="form-chk">
-	<input type="checkbox" id="name"/><span class="elem"></span>No
-</label>
+<div class="code">
+	<h5>HTML Code</h5>
+	<pre class="content"><span style="color:#e0c589">&lt;<span style="color:#e0c589">label</span> <span style="color:#e0c589">class</span>=<span style="color:#8f9d6a">"form-rdb"</span>></span>
+   <span style="color:#e0c589">&lt;<span style="color:#e0c589">input</span> <span style="color:#e0c589">type</span>=<span style="color:#8f9d6a">"radio"</span>/></span><span style="color:#ac885b">&lt;<span style="color:#ac885b">span</span> <span style="color:#ac885b">class</span>=<span style="color:#8f9d6a">"elem"</span>>&lt;/<span style="color:#ac885b">span</span>></span>Primaria
+<span style="color:#e0c589">&lt;/<span style="color:#e0c589">label</span>></span>
+</pre>
+</div>
 
-<label class="form-chk orange">
-	<input type="checkbox" id="name"/><span class="elem"></span>Sí
-</label>
+<h3 class="category">Checkbox</h3>
+<span class="form-label">What categories are you interested in?</span>
+<label class="form-chk"><input type="checkbox"/><span class="elem"></span>Sport</label>
+<label class="form-chk"><input type="checkbox"/><span class="elem"></span>Technology</label>
+<label class="form-chk"><input type="checkbox"/><span class="elem"></span>Entertaiment</label>
+<label class="form-chk"><input type="checkbox"/><span class="elem"></span>Travel</label>
 
-<label class="form-chk regal-blue">
-	<input type="checkbox" id="name"/><span class="elem"></span>No
-</label>
+<div class="code">
+	<h5>HTML Code</h5>
+	<pre class="content"><span style="color:#e0c589">&lt;<span style="color:#e0c589">label</span> <span style="color:#e0c589">class</span>=<span style="color:#8f9d6a">"form-chk"</span>></span>
+   <span style="color:#e0c589">&lt;<span style="color:#e0c589">input</span> <span style="color:#e0c589">type</span>=<span style="color:#8f9d6a">"checkbox"</span>/></span><span style="color:#ac885b">&lt;<span style="color:#ac885b">span</span> <span style="color:#ac885b">class</span>=<span style="color:#8f9d6a">"elem"</span>>&lt;/<span style="color:#ac885b">span</span>></span>Deportes
+<span style="color:#e0c589">&lt;/<span style="color:#e0c589">label</span>></span>
+</pre>
+</div>
 
-<label class="form-chk wisteria">
-	<input type="checkbox" id="name"/><span class="elem"></span>Sí
-</label>
+<!-- SEARCH -->
+<h2 class="subtitle" id="search">Search</h2>
+<p class="section-desc">Donec nec justo eget felis facilisis fermentum. Aliquam porttitor mauris sit amet orci. Aenean dignissim pellentesque felis.</p>
+
+<div class="row">
+	<div class="col col-ds-6">
+		<div class="search-box form-inp">
+			<input type="text" class="inp-glass" placeholder="Search">
+			<input type="submit" class="submit ds-btn-primary" value="Buscar" />
+		</div>
+	</div>
+	<div class="col col-ds-6">
+		<div class="search-box form-inp">
+			<input type="text" placeholder="Search">
+			<buttom class="submit ds-btn-primary"><i class="ion-android-search"></i></buttom>
+		</div>
+	</div>
+</div>

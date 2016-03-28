@@ -1,16 +1,17 @@
 <h1>Tables</h1>
 <div class="bread-crumbs">
 	<ul>
-		<li><a href="#/css/container#simple">Simple</a></li>
-		<li><a href="#/css/container#striped">Striped</a></li>
-		<li><a href="#/css/container#custom">Custom</a></li>
-		<li><a href="#/css/container#full">Full-Color</a></li>
+		<li><a href="#/css/table#minimalistic">Minimalistic</a></li>
+		<li><a href="#/css/table#striped">Striped</a></li>
+		<li><a href="#/css/table#colored">Colored Header</a></li>
+		<li><a href="#/css/table#full">Full-Color</a></li>
+		<li><a href="#/css/table#col">Column</a></li>
 	</ul>
 </div>
 
-<h2 lass="subtitle" id="simple">Simple</h2>
-<p>Donec nec justo eget felis facilisis fermentum. Aliquam porttitor mauris sit amet orci. Aenean dignissim pellentesque felis.</p>
-<table>
+<h2 class="subtitle" id="minimalistic">Minimalistic</h2>
+<p class="section-desc">Donec nec justo eget felis facilisis fermentum. Aliquam porttitor mauris sit amet orci. Aenean dignissim pellentesque felis.</p>
+<table class="ds-table">
 	<thead>
 		<tr>
 			<th>Item</th>
@@ -42,7 +43,7 @@
 </table>
 <div class="code">
 	<h5>HTML Code</h5>
-	<pre class="content"><span style="color:#e0c589">&lt;<span style="color:#e0c589">table</span>></span>
+	<pre class="content"><span style="color:#e0c589">&lt;<span style="color:#e0c589">table</span> <span style="color:#e0c589">class</span>=<span style="color:#8f9d6a">"ds-table"</span>></span>
    <span style="color:#e0c589">&lt;<span style="color:#e0c589">thead</span>></span>
       <span style="color:#e0c589">&lt;<span style="color:#e0c589">tr</span>></span>
          <span style="color:#e0c589">&lt;<span style="color:#e0c589">th</span>></span>...<span style="color:#e0c589">&lt;/<span style="color:#e0c589">th</span>></span>
@@ -57,9 +58,10 @@
 </pre>
 </div>
 
-<h2 lass="subtitle" id="striped">Striped</h2>
-<p>Donec nec justo eget felis facilisis fermentum. Aliquam porttitor mauris sit amet orci. Aenean dignissim pellentesque felis.</p>
-<table class="striped">
+<!-- STRIPED -->
+<h2 class="subtitle" id="striped">Striped</h2>
+<p class="section-desc">Donec nec justo eget felis facilisis fermentum. Aliquam porttitor mauris sit amet orci. Aenean dignissim pellentesque felis.</p>
+<table class="ds-table striped">
 	<thead>
 		<tr>
 			<th>Item</th>
@@ -91,13 +93,14 @@
 </table>
 <div class="code">
 	<h5>HTML Code</h5>
-	<pre class="content"><span style="color:#e0c589">&lt;<span style="color:#e0c589">table</span> <span style="color:#e0c589">class</span>=<span style="color:#8f9d6a">"striped"</span>></span> [...] <span style="color:#e0c589">&lt;/<span style="color:#e0c589">table</span>></span>
+	<pre class="content"><span style="color:#e0c589">&lt;<span style="color:#e0c589">table</span> <span style="color:#e0c589">class</span>=<span style="color:#8f9d6a">"striped ds-table"</span>></span> [...] <span style="color:#e0c589">&lt;/<span style="color:#e0c589">table</span>></span>
 </pre>
 </div>
 
-<h2 lass="subtitle" id="custom">Custom</h2>
-<p>Donec nec justo eget felis facilisis fermentum. Aliquam porttitor mauris sit amet orci. Aenean dignissim pellentesque felis.</p>
-<table class="custom-table">
+<!-- CUSTOM -->
+<h2 class="subtitle" id="colored">Colored Header</h2>
+<p class="section-desc">Donec nec justo eget felis facilisis fermentum. Aliquam porttitor mauris sit amet orci. Aenean dignissim pellentesque felis.</p>
+<table class="ds-table bgheader">
 	<thead>
 		<tr>
 			<th>Item</th>
@@ -129,13 +132,14 @@
 </table>
 <div class="code">
 	<h5>HTML Code</h5>
-	<pre class="content"><span style="color:#e0c589">&lt;<span style="color:#e0c589">table</span> <span style="color:#e0c589">class</span>=<span style="color:#8f9d6a">"custom-table"</span>></span> [...] <span style="color:#e0c589">&lt;/<span style="color:#e0c589">table</span>></span>
+	<pre class="content"><span style="color:#e0c589">&lt;<span style="color:#e0c589">table</span> <span style="color:#e0c589">class</span>=<span style="color:#8f9d6a">"ds-table bgheader"</span>></span> [...] <span style="color:#e0c589">&lt;/<span style="color:#e0c589">table</span>></span>
 </pre>
 </div>
 
-<h2 lass="subtitle" id="full">Full-Color</h2>
-<p>Donec nec justo eget felis facilisis fermentum. Aliquam porttitor mauris sit amet orci. Aenean dignissim pellentesque felis.</p>
-<table class="custom-table-fcolor striped">
+<!-- FULL COLOR -->
+<h2 class="subtitle" id="full">Full-Color</h2>
+<p class="section-desc">Donec nec justo eget felis facilisis fermentum. Aliquam porttitor mauris sit amet orci. Aenean dignissim pellentesque felis.</p>
+<table class="ds-table fcolor striped">
 	<thead class="nocenter">
 		<tr>
 			<th>Item</th>
@@ -171,6 +175,40 @@
 </table>
 <div class="code">
 	<h5>HTML Code</h5>
-	<pre class="content"><span style="color:#e0c589">&lt;<span style="color:#e0c589">table</span> <span style="color:#e0c589">class</span>=<span style="color:#8f9d6a">"custom-table-fcolor"</span>></span> [...] <span style="color:#e0c589">&lt;/<span style="color:#e0c589">table</span>></span>
+	<pre class="content"><span style="color:#e0c589">&lt;<span style="color:#e0c589">table</span> <span style="color:#e0c589">class</span>=<span style="color:#8f9d6a">"ds-table fcolor"</span>></span> [...] <span style="color:#e0c589">&lt;/<span style="color:#e0c589">table</span>></span>
 </pre>
 </div>
+
+<!-- COLUMN -->
+<h2 class="subtitle" id="col">Column</h2>
+<p class="section-desc">Donec nec justo eget felis facilisis fermentum. Aliquam porttitor mauris sit amet orci. Aenean dignissim pellentesque felis.</p>
+<table class="ds-table column">
+	<thead>
+		<tr>
+			<th>Column 1</th>
+			<th>Column 2</th>
+			<th>Column 3</th>
+			<th>Column 4</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td>Pellentesque egestas sem</td>
+			<td>Fusce pellentesque suscipit nibh</td>
+			<td>Cras ornare tristique elit</td>
+			<td>Cras iaculis ultricies nulla</td>
+		</tr>
+		<tr>
+			<td>Fusce lobortis lorem</td>
+			<td>Aliquam tincidunt mauris</td>
+			<td>Praesent placerat risus</td>
+			<td>Ut aliquam sollicitudin leo</td>
+		</tr>
+		<tr>
+			<td>Pellentesque egestas sem</td>
+			<td>Fusce pellentesque suscipit nibh</td>
+			<td>Cras ornare tristique elit</td>
+			<td>Cras iaculis ultricies nulla</td>
+		</tr>
+	</tbody>
+</table>

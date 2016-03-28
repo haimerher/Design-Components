@@ -1,7 +1,7 @@
 /*===================================================
 =================== FORM ELEMENTS ===================
 ===================================================*/
-.form-inp { width: 100%; } 
+.form-inp { width: 100% !important; } 
 .form-label { display: block; font-size: 14px; font-weight: bold; }
 
 input:-webkit-autofill { padding-left: 16px !important; -webkit-box-shadow: 0 0 0px 1000px #fff inset; }
@@ -99,6 +99,10 @@ input:disabled, select:disabled, textarea:disabled {
     background: { image: url('../img/svg/barcode.svg'); repeat: no-repeat; position: 12px 7px; }
     padding-left: 45px !important;
 }
+.inp-glass { 
+    background: { image: url('../img/svg/glass.svg'); repeat: no-repeat; position: 12px 7px; }
+    padding-left: 45px !important;
+}
 
 .box-inp {
     margin-bottom: 15px;
@@ -130,23 +134,26 @@ input:disabled, select:disabled, textarea:disabled {
 .search-box {
     position: relative;
     margin-bottom: 20px;
+    width: 350px; 
 
-    &.small { width: 350px; }
     &.medium { width: 500px; }
     &.full { width: 100%; }
 
-    input { width: 100%; }
+    input[type="text"] { margin: 0; width: 100%; }
 
     .submit {
         border-radius: 0 3px 3px 0;
+        font-size: 14px !important;
         position: absolute;
         right: 0;
         top: 0;
         height: 100%;
+
+        & i { font-size: 16px !important; }
     }
 }
 
-/*RADIOBTN*/
+/*RADIOBTN & CHECKBOX*/
 .form-chk, .form-rdb {
     display: inline-block;
     cursor: pointer;
@@ -156,24 +163,24 @@ input:disabled, select:disabled, textarea:disabled {
     &:last-child { margin-right: 0; }
 
     input { 
-        margin-right: 6px;
+        margin-right: 8px;
         opacity: 0;
 
         &:checked + span.elem {
             border-color: $green-sea;
 
-            &:before {
-                background-color: rgba($green-sea, 1);
-                border-radius: 1px; 
-                display: block;
-                content: "";
-                height: 98%;
-                width: 98%;
-            }
+            &:before { background-color: rgba($green-sea, 1); }
         } 
     }
 
+    &.form-rdb span.elem { 
+        border-radius: 20px; 
+
+        &:before { border-radius: 10px; }
+    }
+
     span.elem {
+        @include transition(.1s);
         background-color: $white;
         border: 1px solid rgba($black, .4);
         border-radius: 4px;
@@ -185,6 +192,16 @@ input:disabled, select:disabled, textarea:disabled {
         position: absolute;
         top: 4px;
         width: 16px;
+
+        &:before {
+            @include transition(.1s);
+            background-color: transparent;
+            border-radius: 1px; 
+            display: block;
+            content: "";
+            height: 100%;
+            width: 100%;
+        }
     }
 
     //color styles
