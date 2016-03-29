@@ -1,0 +1,97 @@
+/*===================================================
+====================== LABELS =======================
+===================================================*/
+.tag {
+	background-color: $grey;
+	border-radius: 4px 1px 1px 4px;
+	display: inline-block;
+	font-size: 13px;
+	line-height: normal;
+	margin: 0 12px 8px 0;
+	padding: 6px 14px 6px 12px;
+	position: relative;
+
+	&:before {
+		content: "";
+		border: {
+			color: transparent transparent transparent $grey;
+			style: solid;
+			width: 14px 0 14px 11px
+		}
+		position: absolute;
+		right: -11px;
+		top: 0;
+	}
+
+	&:after {
+		background-color: $white;
+		border-radius: 20px;
+		content: "";
+		display: block;
+		height: 5px;
+		position: absolute;
+		right: 0;
+		top: 11px;
+		width: 5px;
+	}
+
+	&.blue { 
+		background-color: rgba($blue, .8);
+		color: $white;
+		&:before { border-color: transparent transparent transparent rgba($blue, .8); } 
+	}
+	&.green { 
+		background-color: rgba($green, .8);
+		color: $white;
+		&:before { border-color: transparent transparent transparent rgba($green, .8); } 
+	}
+	&.green-sea { 
+		background-color: rgba($green-sea, .8);
+		color: $white;
+		&:before { border-color: transparent transparent transparent rgba($green-sea, .8); } 
+	}
+	&.orange { 
+		background-color: rgba($orange, .8);
+		color: $white;
+		&:before { border-color: transparent transparent transparent rgba($orange, .8); } 
+	}
+	&.regal-blue { 
+		background-color: rgba($regal-blue, .8);
+		color: $white;
+		&:before { border-color: transparent transparent transparent rgba($regal-blue, .8); } 
+	}
+	&.red { 
+		background-color: rgba($red, .8);
+		color: $white;
+		&:before { border-color: transparent transparent transparent rgba($red, .8); } 
+	}
+	&.wisteria { 
+		background-color: rgba($wisteria, .8);
+		color: $white;
+		&:before { border-color: transparent transparent transparent rgba($wisteria, .8) } 
+	}
+	&.yellow { 
+		background-color: rgba($yellow, .8);
+		color: $white;
+		&:before { border-color: transparent transparent transparent rgba($yellow, .8) } 
+	}
+}
+
+.cont-notification { 
+	position: relative;
+
+	.floating-label {
+		background-color: $red;
+		border-radius: 20px;
+		color: $white;
+		display: block;
+		font-size: 10px;
+		line-height: normal;
+		padding: 3px 6px;
+		position: absolute;
+		right: 6px;
+		text-align: center;
+		top: 8px;
+		z-index: 1;
+	}
+}

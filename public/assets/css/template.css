@@ -1,4 +1,4 @@
-body { padding-top: 80px !important; }
+body { background-color: #ECECEC; padding-top: 80px !important; }
 h1 { color: #274058; }
 #wrapper { padding-bottom: 60px; }
 .container { margin: 0 auto; max-width: 1170px; min-width: 990px; }

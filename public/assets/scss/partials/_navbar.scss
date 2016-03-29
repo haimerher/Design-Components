@@ -15,6 +15,7 @@
 		text-decoration: none; 
 
 		&:hover { text-decoration: none; }
+		&.icons { font-size: 24px; padding: 12px 15px; }
 	}
 
 	.head-nav { 
@@ -26,16 +27,50 @@
 	}
 
 	ul {
+		float: left;
 		margin: 0; 
 		padding: 0;
 
-		li { list-style: none; }
+		li {
+			float: left;  
+			list-style: none; 
+			margin-right: 3px;
+		}
 	}
 
-	.hr_nav { 
-		float: left; 
+	//submenu
+	.submenu {
+		&.horizontal:hover nav, &.vertical:hover nav { height: auto; visibility: visible; opacity: 1; }
+		&.horizontal:hover nav { height: 48px; }
 
-		li { float: left; margin-right: 3px; }
+		&.vertical { 
+			position: relative;
+
+			li { width: 100%; }
+		}
+
+		nav {
+			@include transition(.2s);
+			height: 0;
+			left: 0;
+			opacity: 0;
+			position: absolute;
+			visibility: hidden;
+			width: 100%;
+			z-index: 999;
+
+			li { 
+				@include transition(none); 
+
+				a {
+					opacity: .8;
+					&:hover {
+						background-color: rgba($white, .2); 
+						opacity: 1 
+					}
+				}
+			}
+		}
 	}
 
 	//styles
@@ -67,32 +102,36 @@
 			@include transition(.2s); 
 			
 			&:hover, &.current { background-color: $blue; }
-			&:hover .submenu { visibility: visible; height: 48px; opacity: 1; }
 		}
 
 		a { color: $white; }
 
-		.submenu {height: 0;
-			@include transition(.2s);
-			visibility: hidden;
-			height: 0;
-			opacity: 0;
-			position: absolute;
-			z-index: 999;
+		.submenu {	
 
-			li { @include transition(none); }
+			nav { background-color: $blue; }
 
-			&.horizontal {
-				background-color: $blue;
-				width: 100%;
-				left: 0;
+			&.horizontal nav { li { float: left; margin-right: 3px; } }
+			&.vertical nav { min-width: 150px; width: auto; }
+		}
+	}
 
-				li a {
-					opacity: .8;
-					&:hover {
-						background-color: rgba($white, .2); 
-						opacity: 1 
-					}
+	&.light {
+		@include box-shadow(0 4px 5px 0 rgba(0,0,0,.14));
+		background-color: $white;
+
+		li {
+			margin-right: 0;
+			padding: 15px 0;
+
+			&:first-child a { border-left: 0; }
+			&:last-child a { border-right: 0; }
+
+			a { 
+				border-left: 1px solid #FFF; 
+				border-right: 1px solid $grey; 
+				padding: {
+					bottom: 0;
+					top: 0;
 				}
 			}
 		}
@@ -111,17 +150,25 @@
 	}
 
 	&.simple-sidebar {
-		a { margin-bottom: 2px; padding: 10px; }
+		ul {
+			float: none;
+			width: 100%;
 
-		li {
-			@include transition(.3s);
+			li {
+				@include transition(.3s);
+				float: none;
+				margin-right: 0;
+				width: 100%;
 
-			&:hover, &.selected { 
-				background-color: #FFF;
-				border-radius: 0 3px 3px 0;
-				@include box-shadow(2px 0 0 $blue inset); 
-				font-weight: bold;
-				padding-left: 20px;
+				&:hover, &.selected { 
+					background-color: #FFF;
+					border-radius: 0 3px 3px 0;
+					@include box-shadow(2px 0 0 $blue inset); 
+					font-weight: bold;
+					padding-left: 20px;
+				}
+
+				a { margin-bottom: 2px; padding: 10px; }
 			}
 		}
 	}

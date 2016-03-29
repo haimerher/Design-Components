@@ -40,6 +40,10 @@ routerApp.config(function($stateProvider, $urlRouterProvider) {
             url: '/form',
             templateUrl: 'app/views/css_elements/form.html'
         })
+        .state('css.labels', {
+            url: '/labels',
+            templateUrl: 'app/views/css_elements/labels.html'
+        })
         .state('css.message', {
             url: '/message',
             templateUrl: 'app/views/css_elements/message.html'

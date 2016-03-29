@@ -1,18 +1,20 @@
 <h1>Navbars</h1>
 <div class="bread-crumbs">
 	<ul>
-		<li><a href="#/css/container#alert">Default</a></li>
-		<li><a href="#/css/container#dialog">Dark</a></li>
+		<li><a href="#/css/navbars#default">Default</a></li>
+		<li><a href="#/css/navbars#dark">Dark</a></li>
+		<li><a href="#/css/navbars#light">Light</a></li>
 	</ul>
 </div>
 
+<!-- DEFAULT NAVBAR -->
 <h2 class="subtitle" id="default">Default</h2>
 <p class="section-desc">Donec nec justo eget felis facilisis fermentum. Aliquam porttitor mauris sit amet orci. Aenean dignissim pellentesque felis.</p>
 
 <nav class="navbar default xample">
 	<div class="container">
 		<div class="head-nav"><a href="#">Company Name</a></div>
-    	<ul class="hr_nav">
+    	<ul>
     		<li><a href="#" class="current">Home</a></li>
     		<li><a href="#">About Us</a></li>
     		<li><a href="#">Contact</a></li>
@@ -22,10 +24,20 @@
 
 <div class="code">
 	<h5>HTML Code</h5>
-
+	<pre class="content"><span style="color:#ac885b">&lt;<span style="color:#ac885b">nav</span> <span style="color:#ac885b">class</span>=<span style="color:#8f9d6a">"navbar default"</span>></span>
+   <span style="color:#ac885b">&lt;<span style="color:#ac885b">div</span> <span style="color:#ac885b">class</span>=<span style="color:#8f9d6a">"container"</span>></span>
+      <span style="color:#ac885b">&lt;<span style="color:#ac885b">div</span> <span style="color:#ac885b">class</span>=<span style="color:#8f9d6a">"head-nav"</span>></span><span style="color:#e0c589">&lt;<span style="color:#e0c589">a</span> <span style="color:#e0c589">href</span>=<span style="color:#8f9d6a">"#"</span>></span>Company Name<span style="color:#e0c589">&lt;/<span style="color:#e0c589">a</span>></span><span style="color:#ac885b">&lt;/<span style="color:#ac885b">div</span>></span>
+      <span style="color:#ac885b">&lt;<span style="color:#ac885b">ul</span>></span>
+         <span style="color:#e0c589">&lt;<span style="color:#e0c589">li</span>></span><span style="color:#e0c589">&lt;<span style="color:#e0c589">a</span> <span style="color:#e0c589">href</span>=<span style="color:#8f9d6a">"#"</span> <span style="color:#e0c589">class</span>=<span style="color:#8f9d6a">"current"</span>></span>Home<span style="color:#e0c589">&lt;/<span style="color:#e0c589">a</span>></span><span style="color:#e0c589">&lt;/<span style="color:#e0c589">li</span>></span>
+         <span style="color:#e0c589">&lt;<span style="color:#e0c589">li</span>></span><span style="color:#e0c589">&lt;<span style="color:#e0c589">a</span> <span style="color:#e0c589">href</span>=<span style="color:#8f9d6a">"#"</span>></span>About Us<span style="color:#e0c589">&lt;/<span style="color:#e0c589">a</span>></span><span style="color:#e0c589">&lt;/<span style="color:#e0c589">li</span>></span>
+         <span style="color:#e0c589">&lt;<span style="color:#e0c589">li</span>></span><span style="color:#e0c589">&lt;<span style="color:#e0c589">a</span> <span style="color:#e0c589">href</span>=<span style="color:#8f9d6a">"#"</span>></span>Contact<span style="color:#e0c589">&lt;/<span style="color:#e0c589">a</span>></span><span style="color:#e0c589">&lt;/<span style="color:#e0c589">li</span>></span>
+      <span style="color:#ac885b">&lt;/<span style="color:#ac885b">ul</span>></span>
+   <span style="color:#ac885b">&lt;/<span style="color:#ac885b">div</span>></span>
+<span style="color:#ac885b">&lt;/<span style="color:#ac885b">nav</span>></span>
 </pre>
 </div>
 
+<!-- DARK NAVBAR -->
 <h2 class="subtitle" id="dark">Dark</h2>
 <p class="section-desc">Donec nec justo eget felis facilisis fermentum. Aliquam porttitor mauris sit amet orci. Aenean dignissim pellentesque felis.</p>
 
@@ -33,18 +45,18 @@
 	<nav class="navbar darknavbar xample">
 		<div class="container">
 			<div class="head-nav"><a href="index.html">Company Name</a></div>
-	    	<ul class="hr_nav">
+	    	<ul>
 	    		<li class="current"><a href="#">Home</a></li>
 	    		<li><a href="#">About</a></li>
-	    		<li>
-	    			<a href="#">Services</a>
-	    			<div class="submenu horizontal">
+	    		<li class="submenu vertical">
+                    <a href="#">Services</a>
+	    			<nav>
 	    				<ul>
 	    					<li><a href="#">Service 1</a></li>
 	    					<li><a href="#">Service 2</a></li>
 	    					<li><a href="#">Service 3</a></li>
 	    				</ul>
-	    			</div>
+	    			</nav>
 	    		</li>
 	    		<li><a href="#">Contact</a></li>
 	    	</ul>
@@ -53,6 +65,51 @@
 </div>
 <div class="code">
 	<h5>HTML Code</h5>
-
+	<pre class="content"><span style="color:#ac885b">&lt;<span style="color:#ac885b">nav</span> <span style="color:#ac885b">class</span>=<span style="color:#8f9d6a">"navbar darknavbar"</span>></span>
+   <span style="color:#ac885b">&lt;<span style="color:#ac885b">div</span> <span style="color:#ac885b">class</span>=<span style="color:#8f9d6a">"container"</span>></span>
+      <span style="color:#ac885b">&lt;<span style="color:#ac885b">div</span> <span style="color:#ac885b">class</span>=<span style="color:#8f9d6a">"head-nav"</span>></span><span style="color:#e0c589">&lt;<span style="color:#e0c589">a</span> <span style="color:#e0c589">href</span>=<span style="color:#8f9d6a">"index.html"</span>></span>Company Name<span style="color:#e0c589">&lt;/<span style="color:#e0c589">a</span>></span><span style="color:#ac885b">&lt;/<span style="color:#ac885b">div</span>></span>
+      <span style="color:#ac885b">&lt;<span style="color:#ac885b">ul</span>></span>
+         <span style="color:#e0c589">&lt;<span style="color:#e0c589">li</span> <span style="color:#e0c589">class</span>=<span style="color:#8f9d6a">"current"</span>></span><span style="color:#e0c589">&lt;<span style="color:#e0c589">a</span> <span style="color:#e0c589">href</span>=<span style="color:#8f9d6a">"#"</span>></span>Home<span style="color:#e0c589">&lt;/<span style="color:#e0c589">a</span>></span><span style="color:#e0c589">&lt;/<span style="color:#e0c589">li</span>></span>
+         <span style="color:#e0c589">&lt;<span style="color:#e0c589">li</span>></span><span style="color:#e0c589">&lt;<span style="color:#e0c589">a</span> <span style="color:#e0c589">href</span>=<span style="color:#8f9d6a">"#"</span>></span>About<span style="color:#e0c589">&lt;/<span style="color:#e0c589">a</span>></span><span style="color:#e0c589">&lt;/<span style="color:#e0c589">li</span>></span>
+         <span style="color:#e0c589">&lt;<span style="color:#e0c589">li</span>></span>
+            <span style="color:#e0c589">&lt;<span style="color:#e0c589">a</span> <span style="color:#e0c589">href</span>=<span style="color:#8f9d6a">"#"</span>></span>Services<span style="color:#e0c589">&lt;/<span style="color:#e0c589">a</span>></span>
+            <span style="color:#ac885b">&lt;<span style="color:#ac885b">div</span> <span style="color:#ac885b">class</span>=<span style="color:#8f9d6a">"submenu horizontal"</span>></span>
+               <span style="color:#ac885b">&lt;<span style="color:#ac885b">ul</span>></span>
+                  <span style="color:#e0c589">&lt;<span style="color:#e0c589">li</span>></span><span style="color:#e0c589">&lt;<span style="color:#e0c589">a</span> <span style="color:#e0c589">href</span>=<span style="color:#8f9d6a">"#"</span>></span>Service 1<span style="color:#e0c589">&lt;/<span style="color:#e0c589">a</span>></span><span style="color:#e0c589">&lt;/<span style="color:#e0c589">li</span>></span>
+                  <span style="color:#e0c589">&lt;<span style="color:#e0c589">li</span>></span><span style="color:#e0c589">&lt;<span style="color:#e0c589">a</span> <span style="color:#e0c589">href</span>=<span style="color:#8f9d6a">"#"</span>></span>Service 2<span style="color:#e0c589">&lt;/<span style="color:#e0c589">a</span>></span><span style="color:#e0c589">&lt;/<span style="color:#e0c589">li</span>></span>
+                  <span style="color:#e0c589">&lt;<span style="color:#e0c589">li</span>></span><span style="color:#e0c589">&lt;<span style="color:#e0c589">a</span> <span style="color:#e0c589">href</span>=<span style="color:#8f9d6a">"#"</span>></span>Service 3<span style="color:#e0c589">&lt;/<span style="color:#e0c589">a</span>></span><span style="color:#e0c589">&lt;/<span style="color:#e0c589">li</span>></span>
+               <span style="color:#ac885b">&lt;/<span style="color:#ac885b">ul</span>></span>
+            <span style="color:#ac885b">&lt;/<span style="color:#ac885b">div</span>></span>
+         <span style="color:#e0c589">&lt;/<span style="color:#e0c589">li</span>></span>
+         <span style="color:#e0c589">&lt;<span style="color:#e0c589">li</span>></span><span style="color:#e0c589">&lt;<span style="color:#e0c589">a</span> <span style="color:#e0c589">href</span>=<span style="color:#8f9d6a">"#"</span>></span>Contact<span style="color:#e0c589">&lt;/<span style="color:#e0c589">a</span>></span><span style="color:#e0c589">&lt;/<span style="color:#e0c589">li</span>></span>
+      <span style="color:#ac885b">&lt;/<span style="color:#ac885b">ul</span>></span>
+   <span style="color:#ac885b">&lt;/<span style="color:#ac885b">div</span>></span>
+<span style="color:#ac885b">&lt;/<span style="color:#ac885b">nav</span>></span>
 </pre>
+</div>
+
+<!-- LIGHT NAVBAR -->
+<h2 class="subtitle" id="light">Light</h2>
+<p class="section-desc">Donec nec justo eget felis facilisis fermentum. Aliquam porttitor mauris sit amet orci. Aenean dignissim pellentesque felis.</p>
+<nav class="navbar light xample">
+	<div class="container">
+		<div class="head-nav"><a href="#">Company Name</a></div>
+    	<ul>
+    		<li><a href="#" class="current">Home</a></li>
+    		<li><a href="#">About Us</a></li>
+    		<li><a href="#">Contact</a></li>
+    	</ul>
+    </div>
+</nav>
+
+<div class="code">
+	<h5>HTML Code</h5>
+	<pre class="content"><span style="color:#ac885b">&lt;<span style="color:#ac885b">nav</span> <span style="color:#ac885b">class</span>=<span style="color:#8f9d6a">"navbar light"</span>></span>
+   <span style="color:#ac885b">&lt;<span style="color:#ac885b">div</span> <span style="color:#ac885b">class</span>=<span style="color:#8f9d6a">"container"</span>></span>
+      <span style="color:#ac885b">&lt;<span style="color:#ac885b">div</span> <span style="color:#ac885b">class</span>=<span style="color:#8f9d6a">"head-nav"</span>></span> [...] <span style="color:#ac885b">&lt;/<span style="color:#ac885b">div</span>></span>
+      <span style="color:#ac885b">&lt;<span style="color:#ac885b">ul</span>></span> [...] <span style="color:#ac885b">&lt;/<span style="color:#ac885b">ul</span>></span>
+   <span style="color:#ac885b">&lt;/<span style="color:#ac885b">div</span>></span>
+<span style="color:#ac885b">&lt;/<span style="color:#ac885b">nav</span>></span>
+</pre>
+
 </div>
