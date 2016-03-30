@@ -60,4 +60,8 @@ routerApp.config(function($stateProvider, $urlRouterProvider) {
             url: '/table',
             templateUrl: 'app/views/css_elements/table.html'
         })
+        .state('css.breadcrumbs', {
+            url: '/breadcrumbs',
+            templateUrl: 'app/views/css_elements/breadcrumbs.html'
+        })
 });

@@ -30,34 +30,11 @@ a { color: $blue; }
 	display: block; 
 }
 
-.bread-crumbs {
-	margin: -10px 0 30px;
-
-	ul { 
-		margin: 0; 
-		padding: 0; 
-
-		li {
-			border-right: 1px solid $blue; 
-			font-size: 14px;
-			line-height: normal;
-			list-style: none; 
-			display: inline-block;
-			padding: 0 7px 0 5px;
-
-			&:first-child { padding-left: 0; }
-			&:last-child { border: 0 }
-
-			a:hover { opacity: 0.8; }
-		}
-	}
-}
-
 #wrapper { position: relative; }
 
 .container {
 	margin: 0 auto;
-	width: 95%;
+	width: 98%;
 	min-width: 980px; 
 	padding: 0 20px;
 }

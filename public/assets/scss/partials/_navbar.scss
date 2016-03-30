@@ -75,6 +75,7 @@
 
 	//styles
 	&.default { 
+		@include box-shadow(0 4px 5px 0 rgba(0,0,0,.14));
 		background-color: $regal-blue; 
 		color: $white; 
 

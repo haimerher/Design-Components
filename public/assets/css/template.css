@@ -1,7 +1,7 @@
 body { background-color: #ECECEC; padding-top: 80px !important; }
 h1 { color: #274058; }
 #wrapper { padding-bottom: 60px; }
-.container { margin: 0 auto; max-width: 1170px; min-width: 990px; }
+.container { margin: 0 auto; /*max-width: 1170px;*/ min-width: 990px; }
 .section-desc { margin: 0 0 30px; }
 .fixed { position: fixed !important; top: 0; }
 .col-md-2.fixed { top: 80px; }
