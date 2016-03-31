@@ -81,11 +81,11 @@ a { color: #2980b9; }
 /*===================================================
 ====================== BUTTONS ======================
 ===================================================*/
-.ds-btn-default, .ds-btn-success, .ds-btn-primary, .ds-btn-warning, .ds-btn-danger, .ds-btn-wisteria, .ds-btn-regal-blue, .ds-btn-green-sea, .ds-social-tt, .ds-social-fb, .ds-social-gg, .ds-social-ig, .ds-social-pt, .ds-social-yt, .ds-btn-flat-blue, .ds-btn-flat-red, .ds-btn-flat-orange, .ds-btn-flat-green, .ds-btn-flat-wisteria, .ds-btn-flat-regal-blue, .ds-btn-flat-green-sea { border: 0; border-radius: .2em; color: #fafafa; cursor: pointer; display: inline-block; font-size: 16px !important; outline: 0; padding: 6px 14px; transition: 0.2s; -webkit-transition: 0.2s; -moz-transition: 0.2s; -ms-transition: 0.2s; -o-transition: 0.2s; text-decoration: none; }
-.ds-btn-default:hover, .ds-btn-success:hover, .ds-btn-primary:hover, .ds-btn-warning:hover, .ds-btn-danger:hover, .ds-btn-wisteria:hover, .ds-btn-regal-blue:hover, .ds-btn-green-sea:hover, .ds-social-tt:hover, .ds-social-fb:hover, .ds-social-gg:hover, .ds-social-ig:hover, .ds-social-pt:hover, .ds-social-yt:hover, .ds-btn-flat-blue:hover, .ds-btn-flat-red:hover, .ds-btn-flat-orange:hover, .ds-btn-flat-green:hover, .ds-btn-flat-wisteria:hover, .ds-btn-flat-regal-blue:hover, .ds-btn-flat-green-sea:hover { opacity: 0.9; text-decoration: none; }
-.ds-btn-default:active, .ds-btn-success:active, .ds-btn-primary:active, .ds-btn-warning:active, .ds-btn-danger:active, .ds-btn-wisteria:active, .ds-btn-regal-blue:active, .ds-btn-green-sea:active, .ds-social-tt:active, .ds-social-fb:active, .ds-social-gg:active, .ds-social-ig:active, .ds-social-pt:active, .ds-social-yt:active, .ds-btn-flat-blue:active, .ds-btn-flat-red:active, .ds-btn-flat-orange:active, .ds-btn-flat-green:active, .ds-btn-flat-wisteria:active, .ds-btn-flat-regal-blue:active, .ds-btn-flat-green-sea:active { opacity: 1; }
+.ds-btn-default, .ds-btn-success, .ds-btn-primary, .ds-btn-warning, .ds-btn-danger, .ds-btn-wisteria, .ds-btn-regal-blue, .ds-btn-green-sea, .ds-social-tt, .ds-social-fb, .ds-social-gg, .ds-social-ig, .ds-social-pt, .ds-social-yt, .ds-btn-flat, .ds-btn-flat-blue, .ds-btn-flat-red, .ds-btn-flat-orange, .ds-btn-flat-green, .ds-btn-flat-wisteria, .ds-btn-flat-regal-blue, .ds-btn-flat-green-sea { border: 0; border-radius: .2em; color: #fafafa; cursor: pointer; display: inline-block; font-size: 16px !important; outline: 0; padding: 6px 14px; transition: 0.2s; -webkit-transition: 0.2s; -moz-transition: 0.2s; -ms-transition: 0.2s; -o-transition: 0.2s; text-decoration: none; }
+.ds-btn-default:hover, .ds-btn-success:hover, .ds-btn-primary:hover, .ds-btn-warning:hover, .ds-btn-danger:hover, .ds-btn-wisteria:hover, .ds-btn-regal-blue:hover, .ds-btn-green-sea:hover, .ds-social-tt:hover, .ds-social-fb:hover, .ds-social-gg:hover, .ds-social-ig:hover, .ds-social-pt:hover, .ds-social-yt:hover, .ds-btn-flat:hover, .ds-btn-flat-blue:hover, .ds-btn-flat-red:hover, .ds-btn-flat-orange:hover, .ds-btn-flat-green:hover, .ds-btn-flat-wisteria:hover, .ds-btn-flat-regal-blue:hover, .ds-btn-flat-green-sea:hover { opacity: 0.9; text-decoration: none; }
+.ds-btn-default:active, .ds-btn-success:active, .ds-btn-primary:active, .ds-btn-warning:active, .ds-btn-danger:active, .ds-btn-wisteria:active, .ds-btn-regal-blue:active, .ds-btn-green-sea:active, .ds-social-tt:active, .ds-social-fb:active, .ds-social-gg:active, .ds-social-ig:active, .ds-social-pt:active, .ds-social-yt:active, .ds-btn-flat:active, .ds-btn-flat-blue:active, .ds-btn-flat-red:active, .ds-btn-flat-orange:active, .ds-btn-flat-green:active, .ds-btn-flat-wisteria:active, .ds-btn-flat-regal-blue:active, .ds-btn-flat-green-sea:active { opacity: 1; }
 
-.ds-btn-flat-blue, .ds-btn-flat-red, .ds-btn-flat-orange, .ds-btn-flat-green, .ds-btn-flat-wisteria, .ds-btn-flat-regal-blue, .ds-btn-flat-green-sea { background-color: transparent; opacity: 1 !important; }
+.ds-btn-flat, .ds-btn-flat-blue, .ds-btn-flat-red, .ds-btn-flat-orange, .ds-btn-flat-green, .ds-btn-flat-wisteria, .ds-btn-flat-regal-blue, .ds-btn-flat-green-sea { background-color: transparent; opacity: 1 !important; }
 
 .rounded { border-radius: 30px; padding: 6px 26px; }
 .rounded.btn-sm { padding: 0px 14px; }
@@ -101,6 +101,11 @@ a { color: #2980b9; }
 .btn-sm { font-size: 13px !important; padding: 2px 8px; }
 
 .btn-lg { font-size: 20px !important; padding: 14px 28px; }
+
+.btn-group button { border-radius: 0; border-right-width: 0; margin-right: -3px; }
+.btn-group button:first-child { border-radius: .2em 0 0 .2em; }
+.btn-group button:last-child { border-radius: 0 .2em .2em 0; border-right-width: 1px; }
+.btn-group button.ds-btn-default:hover { color: #2980b9; }
 
 .ds-btn-default { background-color: #fafafa; border: 1px solid #CCC; color: #353535; }
 

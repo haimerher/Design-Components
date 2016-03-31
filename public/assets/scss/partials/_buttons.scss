@@ -70,6 +70,19 @@
 .btn-sm { font-size: 13px !important; padding: 2px 8px; }
 .btn-lg { font-size: 20px !important; padding: 14px 28px; }
 
+//button group
+.btn-group {	
+	button { 
+		border-radius: 0;
+		border-right-width: 0;
+		margin-right: -3px; 
+
+		&:first-child { border-radius: .2em 0 0 .2em; }
+		&:last-child { border-radius: 0 .2em .2em 0; border-right-width: 1px; }
+		&.ds-btn-default:hover { color: $blue; }
+	}
+}
+
 //Colors
 .ds-btn-default { @extend %ds-btn; background-color: $white; border: 1px solid $grey; color: $black; }
 .ds-btn-success { @extend %ds-btn; background-color: rgba($green, .92); border: 1px solid $green; }
@@ -80,6 +93,7 @@
 .ds-btn-regal-blue { @extend %ds-btn; background-color: rgba($regal-blue, .9); border: 1px solid $regal-blue }
 .ds-btn-green-sea { @extend %ds-btn; background-color: rgba($green-sea, .92); border: 1px solid $green-sea; }
 // -----------------------------------------------------------------------------------------------------
+.ds-btn-flat { @extend %ds-btn-flat; }
 .ds-btn-flat-blue { @extend %ds-btn-flat; color: $blue; }
 .ds-btn-flat-blue:hover { background-color: $blue; color: $white; }
 .ds-btn-flat-red { @extend %ds-btn-flat; color: $red; }
