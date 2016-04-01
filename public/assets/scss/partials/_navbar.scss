@@ -1,10 +1,13 @@
 /*===================================================
 ====================== NAVBAR =======================
 ===================================================*/
+.cont-sidebar { width: 250px; }
+
 .navbar { 
 	font-size: 16px;
 	line-height: 18px;
 	margin-bottom: 40px;
+	position: relative;
 	width: 100%; 
 	z-index: 999;
 
@@ -42,11 +45,17 @@
 	.submenu {
 		&.horizontal:hover nav, &.vertical:hover nav { height: auto; visibility: visible; opacity: 1; }
 		&.horizontal:hover nav { height: 48px; }
+		&.horizontal nav { li { float: left; margin-right: 3px; } }
 
 		&.vertical { 
 			position: relative;
+			
+			nav { 
+				min-width: 150px; 
+				width: auto; 
 
-			li { width: 100%; }
+				li { width: 100%; }
+			}
 		}
 
 		nav {
@@ -57,7 +66,7 @@
 			position: absolute;
 			visibility: hidden;
 			width: 100%;
-			z-index: 999;
+			z-index: 998;
 
 			li { 
 				@include transition(none); 
@@ -86,6 +95,11 @@
 
 			&:hover, &.current { color: $white;	opacity: 1; }
 		}
+
+		.submenu { 
+			@include box-shadow(0 4px 5px 0 rgba(0,0,0,.14));
+			nav { background-color: $regal-blue; } 
+		}
 	}
 
 	&.darknavbar { 
@@ -107,13 +121,7 @@
 
 		a { color: $white; }
 
-		.submenu {	
-
-			nav { background-color: $blue; }
-
-			&.horizontal nav { li { float: left; margin-right: 3px; } }
-			&.vertical nav { min-width: 150px; width: auto; }
-		}
+		.submenu { nav { background-color: $blue; } }
 	}
 
 	&.light {
@@ -136,6 +144,23 @@
 				}
 			}
 		}
+
+		.submenu { 
+			nav { 
+				@include box-shadow(0 4px 5px 0 rgba(0,0,0,.14));
+				background-color: $white; 
+				border-top: 1px solid rgba($grey, .7);
+				top: 48px;
+
+				li { padding: 0; }
+				a { 
+					border: 0; 
+					padding: 15px; 
+
+					&:hover { background-color: rgba($grey, .5); }
+				}
+			}
+		}
 	}
 
 	&.sidebar { 
@@ -151,6 +176,8 @@
 	}
 
 	&.simple-sidebar {
+		z-index: 99;
+
 		ul {
 			float: none;
 			width: 100%;
