@@ -70,4 +70,8 @@ routerApp.config(function($stateProvider, $urlRouterProvider) {
             url: '/js',
             templateUrl: 'app/views/templates/js.html'
         })
+        .state('js.tooltips', {
+            url: '/tooltips',
+            templateUrl: 'app/views/js_elements/tooltips.html'
+        })
 });

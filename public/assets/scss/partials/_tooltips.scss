@@ -1,0 +1,30 @@
+/*===================================================
+====================== TOOLTIPS ======================
+===================================================*/
+.tooltip {
+	display: inline-block;
+	position: relative;
+
+	&[data-direction=bottom] { .tooltip-cont { top: 100%; margin-top: 12px; } }
+	&[data-direction=top] { .tooltip-cont { bottom: 100%; margin-bottom: 12px; } }
+	&[data-direction=left] { .tooltip-cont { margin-right: 12px; right: 100%; }	}
+	&[data-direction=right] { .tooltip-cont { left: 100%; margin-left: 12px; } }
+
+	.tooltip-cont {
+		background-color: $black;
+		border-radius: 4px;
+		color: $white;
+		display: block;
+		font-size: 13px;
+		left: -50%;
+		line-height: normal;
+		margin: 0 auto;
+		opacity: 1 !important;
+		padding: 8px;
+		right: -50%;
+		position: absolute;
+		text-align: center;	
+		width: 100px;	
+		z-index: 1070;
+	}
+}
