@@ -1,6 +1,7 @@
 /*===================================================
 =================== FORM ELEMENTS ===================
 ===================================================*/
+label { display: inline-block; margin: 0 15px 15px 0; }
 .form-inp { width: 100% !important; } 
 .form-label { display: block; font-size: 14px; font-weight: bold; }
 
@@ -155,9 +156,7 @@ input:disabled, select:disabled, textarea:disabled {
 
 /*RADIOBTN & CHECKBOX*/
 .form-chk, .form-rdb {
-    display: inline-block;
-    cursor: pointer;
-    margin: 0 10px 10px 0;
+    cursor: pointer;    
     position: relative;
 
     &:last-child { margin-right: 0; }
@@ -169,7 +168,7 @@ input:disabled, select:disabled, textarea:disabled {
         &:checked + span.elem {
             border-color: $green-sea;
 
-            &:before { background-color: rgba($green-sea, 1); }
+            &:before { background-color: $green-sea; }
         } 
     }
 
@@ -360,4 +359,68 @@ input:disabled, select:disabled, textarea:disabled {
 
     &:not(.pmu-view-days) .pmu-days, &:not(.pmu-view-days) .pmu-day-of-week, 
     &:not(.pmu-view-months) .pmu-months, &:not(.pmu-view-years) .pmu-years { display: none; }
+}
+
+/*SWITCH BUTTONS*/
+.switch {
+    cursor: pointer;
+    height: 30px;
+    position: relative;
+    width: 75px;
+
+    .switch-label {
+        @include transition(.3s);
+        background-color: rgba($grey, .4);
+        border: 1px solid rgba($black, .15);
+        border-radius: 20px;
+        display: block;
+        height: 100%;
+        position: relative;
+        width: 100%;
+
+        &:before, &:after {
+            @include transition(inherit);
+            color: rgba($black, .7);            
+            font-size: 14px;
+            position: absolute;
+            top: 2px;
+        }
+
+        &:before { 
+            color: $white; 
+            content: attr(data-on); 
+            opacity: 0;
+            left: 14px; 
+        }
+
+        &:after { content: attr(data-off); right: 14px; }
+    }
+
+    .switch-btn {
+        @include box-shadow(0 4px 5px 0 rgba(0,0,0,.14));
+        @include transition(All .2s ease);
+        background-color: $white;
+        border-radius: 20px;
+        display: block;
+        height: 80%;
+        left: 3px;
+        position: absolute;
+        top: 3px;
+        width: 24px;
+    }
+
+    .switch-inp { 
+        left: 10px;
+        position: absolute; 
+        top: 10px;
+        visibility: hidden; 
+
+        &:checked ~ .switch-btn { 
+            left: 48px; 
+        }
+
+        &:checked + .switch-label:before { opacity: 1; }
+        &:checked + .switch-label:after { opacity: 0; }
+        &:checked + .switch-label { background-color: rgba($green-sea, .6); }
+    }
 }

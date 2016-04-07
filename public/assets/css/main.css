@@ -189,6 +189,8 @@ a { color: #2980b9; }
 /*===================================================
 =================== FORM ELEMENTS ===================
 ===================================================*/
+label { display: inline-block; margin: 0 15px 15px 0; }
+
 .form-inp { width: 100% !important; }
 
 .form-label { display: block; font-size: 14px; font-weight: bold; }
@@ -254,7 +256,7 @@ input:disabled, select:disabled, textarea:disabled { background-color: rgba(204,
 .search-box .submit i { font-size: 16px !important; }
 
 /*RADIOBTN & CHECKBOX*/
-.form-chk, .form-rdb { display: inline-block; cursor: pointer; margin: 0 10px 10px 0; position: relative; }
+.form-chk, .form-rdb { cursor: pointer; position: relative; }
 .form-chk:last-child, .form-rdb:last-child { margin-right: 0; }
 .form-chk input, .form-rdb input { margin-right: 8px; opacity: 0; }
 .form-chk input:checked + span.elem, .form-rdb input:checked + span.elem { border-color: #16a085; }
@@ -301,6 +303,19 @@ input:disabled, select:disabled, textarea:disabled { background-color: rgba(204,
 .pickmeup .pmu-instance:first-child .pmu-month, .pickmeup .pmu-instance:last-child .pmu-month { width: 13em; }
 .pickmeup .pmu-instance:first-child:last-child .pmu-month { width: 12em; }
 .pickmeup:not(.pmu-view-days) .pmu-days, .pickmeup:not(.pmu-view-days) .pmu-day-of-week, .pickmeup:not(.pmu-view-months) .pmu-months, .pickmeup:not(.pmu-view-years) .pmu-years { display: none; }
+
+/*SWITCH BUTTONS*/
+.switch { cursor: pointer; height: 30px; position: relative; width: 75px; }
+.switch .switch-label { transition: 0.3s; -webkit-transition: 0.3s; -moz-transition: 0.3s; -ms-transition: 0.3s; -o-transition: 0.3s; background-color: rgba(204, 204, 204, 0.4); border: 1px solid rgba(53, 53, 53, 0.15); border-radius: 20px; display: block; height: 100%; position: relative; width: 100%; }
+.switch .switch-label:before, .switch .switch-label:after { transition: inherit; -webkit-transition: inherit; -moz-transition: inherit; -ms-transition: inherit; -o-transition: inherit; color: rgba(53, 53, 53, 0.7); font-size: 14px; position: absolute; top: 2px; }
+.switch .switch-label:before { color: #fafafa; content: attr(data-on); opacity: 0; left: 14px; }
+.switch .switch-label:after { content: attr(data-off); right: 14px; }
+.switch .switch-btn { box-shadow: 0 4px 5px 0 rgba(0, 0, 0, 0.14); -webkit-box-shadow: 0 4px 5px 0 rgba(0, 0, 0, 0.14); -moz-box-shadow: 0 4px 5px 0 rgba(0, 0, 0, 0.14); -ms-box-shadow: 0 4px 5px 0 rgba(0, 0, 0, 0.14); -o-box-shadow: 0 4px 5px 0 rgba(0, 0, 0, 0.14); transition: All 0.2s ease; -webkit-transition: All 0.2s ease; -moz-transition: All 0.2s ease; -ms-transition: All 0.2s ease; -o-transition: All 0.2s ease; background-color: #fafafa; border-radius: 20px; display: block; height: 80%; left: 3px; position: absolute; top: 3px; width: 24px; }
+.switch .switch-inp { left: 10px; position: absolute; top: 10px; visibility: hidden; }
+.switch .switch-inp:checked ~ .switch-btn { left: 48px; }
+.switch .switch-inp:checked + .switch-label:before { opacity: 1; }
+.switch .switch-inp:checked + .switch-label:after { opacity: 0; }
+.switch .switch-inp:checked + .switch-label { background-color: rgba(22, 160, 133, 0.6); }
 
 /*===================================================
 ====================== LABELS =======================

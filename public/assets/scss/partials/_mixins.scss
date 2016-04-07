@@ -12,3 +12,7 @@
 @mixin transition($value) {
   @include prefixer(transition, $value);
 }
+
+@mixin transform($value) {
+  @include prefixer(transform, $value);
+}

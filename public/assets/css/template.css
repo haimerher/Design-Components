@@ -16,4 +16,4 @@ h3.category { color: #274058; margin-bottom: 10px; }
 #images-section .size-img-position .img { display: inline-block; margin: 0 10px 10px 0; vertical-align: bottom; }
 table.striped tbody tr:nth-child(2n){ background-color: #ccc !important; }
 .dialog-message { margin-bottom: 20px !important; }
-nav.xample { border-radius: 4px; }
+nav.xample { border-radius: 4px; z-index: inherit; }
