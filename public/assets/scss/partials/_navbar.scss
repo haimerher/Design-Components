@@ -166,17 +166,26 @@
 	&.sidebar { 
 		background-color: $white; 
 		border: 1px solid #DCDCDC;
-		width: 200px; 
+		margin-bottom: 0;
 
-		li { 
-			border-bottom: 1px solid #DCDCDC;
+		ul {
+			width: 100%;
 
-			&:last-child { border-bottom: 0; } 
+			li { 
+				border-bottom: 1px solid #DCDCDC;
+				display: block;
+				float: none;
+				margin: 0;
+
+				&:last-child { border-bottom: 0; } 
+				&:hover { background-color: rgba($grey, .5); }
+			}
 		}
 	}
 
 	&.simple-sidebar {
 		z-index: 99;
+		width: 200px; 
 
 		ul {
 			float: none;

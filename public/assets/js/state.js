@@ -64,6 +64,10 @@ routerApp.config(function($stateProvider, $urlRouterProvider) {
             url: '/breadcrumbs',
             templateUrl: 'app/views/css_elements/breadcrumbs.html'
         })
+        .state('css.list', {
+            url: '/list',
+            templateUrl: 'app/views/css_elements/list.html'
+        })
 
         // JS STATES =========================================
         .state('js', {

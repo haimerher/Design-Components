@@ -5,14 +5,34 @@
 .basic-cont {
 	@include box-shadow(0 4px 5px 0 rgba(0,0,0,.14));
 	background-color: $white;
+	border-top: 1px solid rgba($grey, .5);
 	border-radius: 3px;
 	padding: 30px;
+}
+
+#content-page {
+	background-color: $white;
+	margin-bottom: 30px;
+	padding: 25px 30px 30px;
+}
+
+.back-page { 
+	background-color: $white; 
+	height: 50px;
+	left: -50%;
+	margin: 0 auto;
+	position: absolute;
+	right: -50%;
+	top: -14px;
+	width: 93%;
+	z-index: -1;
 }
 
 .list-grid {
 	
 	.list {
-		border: 1px solid $grey;
+		@include box-shadow(0 4px 5px 0 rgba(0,0,0,.14));
+		border: 1px solid rgba($grey, .5);
 		border-radius: 3px; 
 		background-color: $white;
 		margin-bottom: 10px; 

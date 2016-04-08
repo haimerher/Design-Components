@@ -17,3 +17,5 @@ h3.category { color: #274058; margin-bottom: 10px; }
 table.striped tbody tr:nth-child(2n){ background-color: #ccc !important; }
 .dialog-message { margin-bottom: 20px !important; }
 nav.xample { border-radius: 4px; z-index: inherit; }
+.back-page { width: 96% !important; }
+button { vertical-align: bottom; }
