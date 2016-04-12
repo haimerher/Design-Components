@@ -202,38 +202,6 @@ input:disabled, select:disabled, textarea:disabled {
             width: 100%;
         }
     }
-
-    //color styles
-    &.orange { 
-        input:checked + span.elem { 
-            border-color: $orange; 
-            &:before { background-color: rgba($orange, .8) } 
-        } 
-    }
-    &.regal-blue { 
-        input:checked + span.elem { 
-            border-color: $regal-blue; 
-            &:before { background-color: rgba($regal-blue, .8) } 
-        } 
-    }
-    &.red { 
-        input:checked + span.elem { 
-            border-color: $midnight-blue; 
-            &:before { background-color: rgba($midnight-blue, .8) } 
-        } 
-    }
-    &.wisteria { 
-        input:checked + span.elem { 
-            border-color: $wisteria; 
-            &:before { background-color: rgba($wisteria, .8) } 
-        } 
-    }
-    &.regal-blue { 
-        input:checked + span.elem { 
-            border-color: $regal-blue; 
-            &:before { background-color: rgba($regal-blue, .8) } 
-        } 
-    }
 }
 
 /*SWITCH BUTTONS*/
