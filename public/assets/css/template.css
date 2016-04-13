@@ -4,8 +4,16 @@ h1 { color: #274058; }
 .container { margin: 0 auto; /*max-width: 1170px;*/ min-width: 990px; }
 .section-desc { margin: 0 0 30px; }
 .fixed { position: fixed !important; top: 0; }
+#static-nav .sidebar { background: rgba(255, 255, 255, .25) !important; border-top: 0; box-shadow: none !important; margin-bottom: 0 !important;  }
+#static-nav .sidebar li { border-bottom: 0; }
+#static-nav .sidebar li:hover, #static-nav .sidebar li.selected { background-color: #FFF; border-radius: 0 3px 3px 0; box-shadow: 2.5px 0 0 #2980b9 inset !important; padding-left: 20px; }
+#static-nav .sidebar a { color: #353535; }
+.navbar.light { background-color: #FAFAFA; box-shadow: 0 4px 5px 0 rgba(0,0,0,.14)  }
+.navbar.light li { margin-right: 0; padding: 15px 0; }
+.navbar.light li:first-child a { border-left: 0; }
+.navbar.light li:last-child a { border-right: 0; }
+.navbar.light li a { border-left: 1px solid #FFF; border-right: 1px solid #CCC; padding-bottom: 0; padding-top: 0; }
 .col-md-2.fixed { top: 80px; }
-#static-nav { background: rgba(255, 255, 255, .4); }
 .subtitle { margin: 10px 0; }
 h3.category { color: #274058; margin-bottom: 10px; }
 .code { background-color: #313233 !important; border-radius: 3px; margin: 20px 0 40px; overflow: hidden; width: 100%; }
@@ -20,3 +28,5 @@ table.striped tbody tr:nth-child(2n){ background-color: #ccc !important; }
 nav.xample { border-radius: 4px; z-index: inherit; }
 .back-page { width: 96% !important; }
 button { vertical-align: bottom; }
+.testing-area { background-color: rgba(255, 255, 255, .5); border: 1px solid #CCC; border-radius: 3px; overflow: hidden; width: 100%; }
+.testing-area .navbar { margin-bottom: 0; }

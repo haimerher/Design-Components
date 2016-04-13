@@ -1,7 +1,38 @@
 /*===================================================
 ====================== NAVBAR =======================
 ===================================================*/
-.cont-sidebar { width: 250px; }
+.cont-sidebar { 
+	@include transition(.4s);
+	margin-left: 0;
+	position: relative; 
+	width: 230px;
+
+	nav { @include transition(.3s); margin-left: 0; }
+
+	&.hide {
+		overflow: hidden; 
+		width: 22px; 
+
+		.burger-sidebar { left: 0; }
+		nav { margin-left: -100px; width: 22px; }
+	}
+
+	.burger-sidebar { 
+		background-color: #0B8069;
+		border: 0;
+		border-radius: 0 4px 4px 0;
+		color: $white;
+		font-size: 13px;
+		height: 20px;
+		line-height: normal;
+		right: -18px; 
+		outline: none;
+		padding: 0 6px;
+		position: absolute;   
+
+		&:hover { opacity: .9; }  
+	}
+}
 
 .navbar { 
 	font-size: 16px;
@@ -54,7 +85,7 @@
 				min-width: 150px; 
 				width: auto; 
 
-				li { width: 100%; }
+				li { @include transition(none !important); width: 100%; }
 			}
 		}
 
@@ -69,7 +100,7 @@
 			z-index: 998;
 
 			li { 
-				@include transition(none); 
+				@include transition(none !important); 
 
 				a {
 					opacity: .8;
@@ -124,68 +155,10 @@
 		.submenu { nav { background-color: $blue; } }
 	}
 
-	&.light {
-		@include box-shadow(0 4px 5px 0 rgba(0,0,0,.14));
-		background-color: $white;
-
-		li {
-			margin-right: 0;
-			padding: 15px 0;
-
-			&:first-child a { border-left: 0; }
-			&:last-child a { border-right: 0; }
-
-			a { 
-				border-left: 1px solid #FFF; 
-				border-right: 1px solid $grey; 
-				padding: {
-					bottom: 0;
-					top: 0;
-				}
-			}
-		}
-
-		.submenu { 
-			nav { 
-				@include box-shadow(0 4px 5px 0 rgba(0,0,0,.14));
-				background-color: $white; 
-				border-top: 1px solid rgba($grey, .7);
-				top: 48px;
-
-				li { padding: 0; }
-				a { 
-					border: 0; 
-					padding: 15px; 
-
-					&:hover { background-color: rgba($grey, .5); }
-				}
-			}
-		}
-	}
-
-	&.sidebar { 
-		background-color: $white; 
-		border: 1px solid #DCDCDC;
-		margin-bottom: 0;
-
-		ul {
-			width: 100%;
-
-			li { 
-				border-bottom: 1px solid #DCDCDC;
-				display: block;
-				float: none;
-				margin: 0;
-
-				&:last-child { border-bottom: 0; } 
-				&:hover { background-color: rgba($grey, .5); }
-			}
-		}
-	}
-
-	&.simple-sidebar {
+	&.sidebar {
+		background-color: $black;
+		border-top: 20px solid #0B8069;
 		z-index: 99;
-		width: 200px; 
 
 		ul {
 			float: none;
@@ -193,20 +166,28 @@
 
 			li {
 				@include transition(.3s);
+				@include box-shadow(0 0 0 $green-sea inset);
+				border-bottom: 1px solid rgba($white, .05);
 				float: none;
 				margin-right: 0;
 				width: 100%;
 
+				&:last-child { border-bottom: 0; }
+
 				&:hover, &.selected { 
-					background-color: #FFF;
-					border-radius: 0 3px 3px 0;
-					@include box-shadow(2px 0 0 $blue inset); 
+					@include box-shadow(230px 0 0 rgba($green-sea, .9) inset); 
 					font-weight: bold;
-					padding-left: 20px;
+					padding-left: 15px;
 				}
 
-				a { margin-bottom: 2px; padding: 10px; }
+				a { 
+					color: $white;
+					margin-bottom: 2px; 
+					padding: 10px 15px; 
+				}
 			}
 		}
+
+		[class*='ion'] { margin-right: 5px; }
 	}
 }
