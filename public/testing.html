@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<link href='https://fonts.googleapis.com/css?family=Lato:400,700' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Roboto:400,700' rel='stylesheet' type='text/css'>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="assets/css/normalize.css">
+	<link rel="stylesheet" type="text/css" href="assets/css/main.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/ionicons.min.css">
+</head>
+<body>
+	<div class="cont-sidebar">
+        <button class="burger-sidebar"><i class="ion-navicon-round"></i></button>
+        <nav class="navbar sidebar" style="z-index: inherit;">
+            <ul class="nav">
+                <li><a href=""> <i class="ion-leaf"></i> Nature</a></li>
+                <li><a href=""><i class="ion-tshirt"></i> Clothes</a></li>
+                <li class="sub-sidebar"><a href=""><i class="ion-android-camera"></i> Photos</a>
+                    <nav>
+                        <ul>
+                            <li><a href="">People</a></li>
+                            <li><a href="">Landscape</a></li>
+                            <li><a href="">City</a></li>
+                        </ul>
+                    </nav>
+                </li>
+                <li class="selected"><a href=""><i class="ion-headphone"></i> Music</a></li>
+                <li><a href=""><i class="ion-film-marker"></i> Movies</a></li>                
+                <li><a href=""><i class="ion-planet"></i> Planets</a></li>
+                <li><a href=""><i class="ion-thermometer"></i> Weather</a></li>
+            </ul>
+      </nav>
+    </div>
+</body>
+<script src="vendors/jquery/jquery-1.11.3.min.js"></script>
+<script type="text/javascript">
+    $(document).ready(function(){
+
+        $(".burger-sidebar").on('click', function(){ 
+            if($(".cont-sidebar").hasClass("hide")){
+                $(".cont-sidebar").removeClass("hide");
+            } else {
+            	$(".cont-sidebar").addClass("hide");
+            }
+        });
+
+    });
+</script>
+</html>

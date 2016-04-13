@@ -90,14 +90,22 @@
 <h2 class="subtitle" id="sidebar">Sidebar</h2>
 <p class="section-desc">Donec nec justo eget felis facilisis fermentum. Aliquam porttitor mauris sit amet orci. Aenean dignissim pellentesque felis.</p>
 
-<div class="testing-area" style="height: 306px">
+<div class="testing-area" style="height: 318px">
     <div class="cont-sidebar">
         <button class="burger-sidebar"><i class="ion-navicon-round"></i></button>
         <nav class="navbar sidebar" style="z-index: inherit;">
             <ul class="nav">
-                <li class="selected"><a href=""> <i class="ion-leaf"></i> Nature</a></li>
+                <li class="selected"><a href=""><i class="ion-leaf"></i> Nature</a></li>
                 <li><a href=""><i class="ion-tshirt"></i> Clothes</a></li>
-                <li><a href=""><i class="ion-android-camera"></i> Photos</a></li>
+                <li class="sub-sidebar"><a href=""><i class="ion-android-camera"></i> Photos</a>
+                    <nav>
+                        <ul>
+                            <li><a href="">People</a></li>
+                            <li><a href="">Landscape</a></li>
+                            <li><a href="">City</a></li>
+                        </ul>
+                    </nav>
+                </li>
                 <li><a href=""><i class="ion-headphone"></i> Music</a></li>
                 <li><a href=""><i class="ion-film-marker"></i> Movies</a></li>                
                 <li><a href=""><i class="ion-planet"></i> Planets</a></li>
@@ -126,10 +134,10 @@
     $(document).ready(function(){
 
         $('.burger-sidebar').on('click', function(){
-            $('.cont-sidebar').addClass('hide'); 
-
-            if(('.cont-sidebar').hasClass('hide')){
+            if($('.cont-sidebar').hasClass('hide')){
                 $('.cont-sidebar').removeClass('hide');
+            } else {
+                $('.cont-sidebar').addClass('hide');
             }
         });
 

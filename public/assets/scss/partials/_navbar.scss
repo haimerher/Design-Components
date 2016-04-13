@@ -2,33 +2,32 @@
 ====================== NAVBAR =======================
 ===================================================*/
 .cont-sidebar { 
-	@include transition(.4s);
+	@include transition(.3s);
 	margin-left: 0;
 	position: relative; 
-	width: 230px;
+	width: 200px;
 
 	nav { @include transition(.3s); margin-left: 0; }
 
 	&.hide {
 		overflow: hidden; 
-		width: 22px; 
+		width: 29px; 
 
-		.burger-sidebar { left: 0; }
 		nav { margin-left: -100px; width: 22px; }
 	}
 
 	.burger-sidebar { 
 		background-color: #0B8069;
 		border: 0;
-		border-radius: 0 4px 4px 0;
 		color: $white;
-		font-size: 13px;
-		height: 20px;
+		font-size: 18px;
+		height: 24px;
 		line-height: normal;
-		right: -18px; 
+		right: 0; 
 		outline: none;
-		padding: 0 6px;
-		position: absolute;   
+		padding: 0 8px;
+		position: absolute;
+		z-index: 1;   
 
 		&:hover { opacity: .9; }  
 	}
@@ -157,7 +156,9 @@
 
 	&.sidebar {
 		background-color: $black;
-		border-top: 20px solid #0B8069;
+		border-top: 30px solid #0B8069;
+		height: 100vh;
+		margin-bottom: 0;
 		z-index: 99;
 
 		ul {
@@ -175,9 +176,9 @@
 				&:last-child { border-bottom: 0; }
 
 				&:hover, &.selected { 
-					@include box-shadow(230px 0 0 rgba($green-sea, .9) inset); 
+					@include box-shadow(200px 0 0 rgba($green-sea, .9) inset); 
 					font-weight: bold;
-					padding-left: 15px;
+					padding-left: 20px;
 				}
 
 				a { 
@@ -185,6 +186,30 @@
 					margin-bottom: 2px; 
 					padding: 10px 15px; 
 				}
+
+				&.sub-sidebar {
+					nav {
+						background-color: rgba($black, .9);
+						box-shadow: 1px 0 3px rgba(#000, .8) inset;
+						height: 100vh;
+						position: absolute;
+					    right: -200px;
+					    top: -32px;
+					    width: 200px;
+					}
+
+					ul { padding-top: 32px; }
+
+					li { 
+						font-weight: normal; 
+
+						&:hover { 
+							@include box-shadow(-5px 0 0 rgba($green-sea, .9) inset);
+							padding-left: 0; 
+						}
+					}
+				}
+
 			}
 		}
 
