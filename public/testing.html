@@ -16,7 +16,7 @@
             <ul class="nav">
                 <li><a href=""> <i class="ion-leaf"></i> Nature</a></li>
                 <li><a href=""><i class="ion-tshirt"></i> Clothes</a></li>
-                <li class="sub-sidebar"><a href=""><i class="ion-android-camera"></i> Photos</a>
+                <li class="sub-sidebar"><span class="static-option"><i class="ion-android-camera"></i> Photos</span>
                     <nav>
                         <ul>
                             <li><a href="">People</a></li>
@@ -25,7 +25,7 @@
                         </ul>
                     </nav>
                 </li>
-                <li class="selected"><a href=""><i class="ion-headphone"></i> Music</a></li>
+                <li><a href=""><i class="ion-headphone"></i> Music</a></li>
                 <li><a href=""><i class="ion-film-marker"></i> Movies</a></li>                
                 <li><a href=""><i class="ion-planet"></i> Planets</a></li>
                 <li><a href=""><i class="ion-thermometer"></i> Weather</a></li>
@@ -34,6 +34,7 @@
     </div>
 </body>
 <script src="vendors/jquery/jquery-1.11.3.min.js"></script>
+<script src="/assets/js/ds-scripts.js"></script>
 <script type="text/javascript">
     $(document).ready(function(){
 
@@ -43,7 +44,15 @@
             } else {
             	$(".cont-sidebar").addClass("hide");
             }
-        });
+
+            if($('.sub-sidebar').children('nav').is(':visible')){
+                $('.sub-sidebar').children('nav').toggle();
+            } else { return false; }
+        }); 
+
+        $(".sub-sidebar").on('click', function(){
+            $(this).children('nav').toggle();
+        });  
 
     });
 </script>

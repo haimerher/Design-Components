@@ -3,14 +3,16 @@
 ===================================================*/
 .cont-sidebar { 
 	@include transition(.3s);
+	background-color: $black;
+	border-top: 30px solid #0B8069;
 	margin-left: 0;
+	height: 100vh;
 	position: relative; 
 	width: 200px;
 
 	nav { @include transition(.3s); margin-left: 0; }
 
 	&.hide {
-		overflow: hidden; 
 		width: 29px; 
 
 		nav { margin-left: -100px; width: 22px; }
@@ -21,15 +23,16 @@
 		border: 0;
 		color: $white;
 		font-size: 18px;
-		height: 24px;
+		height: 30px;
 		line-height: normal;
 		right: 0; 
 		outline: none;
 		padding: 0 8px;
 		position: absolute;
+		top: -30px;
 		z-index: 1;   
 
-		&:hover { opacity: .9; }  
+		&:hover { background-color: #52A594; }  
 	}
 }
 
@@ -41,8 +44,9 @@
 	width: 100%; 
 	z-index: 999;
 
-	a { 
+	a, .static-option { 
 		color: $black;
+		cursor: pointer;
 		display: block; 
 		padding: 15px;
 		text-decoration: none; 
@@ -56,7 +60,7 @@
 		font-size: 18px; 
 		margin-right: 40px;
 
-		a { padding-left: 0; }
+		a, .static-option { padding-left: 0; }
 	}
 
 	ul {
@@ -101,7 +105,7 @@
 			li { 
 				@include transition(none !important); 
 
-				a {
+				a, .static-option {
 					opacity: .8;
 					&:hover {
 						background-color: rgba($white, .2); 
@@ -118,7 +122,7 @@
 		background-color: $regal-blue; 
 		color: $white; 
 
-		a { 
+		a, .static-option { 
 			@include transition(.3s);
 			color: $white;
 			opacity: 0.7;
@@ -149,15 +153,12 @@
 			&:hover, &.current { background-color: $blue; }
 		}
 
-		a { color: $white; }
+		a, .static-option { color: $white; }
 
 		.submenu { nav { background-color: $blue; } }
 	}
 
 	&.sidebar {
-		background-color: $black;
-		border-top: 30px solid #0B8069;
-		height: 100vh;
 		margin-bottom: 0;
 		z-index: 99;
 
@@ -181,7 +182,7 @@
 					padding-left: 20px;
 				}
 
-				a { 
+				a, .static-option { 
 					color: $white;
 					margin-bottom: 2px; 
 					padding: 10px 15px; 
@@ -191,14 +192,15 @@
 					nav {
 						background-color: rgba($black, .9);
 						box-shadow: 1px 0 3px rgba(#000, .8) inset;
+						display: none;
 						height: 100vh;
 						position: absolute;
 					    right: -200px;
-					    top: -32px;
+					    top: -30px;
 					    width: 200px;
 					}
 
-					ul { padding-top: 32px; }
+					ul { padding-top: 30px; }
 
 					li { 
 						font-weight: normal; 
