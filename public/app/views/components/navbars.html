@@ -139,7 +139,15 @@
             } else {
                 $(".cont-sidebar").addClass("hide");
             }
+
+            if($('.sub-sidebar').children('nav').is(':visible')){
+                $('.sub-sidebar').children('nav').toggle();
+            } else { return false; }
         }); 
-        
+
+        $(".sub-sidebar").on('click', function(){
+            $(this).children('nav').toggle();
+        });  
+
     });
 </script>

@@ -65,10 +65,10 @@
 		color: $white;
 		&:before { border-color: transparent transparent transparent rgba($red, .8); } 
 	}
-	&.wisteria { 
-		background-color: rgba($wisteria, .8);
+	&.violet { 
+		background-color: rgba($violet, .8);
 		color: $white;
-		&:before { border-color: transparent transparent transparent rgba($wisteria, .8) } 
+		&:before { border-color: transparent transparent transparent rgba($violet, .8) } 
 	}
 	&.yellow { 
 		background-color: rgba($yellow, .8);

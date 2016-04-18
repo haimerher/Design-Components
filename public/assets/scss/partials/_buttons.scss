@@ -1,7 +1,7 @@
 /*===================================================
 ====================== BUTTONS ======================
 ===================================================*/
-%ds-btn,  %ds-btn-flat { 
+%ds-btn,  .ds-btn-flat { 
 	border: 0;
 	border-radius: .2em; 
 	color: $white;
@@ -19,7 +19,28 @@
 }
 
 //flat buttons
-%ds-btn-flat { background-color: transparent; opacity: 1 !important; }
+.ds-btn-flat { 
+	background-color: transparent; 
+	color: $black;
+	opacity: 1 !important; 
+
+	&:hover { background-color: $grey; }
+
+	&.blue { color: $blue; }
+	&.blue:hover { background-color: $blue; color: $white; }
+	&.red { color: $red; }
+	&.red:hover { background-color: $red; color: $white; }
+	&.orange { color: $orange; }
+	&.orange:hover { background-color: $orange; color: $white; }
+	&.green { color: $green; }
+	&.green:hover { background-color: $green; color: $white; }
+	&.violet { color: $violet; }
+	&.violet:hover { background-color: $violet; color: $white; }
+	&.regal-blue { color: $regal-blue; }
+	&.regal-blue:hover { background-color: $regal-blue; color: $white; }
+	&.green-sea { color: $green-sea; }
+	&.green-sea:hover { background-color: $green-sea; color: $white; }
+}
 
 //rounded buttons
 .rounded { 
@@ -89,25 +110,9 @@
 .ds-btn-primary { @extend %ds-btn; background-color: rgba($blue, .92); border: 1px solid $blue; }
 .ds-btn-warning { @extend %ds-btn; background-color: rgba($orange, .92); border: 1px solid $orange; }
 .ds-btn-danger { @extend %ds-btn; background-color: rgba($red, .92); border: 1px solid $red; }
-.ds-btn-wisteria { @extend %ds-btn; background-color: rgba($wisteria, .92); border: 1px solid $wisteria; }
+.ds-btn-violet { @extend %ds-btn; background-color: rgba($violet, .92); border: 1px solid $violet; }
 .ds-btn-regal-blue { @extend %ds-btn; background-color: rgba($regal-blue, .9); border: 1px solid $regal-blue }
 .ds-btn-green-sea { @extend %ds-btn; background-color: rgba($green-sea, .92); border: 1px solid $green-sea; }
-// -----------------------------------------------------------------------------------------------------
-.ds-btn-flat { @extend %ds-btn-flat; }
-.ds-btn-flat-blue { @extend %ds-btn-flat; color: $blue; }
-.ds-btn-flat-blue:hover { background-color: $blue; color: $white; }
-.ds-btn-flat-red { @extend %ds-btn-flat; color: $red; }
-.ds-btn-flat-red:hover { background-color: $red; color: $white; }
-.ds-btn-flat-orange { @extend %ds-btn-flat; color: $orange; }
-.ds-btn-flat-orange:hover { background-color: $orange; color: $white; }
-.ds-btn-flat-green { @extend %ds-btn-flat; color: $green; }
-.ds-btn-flat-green:hover { background-color: $green; color: $white; }
-.ds-btn-flat-wisteria { @extend %ds-btn-flat; color: $wisteria; }
-.ds-btn-flat-wisteria:hover { background-color: $wisteria; color: $white; }
-.ds-btn-flat-regal-blue { @extend %ds-btn-flat; color: $regal-blue; }
-.ds-btn-flat-regal-blue:hover { background-color: $regal-blue; color: $white; }
-.ds-btn-flat-green-sea { @extend %ds-btn-flat; color: $green-sea; }
-.ds-btn-flat-green-sea:hover { background-color: $green-sea; color: $white; }
 // -----------------------------------------------------------------------------------------------------
 .ds-social-tt { @extend %ds-btn; background-color: $tt-blue; }
 .ds-social-fb { @extend %ds-btn; background-color: $fb-blue; }

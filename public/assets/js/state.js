@@ -24,49 +24,53 @@ routerApp.config(function($stateProvider, $urlRouterProvider) {
         })
 
         // CSS STATES =========================================
-        .state('css', {
-            url: '/css',
-            templateUrl: 'app/views/templates/css.html'      	
+        .state('components', {
+            url: '/components',
+            templateUrl: 'app/views/templates/components.html'      	
         })
-        .state('css.buttons', {
+        .state('components.buttons', {
             url: '/buttons',
-            templateUrl: 'app/views/css_elements/buttons.html'
+            templateUrl: 'app/views/components/buttons.html'
         })
-        .state('css.container', {
+        .state('components.container', {
             url: '/container',
-            templateUrl: 'app/views/css_elements/container.html'
+            templateUrl: 'app/views/components/container.html'
         })
-        .state('css.form', {
+        .state('components.grid', {
+            url: '/grid',
+            templateUrl: 'app/views/components/grid.html'
+        })
+        .state('components.form', {
             url: '/form',
-            templateUrl: 'app/views/css_elements/form.html'
+            templateUrl: 'app/views/components/form.html'
         })
-        .state('css.labels', {
+        .state('components.labels', {
             url: '/labels',
-            templateUrl: 'app/views/css_elements/labels.html'
+            templateUrl: 'app/views/components/labels.html'
         })
-        .state('css.message', {
+        .state('components.message', {
             url: '/message',
-            templateUrl: 'app/views/css_elements/message.html'
+            templateUrl: 'app/views/components/message.html'
         })
-        .state('css.navbars', {
+        .state('components.navbars', {
             url: '/navbars',
-            templateUrl: 'app/views/css_elements/navbars.html'
+            templateUrl: 'app/views/components/navbars.html'
         })
-        .state('css.images', {
+        .state('components.images', {
             url: '/images',
-            templateUrl: 'app/views/css_elements/images.html'
+            templateUrl: 'app/views/components/images.html'
         })
-        .state('css.table', {
+        .state('components.table', {
             url: '/table',
-            templateUrl: 'app/views/css_elements/table.html'
+            templateUrl: 'app/views/components/table.html'
         })
-        .state('css.breadcrumbs', {
+        .state('components.breadcrumbs', {
             url: '/breadcrumbs',
-            templateUrl: 'app/views/css_elements/breadcrumbs.html'
+            templateUrl: 'app/views/components/breadcrumbs.html'
         })
-        .state('css.list', {
+        .state('components.list', {
             url: '/list',
-            templateUrl: 'app/views/css_elements/list.html'
+            templateUrl: 'app/views/components/list.html'
         })
 
         // JS STATES =========================================
