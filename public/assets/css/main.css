@@ -41,7 +41,7 @@ a { color: #2980b9; }
 .cont-sidebar .burger-sidebar { background-color: #0B8069; border: 0; color: #fafafa; font-size: 18px; height: 30px; line-height: normal; right: 0; outline: none; padding: 0 8px; position: absolute; top: -30px; z-index: 1; }
 .cont-sidebar .burger-sidebar:hover { background-color: #52A594; }
 
-.navbar { font-size: 16px; line-height: 18px; margin-bottom: 40px; position: relative; width: 100%; z-index: 999; }
+.navbar { font-size: 15px; line-height: 18px; margin-bottom: 40px; position: relative; width: 100%; z-index: 999; }
 .navbar a, .navbar .static-option { color: #353535; cursor: pointer; display: block; padding: 15px; text-decoration: none; }
 .navbar a:hover, .navbar .static-option:hover { text-decoration: none; }
 .navbar a.icons, .navbar .static-option.icons { font-size: 24px; padding: 12px 15px; }
@@ -110,7 +110,7 @@ a { color: #2980b9; }
 .rounded.btn-sm { padding: 0px 14px; }
 .rounded.btn-lg { padding: 10px 34px; }
 
-.circle { border-radius: 30px; font-size: 22px !important; height: 45px; padding: 0; text-align: center; width: 45px; }
+.circle { border-radius: 50%; font-size: 22px !important; height: 45px; padding: 0; text-align: center; width: 45px; }
 .circle .btn-sm { font-size: 15px !important; height: 30px; width: 30px; }
 .circle .btn-lg { font-size: 26px !important; height: 60px; width: 60px; }
 
@@ -329,15 +329,11 @@ input:disabled, select:disabled, textarea:disabled { background-color: rgba(204,
 .danger-alert { background-color: rgba(231, 76, 60, 0.1); border: 1px solid rgba(231, 76, 60, 0.9); color: #e74c3c; }
 .danger-alert h4 { background-color: rgba(231, 76, 60, 0.9); }
 
-.dialog-black, .dialog-blue, .dialog-clouds, .dialog-midnight-blue, .dialog-green, .dialog-green-sea, .dialog-orange, .dialog-regal-blue, .dialog-red, .dialog-silver, .dialog-violet, .dialog-yellow, .dialog-grey, .dialog-light-grey { background-color: #fafafa; border: 1px solid; border-left-width: 6px; border-radius: 4px; margin-bottom: 30px; padding: 15px; }
-.dialog-black h3, .dialog-blue h3, .dialog-clouds h3, .dialog-midnight-blue h3, .dialog-green h3, .dialog-green-sea h3, .dialog-orange h3, .dialog-regal-blue h3, .dialog-red h3, .dialog-silver h3, .dialog-violet h3, .dialog-yellow h3, .dialog-grey h3, .dialog-light-grey h3 { margin: 0 0 10px; }
-.dialog-black p, .dialog-blue p, .dialog-clouds p, .dialog-midnight-blue p, .dialog-green p, .dialog-green-sea p, .dialog-orange p, .dialog-regal-blue p, .dialog-red p, .dialog-silver p, .dialog-violet p, .dialog-yellow p, .dialog-grey p, .dialog-light-grey p { margin: 0; }
-
-.dialog-black { border-color: #353535; }
+.dialog-blue, .dialog-midnight-blue, .dialog-green, .dialog-green-sea, .dialog-orange, .dialog-red, .dialog-silver, .dialog-violet, .dialog-yellow { background-color: #fafafa; border: 1px solid; border-left-width: 6px; border-radius: 4px; margin: 20px 0; padding: 15px; }
+.dialog-blue h3, .dialog-midnight-blue h3, .dialog-green h3, .dialog-green-sea h3, .dialog-orange h3, .dialog-red h3, .dialog-silver h3, .dialog-violet h3, .dialog-yellow h3 { margin: 0 0 10px; }
+.dialog-blue p, .dialog-midnight-blue p, .dialog-green p, .dialog-green-sea p, .dialog-orange p, .dialog-red p, .dialog-silver p, .dialog-violet p, .dialog-yellow p { margin: 0; }
 
 .dialog-blue { border-color: #2980b9; }
-
-.dialog-clouds { border-color: #ecf0f1; }
 
 .dialog-midnight-blue { border-color: #2c3e50; }
 
@@ -347,8 +343,6 @@ input:disabled, select:disabled, textarea:disabled { background-color: rgba(204,
 
 .dialog-orange { border-color: #f39c12; }
 
-.dialog-regal-blue { border-color: #274058; }
-
 .dialog-red { border-color: #e74c3c; }
 
 .dialog-silver { border-color: #bdc3c7; }
@@ -356,10 +350,6 @@ input:disabled, select:disabled, textarea:disabled { background-color: rgba(204,
 .dialog-violet { border-color: #8e44ad; }
 
 .dialog-yellow { border-color: #f1c40f; }
-
-.dialog-grey { border-color: #CCC; }
-
-.dialog-light-grey { border-color: #ECECEC; }
 
 /*===================================================
 ====================== IMAGES =======================

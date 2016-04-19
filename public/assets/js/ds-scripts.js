@@ -18,4 +18,21 @@ $(document).ready(function(){
 			$(this).remove();
 		});
 	})
+
+	//SIDEBAR
+	$(".burger-sidebar").on('click', function(){ 
+        if($(".cont-sidebar").hasClass("hide")){
+            $(".cont-sidebar").removeClass("hide");
+        } else {
+            $(".cont-sidebar").addClass("hide");
+        }
+
+        if($('.sub-sidebar').children('nav').is(':visible')){
+            $('.sub-sidebar').children('nav').toggle();
+        } else { return false; }
+    }); 
+
+    $(".sub-sidebar").on('click', function(){
+        $(this).children('nav').toggle();
+    });
 });

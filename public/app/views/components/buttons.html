@@ -1,52 +1,81 @@
 <h1>Buttons Elements</h1>
 <div class="bread-crumbs">
 	<ul>
-		<li><a href="#/css/buttons#icons">Icons</a></li>
-		<li><a href="#/css/buttons#flat">Flat</a></li>
-		<li><a href="#/css/buttons#rounded">Rounded</a></li>
-		<li><a href="#/css/buttons#raised">Raised</a></li>
-		<li><a href="#/css/buttons#social">Social</a></li>
-		<li><a href="#/css/buttons#group">Group</a></li>
-		<li><a href="#/css/buttons#size">Size</a></li>
+		<li><a href="#/components/buttons#buttons">Buttons</a></li>
+		<li><a href="#/components/buttons#icons">Icons</a></li>
+		<li><a href="#/components/buttons#flat">Flat</a></li>
+		<li><a href="#/components/buttons#rounded">Rounded</a></li>
+		<li><a href="#/components/buttons#raised">Raised</a></li>
+		<li><a href="#/components/buttons#social">Social</a></li>
+		<li><a href="#/components/buttons#group">Group</a></li>
+		<li><a href="#/components/buttons#size">Size</a></li>
 	</ul>
 </div>
 
-<!-- Icons Buttons -->
-<h2 class="subtitle" id="icons">Icons</h2>
-<p class="section-desc">Donec nec justo eget felis facilisis fermentum. Aliquam porttitor mauris sit amet orci. Aenean dignissim pellentesque felis.</p>
-<div class="group">
-	<button class="ds-btn-default"><i class="ion-android-print"></i></button>
-	<button class="ds-btn-primary"><i class="ion-android-document"></i></button>
-	<button class="ds-btn-success"><i class="ion-android-done"></i></button>
-	<button class="ds-btn-warning"><i class="ion-android-create"></i></button>
-	<button class="ds-btn-danger"><i class="ion-android-close"></i></button>
-	<a class="ds-btn-violet"><i class="ion-android-settings"></i> Settings</a>
-</div>
+<!-- Buttons -->
+<section>
+	<h2 class="subtitle" id="icons">Buttons</h2>
+	<p class="section-desc">Puedes usar el estilo dentro de etiques <span class="code-tag">&lt;a&gt;</span>, <span class="code-tag">&lt;button&gt;</span> y <span class="code-tag">&lt;input&gt;</span>. También puedes aplicar estas clases para obtener una tonalidad diferente a las de defecto: <span class="code-tag space">.ds-btn-violet</span> <span class="code-tag space">.ds-btn-regal-blue</span> <span class="code-tag">.ds-btn-green-sea</span></p>
+	<div class="group">
+		<button class="ds-btn-default">Default</button>
+		<button class="ds-btn-primary">Primary</button>
+		<button class="ds-btn-success">Success</button>
+		<button class="ds-btn-warning">Warning</button>
+		<button class="ds-btn-danger">Danger</button>
+	</div>
 
-<div class="code">
-	<h5>HTML Code</h5>
-	
-	<pre class="content"><span style="color:#e0c589">&lt;<span style="color:#e0c589">button</span><span style="color:#e0c589">class</span>=<span style="color:#8f9d6a">"ds-btn-primary"</span>></span><span style="color:#ac885b">&lt;<span style="color:#ac885b">i</span> <span style="color:#ac885b">class</span>=<span style="color:#8f9d6a">"ion-android-settings"</span>>&lt;/<span style="color:#ac885b">i</span>></span> Settings<span style="color:#e0c589">&lt;/<span style="color:#e0c589">button</span>></span>
+	<div class="code">
+		<h5>HTML Code</h5>
+		<pre class="content"><span style="color:#e0c589">&lt;<span style="color:#e0c589">button</span> <span style="color:#e0c589">class</span>=<span style="color:#8f9d6a">"ds-btn-default"</span>></span>Default<span style="color:#e0c589">&lt;/<span style="color:#e0c589">button</span>></span>
+<span style="color:#e0c589">&lt;<span style="color:#e0c589">button</span> <span style="color:#e0c589">class</span>=<span style="color:#8f9d6a">"ds-btn-primary"</span>></span>Primary<span style="color:#e0c589">&lt;/<span style="color:#e0c589">button</span>></span>
+<span style="color:#e0c589">&lt;<span style="color:#e0c589">button</span> <span style="color:#e0c589">class</span>=<span style="color:#8f9d6a">"ds-btn-success"</span>></span>Success<span style="color:#e0c589">&lt;/<span style="color:#e0c589">button</span>></span>
+<span style="color:#e0c589">&lt;<span style="color:#e0c589">button</span> <span style="color:#e0c589">class</span>=<span style="color:#8f9d6a">"ds-btn-warning"</span>></span>Warning<span style="color:#e0c589">&lt;/<span style="color:#e0c589">button</span>></span>
+<span style="color:#e0c589">&lt;<span style="color:#e0c589">button</span> <span style="color:#e0c589">class</span>=<span style="color:#8f9d6a">"ds-btn-danger"</span>></span>Danger<span style="color:#e0c589">&lt;/<span style="color:#e0c589">button</span>></span>
 </pre>
-</div>
+	</div>
+</section>
+
+<!-- Icons Buttons -->
+<section>
+	<h2 class="subtitle" id="icons">Icons</h2>
+	<p class="section-desc">Utiliza íconos como símbolo de tus botones dentro de las etiquetas.
+	<div class="group">
+		<button class="ds-btn-primary"><i class="ion-android-document"></i></button>
+		<button class="ds-btn-success"><i class="ion-android-done"></i></button>
+		<button class="ds-btn-warning"><i class="ion-android-create"></i></button>
+		<button class="ds-btn-danger"><i class="ion-android-close"></i></button>
+		<a class="ds-btn-violet"><i class="ion-android-settings"></i> Settings</a>
+	</div>
+
+	<div class="code">
+		<h5>HTML Code</h5>
+	
+		<pre class="content"><span style="color:#e0c589">&lt;<span style="color:#e0c589">button</span><span style="color:#e0c589"> class</span>=<span style="color:#8f9d6a">"ds-btn-primary"</span>></span><span style="color:#ac885b">&lt;<span style="color:#ac885b">i</span> <span style="color:#ac885b">class</span>=<span style="color:#8f9d6a">"ion-android-settings"</span>>&lt;/<span style="color:#ac885b">i</span>></span> Settings<span style="color:#e0c589">&lt;/<span style="color:#e0c589">button</span>></span>
+</pre>
+	</div>
+	<div class="dialog-blue">
+		<i class="ion-information-circled"></i> Puedes consultar la librería de iconos de <a href="http://ionicons.com/">ionicons</a> para usar el de tu preferencia.</p>
+	</div>
+</section>
 
 <!-- Flat Buttons -->
-<h2 class="subtitle" id="flat">Flat</h2>
-<p class="section-desc">Donec nec justo eget felis facilisis fermentum. Aliquam porttitor mauris sit amet orci. Aenean dignissim pellentesque felis.</p>
+<section>
+	<h2 class="subtitle" id="flat">Flat</h2>
+	<p class="section-desc">Botones con relleno de color al hacer hover sobre ellos. Para usar los colores, solo debes agregar el nombre del color junto a la clase por defecto <span class="code-tag">.ds-btn-flat</span></p>
 
-<div class="group">
-	<button class="ds-btn-flat">Default</button>
-	<button class="ds-btn-flat blue">Blue</button>
-	<button class="ds-btn-flat red">Red</button>
-	<button class="ds-btn-flat orange">Orange</button>
-	<button class="ds-btn-flat green">Green</button>
-	<button class="ds-btn-flat violet">Violet</button>
-	<button class="ds-btn-flat regal-blue">Regal-Blue</button>
-	<button class="ds-btn-flat green-sea">Green-Sea</button>
-</div>
+	<div class="group">
+		<button class="ds-btn-flat">Default</button>
+		<button class="ds-btn-flat blue">Blue</button>
+		<button class="ds-btn-flat red">Red</button>
+		<button class="ds-btn-flat orange">Orange</button>
+		<button class="ds-btn-flat green">Green</button>
+		<button class="ds-btn-flat violet">Violet</button>
+		<button class="ds-btn-flat regal-blue">Regal-Blue</button>
+		<button class="ds-btn-flat green-sea">Green-Sea</button>
+	</div>
 
-<div class="code">
-	<h5>HTML Code</h5>
+	<div class="code">
+		<h5>HTML Code</h5>
 	<pre class="content"><span style="color:#e0c589">&lt;<span style="color:#e0c589">button</span> <span style="color:#e0c589">class</span>=<span style="color:#8f9d6a">"ds-btn-flat"</span>></span>Default<span style="color:#e0c589">&lt;/<span style="color:#e0c589">button</span>></span>
 <span style="color:#e0c589">&lt;<span style="color:#e0c589">button</span> <span style="color:#e0c589">class</span>=<span style="color:#8f9d6a">"ds-btn-flat blue"</span>></span>Blue<span style="color:#e0c589">&lt;/<span style="color:#e0c589">button</span>></span>
 <span style="color:#e0c589">&lt;<span style="color:#e0c589">button</span> <span style="color:#e0c589">class</span>=<span style="color:#8f9d6a">"ds-btn-flat red"</span>></span>Red<span style="color:#e0c589">&lt;/<span style="color:#e0c589">button</span>></span>
@@ -56,85 +85,114 @@
 <span style="color:#e0c589">&lt;<span style="color:#e0c589">button</span> <span style="color:#e0c589">class</span>=<span style="color:#8f9d6a">"ds-btn-flat regal-blue"</span>></span>Regal-Blue<span style="color:#e0c589">&lt;/<span style="color:#e0c589">button</span>></span>
 <span style="color:#e0c589">&lt;<span style="color:#e0c589">button</span> <span style="color:#e0c589">class</span>=<span style="color:#8f9d6a">"ds-btn-flat green-sea"</span>></span>Green-Sea<span style="color:#e0c589">&lt;/<span style="color:#e0c589">button</span>></span>
 </pre>
-</div>
+	</div>
+</section>
 
 <!-- Rounded Buttons -->
-<h2 class="subtitle" id="rounded">Rounded</h2>
-<p class="section-desc">Donec nec justo eget felis facilisis fermentum. Aliquam porttitor mauris sit amet orci. Aenean dignissim pellentesque felis.</p>
+<section>
+	<h2 class="subtitle" id="rounded">Rounded</h2>
+	<p class="section-desc">Usa la clase <span class="code-tag">.rounded</span> para agregar el efecto curvo a tus botones</p>
 
-<div class="group">
-	<button class="ds-btn-violet rounded">Violet</button>
-	<button class="ds-btn-regal-blue rounded">Regal-Blue</button>
-	<button class="ds-btn-green-sea rounded">Green-Sea</button>
-</div>
+	<div class="group">
+		<button class="ds-btn-violet rounded">Violet</button>
+		<button class="ds-btn-regal-blue rounded">Regal-Blue</button>
+		<button class="ds-btn-green-sea rounded">Green-Sea</button>
+	</div>
 
-<div class="code">
-	<h5>HTML Code</h5>
-	<pre class="content"><span style="color:#e0c589">&lt;<span style="color:#e0c589">button</span> <span style="color:#e0c589">class</span>=<span style="color:#8f9d6a">"ds-btn-violet rounded"</span>></span>Violet<span style="color:#e0c589">&lt;/<span style="color:#e0c589">button</span>></span>
+	<div class="code">
+		<h5>HTML Code</h5>
+		<pre class="content"><span style="color:#e0c589">&lt;<span style="color:#e0c589">button</span> <span style="color:#e0c589">class</span>=<span style="color:#8f9d6a">"ds-btn-violet rounded"</span>></span>Violet<span style="color:#e0c589">&lt;/<span style="color:#e0c589">button</span>></span>
 </pre>
-</div>
+	</div>
+</section>
 
 <!-- Raised Buttons -->
-<h2 class="subtitle" id="raised">Raised</h2>
-<p class="section-desc">Donec nec justo eget felis facilisis fermentum. Aliquam porttitor mauris sit amet orci. Aenean dignissim pellentesque felis.</p>
+<section>
+	<h2 class="subtitle" id="raised">Raised</h2>
+	<p class="section-desc">Coloca la clase <span class="code-tag">.raised</span> dentro de tu elemento y agrega un efecto de volumen a tus botones y crea la sensación de hundimiento al presionar sobre ellos.</p>
 
-<div class="group">
-	<button class="ds-btn-success raised">Success!</button>
-	<button class="ds-btn-primary raised">Save</button>
-	<button class="ds-btn-danger raised">Cancel</button>
-</div>
+	<div class="group">
+		<button class="ds-btn-success raised">Success!</button>
+		<button class="ds-btn-primary raised">Save</button>
+		<button class="ds-btn-danger raised">Cancel</button>
+	</div>
 
-<div class="code">
-	<h5>HTML Code</h5>	
-	<pre class="content"><span style="color:#e0c589">&lt;<span style="color:#e0c589">button</span> <span style="color:#e0c589">class</span>=<span style="color:#8f9d6a">"ds-btn-success raised"</span>></span>Success!<span style="color:#e0c589">&lt;/<span style="color:#e0c589">button</span>></span>
+	<div class="code">
+		<h5>HTML Code</h5>	
+		<pre class="content"><span style="color:#e0c589">&lt;<span style="color:#e0c589">button</span> <span style="color:#e0c589">class</span>=<span style="color:#8f9d6a">"ds-btn-success raised"</span>></span>Success!<span style="color:#e0c589">&lt;/<span style="color:#e0c589">button</span>></span>
 </pre>
-</div>
+	</div>
+</section>
 
 <!-- Social Buttons -->
-<h2 class="subtitle" id="social">Social Icons</h2>
-<p class="section-desc">Donec nec justo eget felis facilisis fermentum. Aliquam porttitor mauris sit amet orci. Aenean dignissim pellentesque felis.</p>
+<section>
+	<h2 class="subtitle" id="social">Social Icons</h2>
+	<p class="section-desc">Iconos con las diferentes redes sociales. Usa la clase <span class="code-tag">.circle</span> para agregar el efecto esfera</p>
 
-<div class="group">
-	<button class="ds-social-tt circle"><i class="ion-social-twitter"></i></button>
-	<button class="ds-social-fb circle"><i class="ion-social-facebook"></i></button>
-	<button class="ds-social-gg circle"><i class="ion-social-googleplus"></i></button>
-	<button class="ds-social-ig circle"><i class="ion-social-instagram"></i></button>
-	<button class="ds-social-pt circle"><i class="ion-social-pinterest"></i></button>
-	<button class="ds-social-yt circle"><i class="ion-social-youtube"></i></button>
-</div>
+	<div class="group">
+		<button class="ds-social-tt circle"><i class="ion-social-twitter"></i></button>
+		<button class="ds-social-fb circle"><i class="ion-social-facebook"></i></button>
+		<button class="ds-social-gg circle"><i class="ion-social-googleplus"></i></button>
+		<button class="ds-social-ig circle"><i class="ion-social-instagram"></i></button>
+		<button class="ds-social-pt circle"><i class="ion-social-pinterest"></i></button>
+		<button class="ds-social-yt circle"><i class="ion-social-youtube"></i></button>
+	</div>
 
-<div class="code">
-	<h5>HTML Code</h5>
-	<pre class="content"><span style="color:#e0c589">&lt;<span style="color:#e0c589">button</span> <span style="color:#e0c589">class</span>=<span style="color:#8f9d6a">"ds-social-yt circle"</span>></span><span style="color:#ac885b">&lt;<span style="color:#ac885b">i</span> <span style="color:#ac885b">class</span>=<span style="color:#8f9d6a">"ion-social-youtube"</span>>&lt;/<span style="color:#ac885b">i</span>></span><span style="color:#e0c589">&lt;/<span style="color:#e0c589">button</span>></span>
+	<div class="code">
+		<h5>HTML Code</h5>
+		<pre class="content"><span style="color:#e0c589">&lt;<span style="color:#e0c589">button</span> <span style="color:#e0c589">class</span>=<span style="color:#8f9d6a">"ds-social-tt circle"</span>></span><span style="color:#ac885b">&lt;<span style="color:#ac885b">i</span> <span style="color:#ac885b">class</span>=<span style="color:#8f9d6a">"ion-social-twitter"</span>>&lt;/<span style="color:#ac885b">i</span>></span><span style="color:#e0c589">&lt;/<span style="color:#e0c589">button</span>></span>
+<span style="color:#e0c589">&lt;<span style="color:#e0c589">button</span> <span style="color:#e0c589">class</span>=<span style="color:#8f9d6a">"ds-social-fb circle"</span>></span><span style="color:#ac885b">&lt;<span style="color:#ac885b">i</span> <span style="color:#ac885b">class</span>=<span style="color:#8f9d6a">"ion-social-facebook"</span>>&lt;/<span style="color:#ac885b">i</span>></span><span style="color:#e0c589">&lt;/<span style="color:#e0c589">button</span>></span>
+<span style="color:#e0c589">&lt;<span style="color:#e0c589">button</span> <span style="color:#e0c589">class</span>=<span style="color:#8f9d6a">"ds-social-gg circle"</span>></span><span style="color:#ac885b">&lt;<span style="color:#ac885b">i</span> <span style="color:#ac885b">class</span>=<span style="color:#8f9d6a">"ion-social-googleplus"</span>>&lt;/<span style="color:#ac885b">i</span>></span><span style="color:#e0c589">&lt;/<span style="color:#e0c589">button</span>></span>
+<span style="color:#e0c589">&lt;<span style="color:#e0c589">button</span> <span style="color:#e0c589">class</span>=<span style="color:#8f9d6a">"ds-social-ig circle"</span>></span><span style="color:#ac885b">&lt;<span style="color:#ac885b">i</span> <span style="color:#ac885b">class</span>=<span style="color:#8f9d6a">"ion-social-instagram"</span>>&lt;/<span style="color:#ac885b">i</span>></span><span style="color:#e0c589">&lt;/<span style="color:#e0c589">button</span>></span>
+<span style="color:#e0c589">&lt;<span style="color:#e0c589">button</span> <span style="color:#e0c589">class</span>=<span style="color:#8f9d6a">"ds-social-pt circle"</span>></span><span style="color:#ac885b">&lt;<span style="color:#ac885b">i</span> <span style="color:#ac885b">class</span>=<span style="color:#8f9d6a">"ion-social-pinterest"</span>>&lt;/<span style="color:#ac885b">i</span>></span><span style="color:#e0c589">&lt;/<span style="color:#e0c589">button</span>></span>
+<span style="color:#e0c589">&lt;<span style="color:#e0c589">button</span> <span style="color:#e0c589">class</span>=<span style="color:#8f9d6a">"ds-social-yt circle"</span>></span><span style="color:#ac885b">&lt;<span style="color:#ac885b">i</span> <span style="color:#ac885b">class</span>=<span style="color:#8f9d6a">"ion-social-youtube"</span>>&lt;/<span style="color:#ac885b">i</span>></span><span style="color:#e0c589">&lt;/<span style="color:#e0c589">button</span>></span>
 </pre>
-</pre>
-</div>
+	</div>
+	<div class="dialog-blue">
+		<i class="ion-information-circled"></i> Puedes jugar con cualquiera de las otras clases de estilo para los botones.
+	</div>
+</section>
 
-<!-- Size -->
-<h2 class="subtitle" id="group">Group</h2>
-<p class="section-desc">Donec nec justo eget felis facilisis fermentum. Aliquam porttitor mauris sit amet orci. Aenean dignissim pellentesque felis.</p>
-<div class="btn-group">
-	<button class="ds-btn-default"><i class="ion-android-create"></i> Edit</button>
-	<button class="ds-btn-default"><i class="ion-android-delete"></i> Delete</button>
-	<button class="ds-btn-default"><i class="ion-android-cloud"></i> Download</button>
-</div>
+<!-- Group -->
+<section>
+	<h2 class="subtitle" id="group">Group</h2>
+	<p class="section-desc">Agrupa varios botones en una sola línea usando la clase <span class="code-tag">.btn-group</span> en tu elemento contenedor</p>
+	<div class="btn-group">
+		<button class="ds-btn-default"><i class="ion-android-create"></i> Edit</button>
+		<button class="ds-btn-default"><i class="ion-android-delete"></i> Delete</button>
+		<button class="ds-btn-default"><i class="ion-android-cloud"></i> Download</button>
+	</div>
 
-<div class="code">
-	<h5>HTML Code</h5>
-	<pre class="content"><span style="color:#ac885b">&lt;<span style="color:#ac885b">div</span> <span style="color:#ac885b">class</span>=<span style="color:#8f9d6a">"btn-group"</span>></span>
+	<div class="code">
+		<h5>HTML Code</h5>
+		<pre class="content"><span style="color:#ac885b">&lt;<span style="color:#ac885b">div</span> <span style="color:#ac885b">class</span>=<span style="color:#8f9d6a">"btn-group"</span>></span>
    <span style="color:#e0c589">&lt;<span style="color:#e0c589">button</span> <span style="color:#e0c589">class</span>=<span style="color:#8f9d6a">"ds-btn-default"</span>></span><span style="color:#ac885b">&lt;<span style="color:#ac885b">i</span> <span style="color:#ac885b">class</span>=<span style="color:#8f9d6a">"ion-android-create"</span>>&lt;/<span style="color:#ac885b">i</span>></span> Edit<span style="color:#e0c589">&lt;/<span style="color:#e0c589">button</span>></span>
    <span style="color:#e0c589">&lt;<span style="color:#e0c589">button</span> <span style="color:#e0c589">class</span>=<span style="color:#8f9d6a">"ds-btn-default"</span>></span><span style="color:#ac885b">&lt;<span style="color:#ac885b">i</span> <span style="color:#ac885b">class</span>=<span style="color:#8f9d6a">"ion-android-delete"</span>>&lt;/<span style="color:#ac885b">i</span>></span> Delete<span style="color:#e0c589">&lt;/<span style="color:#e0c589">button</span>></span>
    <span style="color:#e0c589">&lt;<span style="color:#e0c589">button</span> <span style="color:#e0c589">class</span>=<span style="color:#8f9d6a">"ds-btn-default"</span>></span><span style="color:#ac885b">&lt;<span style="color:#ac885b">i</span> <span style="color:#ac885b">class</span>=<span style="color:#8f9d6a">"ion-android-cloud"</span>>&lt;/<span style="color:#ac885b">i</span>></span> Download<span style="color:#e0c589">&lt;/<span style="color:#e0c589">button</span>></span>
 <span style="color:#ac885b">&lt;/<span style="color:#ac885b">div</span>></span>
 </pre>
-</div>
+	</div>
+</section>
 
 <!-- Size -->
-<h2 class="subtitle" id="size">Size</h2>
-<p class="section-desc">Donec nec justo eget felis facilisis fermentum. Aliquam porttitor mauris sit amet orci. Aenean dignissim pellentesque felis.</p>
+<section>
+	<h2 class="subtitle" id="size">Size</h2>
+	<p class="section-desc">Utiliza las clases <span class="code-tag">.btn-sm</span> o <span class="code-tag">.btn-lg</span> para modificar el tamaño de tus botones</p>
 
-<div class="group">
-	<button class="ds-btn-default btn-sm">Small</button>
-	<button class="ds-btn-default">Normal</button>
-	<button class="ds-btn-default btn-lg">Large</button>
-</div>
+	<div class="group">
+		<button class="ds-btn-default btn-sm">Small</button>
+		<button class="ds-btn-default">Normal</button>
+		<button class="ds-btn-default btn-lg">Large</button>
+	</div>
+
+	<div class="code">
+		<h5>HTML Code</h5>
+		<pre class="content"><span style="color:#e0c589">&lt;<span style="color:#e0c589">button</span> <span style="color:#e0c589">class</span>=<span style="color:#8f9d6a">"ds-btn-default btn-sm"</span>></span>Small<span style="color:#e0c589">&lt;/<span style="color:#e0c589">button</span>></span>
+<span style="color:#e0c589">&lt;<span style="color:#e0c589">button</span> <span style="color:#e0c589">class</span>=<span style="color:#8f9d6a">"ds-btn-default"</span>></span>Normal<span style="color:#e0c589">&lt;/<span style="color:#e0c589">button</span>></span>
+<span style="color:#e0c589">&lt;<span style="color:#e0c589">button</span> <span style="color:#e0c589">class</span>=<span style="color:#8f9d6a">"ds-btn-default btn-lg"</span>></span>Large<span style="color:#e0c589">&lt;/<span style="color:#e0c589">button</span>></span>
+</pre>
+	</div>
+	<div class="dialog-blue">
+		<i class="ion-information-circled"></i> Si vas a utilizar botones agrupados, no es necesario que agregues el estilo a cada elemento por separado. Agrega el tamaño que quieres usar a tu elemento contenedor.
+	</div>
+</section>
