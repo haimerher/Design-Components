@@ -92,7 +92,12 @@
 .btn-lg { font-size: 20px !important; padding: 14px 28px; }
 
 //button group
-.btn-group {	
+.btn-group {
+
+	&.btn-sm, &.btn-lg { padding: 0; }
+	&.btn-sm { button, a, input { font-size: 13px !important; padding: 2px 8px; } }
+	&.btn-lg { button, &.btn-lg a, &.btn-lg input { font-size: 20px !important; padding: 14px 28px; } }
+
 	button { 
 		border-radius: 0;
 		border-right-width: 0;
