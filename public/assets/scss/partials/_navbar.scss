@@ -189,6 +189,20 @@
 					padding: 10px 15px; 
 				}
 
+				.static-option {
+					position: relative;
+
+					&:after {
+					    content: "\f10a";
+					    display: block;
+					    font-family: "Ionicons";
+					    font-size: 14px; 
+					    position: absolute;
+					    right: 8px;
+					    top: 10px;
+					}
+				}
+
 				&.sub-sidebar {
 					nav {
 						background-color: rgba($black, .9);
