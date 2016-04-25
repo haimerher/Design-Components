@@ -10,7 +10,7 @@
 <!-- Basic container -->
 <section>
     <h2 class="subtitle" id="basic">Basic</h2>
-    <p class="section-desc">Usa la clase <span class="code-tag">.basic-cont</span> para agrupar tu contenido dentro de un cuadro simple</p>
+    <p class="section-desc">Put your content into a simple box. Use the class <span class="code-tag">.basic-cont</span> for it.</p>
     <div class="basic-cont clear">
     	<h3>Pellentesque fermentum dolor</h3>
     	<p><img src="assets/img/user.png" class="pull-left border" alt=""/> Pellentesque fermentum dolor. Aliquam quam lectus, facilisis auctor, ultrices ut, elementum vulputate, nunc. Sed adipiscing ornare risus. Morbi est est, blandit sit amet, sagittis vel, euismod vel, velit. Pellentesque egestas sem. Suspendisse commodo ullamcorper magna.</p>	
@@ -25,10 +25,10 @@
 <!-- Pages -->
 <section>
     <h2 class="subtitle" id="page">Pages</h2>
-    <p class="section-desc">Coloca tu contenedor con la clase <span class="code-tag">.basic-cont</span> dentro de un elemento con posición relativa. Para agregar la sensación de que hay un bloque o capa detrás, agrega las clases <span class="code-tag">.basic-cont</span> y <span class="code-tag">.back-page</span> a un elemento de bloque después de tu contenedor principal.</p>
+    <p class="section-desc">To give the appearance that you are working on layers or several pages.</p>
 
-    <div id="wrapper" style="padding-bottom: 0;">
-    	<div id="content-page" class="basic-cont clear">
+    <div id="content-page">
+    	<div class="basic-cont clear">
     		<h3>Pellentesque fermentum dolor</h3>
     		<p><img src="assets/img/user.png" class="pull-left border" alt=""/> Pellentesque fermentum dolor. Aliquam quam lectus, facilisis auctor, ultrices ut, elementum vulputate, nunc. Sed adipiscing ornare risus. Morbi est est, blandit sit amet, sagittis vel, euismod vel, velit. Pellentesque egestas sem. Suspendisse commodo ullamcorper magna.</p>	
     	</div>
@@ -37,9 +37,10 @@
 
     <div class="code">
     	<h5>HTML Code</h5>
-        <pre class="content"><span style="color:#ac885b">&lt;<span style="color:#ac885b">div</span> <span style="color:#ac885b">id</span>=<span style="color:#8f9d6a">"wrapper"</span>></span>
-   <span style="color:#ac885b">&lt;<span style="color:#ac885b">div</span> <span style="color:#ac885b">id</span>=<span style="color:#8f9d6a">"content-page"</span> <span style="color:#ac885b">class</span>=<span style="color:#8f9d6a">"basic-cont clear"</span>></span>
-      [...] 
+        <pre class="content"><span style="color:#ac885b">&lt;<span style="color:#ac885b">div</span> <span style="color:#ac885b">id</span>=<span style="color:#8f9d6a">"content-page"</span>></span>
+   <span style="color:#ac885b">&lt;<span style="color:#ac885b">div</span> <span style="color:#ac885b">class</span>=<span style="color:#8f9d6a">"basic-cont clear"</span>></span>
+      <span style="color:#ac885b">&lt;<span style="color:#ac885b">h3</span>></span>...<span style="color:#ac885b">&lt;/<span style="color:#ac885b">h3</span>></span>
+      <span style="color:#ac885b">&lt;<span style="color:#ac885b">p</span>></span>...<span style="color:#ac885b">&lt;/<span style="color:#ac885b">p</span>></span>    
    <span style="color:#ac885b">&lt;/<span style="color:#ac885b">div</span>></span>
    <span style="color:#ac885b">&lt;<span style="color:#ac885b">div</span> <span style="color:#ac885b">class</span>=<span style="color:#8f9d6a">"back-page basic-cont"</span>>&lt;/<span style="color:#ac885b">div</span>></span>
 <span style="color:#ac885b">&lt;/<span style="color:#ac885b">div</span>></span>
@@ -50,7 +51,7 @@
 <!-- List Grid -->
 <section>
     <h2 class="subtitle" id="cards">Cards</h2>
-    <p class="section-desc">Donec nec justo eget felis facilisis fermentum. Aliquam porttitor mauris sit amet orci. Aenean dignissim pellentesque felis.</p>
+    <p class="section-desc">Organize your content within cards. You can use thumbnail images for add a cool effect.</p>
     <div class="cards row">
         <div class="col-ds-3">
             <a href="#">

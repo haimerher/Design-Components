@@ -111,6 +111,7 @@
 
 //Colors
 .ds-btn-default { @extend %ds-btn; background-color: $white; border: 1px solid $grey; color: $black; }
+.ds-btn-default:hover { background-color: #F9F9F9; }
 .ds-btn-success { @extend %ds-btn; background-color: rgba($green, .92); border: 1px solid $green; }
 .ds-btn-primary { @extend %ds-btn; background-color: rgba($blue, .92); border: 1px solid $blue; }
 .ds-btn-warning { @extend %ds-btn; background-color: rgba($orange, .92); border: 1px solid $orange; }

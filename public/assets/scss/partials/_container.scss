@@ -11,21 +11,26 @@
 }
 
 #content-page {
-	background-color: $white;
-	margin-bottom: 30px;
-	padding: 25px 30px 30px;
-}
+	margin-top: 30px;
+    position: relative;
+    
+    .basic-cont { 
+		background-color: $white;
+		margin-bottom: 30px;
+		padding: 25px 30px 30px;
+	}
 
-.back-page { 
-	background-color: $white; 
-	height: 50px;
-	left: -50%;
-	margin: 0 auto;
-	position: absolute;
-	right: -50%;
-	top: -14px;
-	width: 93%;
-	z-index: -1;
+	.back-page { 
+		background-color: $white; 
+		height: 50px;
+		left: -50%;
+		margin: 0 auto;
+		position: absolute;
+		right: -50%;
+		top: -14px;
+		width: 93%;
+		z-index: -1;
+	}
 }
 
 .cards {
