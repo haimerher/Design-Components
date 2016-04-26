@@ -28,7 +28,7 @@
 	</div>
 	<div class="row">
 		<div class="col-ds-12">
-			<textarea placeholder="Textarea" class="form-inp"></textarea>
+			<textarea placeholder="Textarea" class="form-inp" style="margin-bottom: 0;"></textarea>
 		</div>
 	</div>
 </section>
@@ -36,199 +36,216 @@
 <!-- DISABLED ELEMENTS -->
 <section>
 	<h2 class="subtitle" id="disabled">Disabled Elements</h2>
-	<p class="section-desc">Donec nec justo eget felis facilisis fermentum. Aliquam porttitor mauris sit amet orci. Aenean dignissim pellentesque felis.</p>
+	<p class="section-desc">Only add the <span class="code-tag">disabled</span> attribute to your elements.</p>
 	<div class="row" style="margin-bottom: 20px;">
 		<div class="col-ds-4">
-			<input type="text" class="form-inp" disabled="disabled">
+			<input type="text" class="form-inp" disabled>
 		</div>
 		<div class="col-ds-4">
-			<select class="form-inp" disabled="disabled">
+			<select class="form-inp" disabled>
 				<option>Option 1</option>	
 				<option>Option 2</option>	
 				<option>Option 3</option>	
 			</select>
 		</div>
 		<div class="col-ds-4">
-			<button class="ds-btn-primary" disabled="disabled">Enviar</button>
+			<button class="ds-btn-primary" disabled>Send</button>
 		</div>
+	</div>
+	<div>
+		<div class="code">
+		<h5>HTML Code</h5>
+		<pre class="content"><span style="color:#e0c589">&lt;<span style="color:#e0c589">button</span> <span style="color:#e0c589">class</span>=<span style="color:#8f9d6a">"ds-btn-primary"</span> <span style="color:#e0c589">disabled</span>></span>Send<span style="color:#e0c589">&lt;/<span style="color:#e0c589">button</span>></span>
+</pre>
+
 	</div>
 </section>
 
 <!-- ERROR -->
-<h2 class="subtitle" id="error">Error</h2>
-<p class="section-desc">Donec nec justo eget felis facilisis fermentum. Aliquam porttitor mauris sit amet orci. Aenean dignissim pellentesque felis.</p>
-<input type="text" class="error" style="width: 300px">
-<div class="code">
-	<h5>HTML Code</h5>
+<section>
+	<h2 class="subtitle" id="error">Error</h2>
+	<p class="section-desc">Add the class <span class="code-tag">.error</span> at your element to indicate there is something wrong.</p>
+	<input type="text" class="error" style="width: 300px">
+	<div class="code">
+		<h5>HTML Code</h5>
 	<pre class="content"><span style="color:#e0c589">&lt;<span style="color:#e0c589">input</span> <span style="color:#e0c589">type</span>=<span style="color:#8f9d6a">"text"</span> <span style="color:#e0c589">class</span>=<span style="color:#8f9d6a">"error"</span>/></span>
 </pre>
-</div>
+	</div>
+</section>
 
 <!-- CUSTOM FIELDS -->
-<h2 class="subtitle" id="custom">Custom Fields</h2>
-<p class="section-desc">Donec nec justo eget felis facilisis fermentum. Aliquam porttitor mauris sit amet orci. Aenean dignissim pellentesque felis.</p>
+<section>
+	<h2 class="subtitle" id="custom">Custom Fields</h2>
+	<p class="section-desc">Adds background image and changes the appearance of the fields form, to indicate at the users what kind of fields is.</p>
 
-<h3 class="category">Inside Icon</h3>
-<div class="row">
-	<div class="col-ds-4"><input type="text" class="inp-user form-inp" placeholder=".inp-user"/></div>
-	<div class="col-ds-4"><input type="password" class="inp-pass form-inp" placeholder=".inp-pass"/></div>
-	<div class="col-ds-4"><input type="text" class="inp-phone form-inp" placeholder=".inp-phone"/></div>
-</div>
-<div class="row">
-	<div class="col-ds-4"><input type="text" class="inp-mail form-inp" placeholder=".inp-mail"/></div>
-	<div class="col-ds-4"><input type="text" class="inp-location form-inp" placeholder=".inp-location"/></div>
-	<div class="col-ds-4"><input type="text" class="inp-job form-inp" placeholder=".inp-job"/></div>
-</div>
-<div class="row">
-	<div class="col-ds-4"><input type="text" class="inp-edit form-inp" placeholder=".inp-edit"/></div>
-	<div class="col-ds-4"><input type="text" class="inp-key form-inp" placeholder=".inp-key"/></div>
-	<div class="col-ds-4">
-		<select class="inp-list form-inp">
-			<option>.inp-list</option>
-			<option>.inp-list (second)</option>
-		</select>
+	<h3 class="category">Inside Icon</h3>
+	<div class="row">
+		<div class="col-ds-4"><input type="text" class="inp-user form-inp" placeholder=".inp-user"/></div>
+		<div class="col-ds-4"><input type="password" class="inp-pass form-inp" placeholder=".inp-pass"/></div>
+		<div class="col-ds-4"><input type="text" class="inp-phone form-inp" placeholder=".inp-phone"/></div>
 	</div>
-</div>
-<div class="row">
-	<div class="col-ds-4"><input type="text" class="inp-cloud form-inp" placeholder=".inp-cloud"/></div>
-	<div class="col-ds-4"><input type="text" class="inp-bar form-inp" placeholder=".inp-bar"/></div>
-	<div class="col-ds-4"><input type="text" class="inp-link form-inp" placeholder=".inp-link"/></div>
-</div>
-<div class="row">
-	<div class="col-ds-12"><textarea class="inp-message form-inp" placeholder=".inp-message"></textarea></div>
-</div>
-<div class="code">
-	<h5>HTML Code</h5>
+	<div class="row">
+		<div class="col-ds-4"><input type="text" class="inp-mail form-inp" placeholder=".inp-mail"/></div>
+		<div class="col-ds-4"><input type="text" class="inp-location form-inp" placeholder=".inp-location"/></div>
+		<div class="col-ds-4"><input type="text" class="inp-job form-inp" placeholder=".inp-job"/></div>
+	</div>
+	<div class="row">
+		<div class="col-ds-4"><input type="text" class="inp-edit form-inp" placeholder=".inp-edit"/></div>
+		<div class="col-ds-4"><input type="text" class="inp-key form-inp" placeholder=".inp-key"/></div>
+		<div class="col-ds-4">
+			<select class="inp-list form-inp">
+				<option>.inp-list</option>
+				<option>.inp-list (second)</option>
+			</select>
+		</div>
+	</div>
+	<div class="row">
+		<div class="col-ds-4"><input type="text" class="inp-cloud form-inp" placeholder=".inp-cloud"/></div>
+		<div class="col-ds-4"><input type="text" class="inp-bar form-inp" placeholder=".inp-bar"/></div>
+		<div class="col-ds-4"><input type="text" class="inp-link form-inp" placeholder=".inp-link"/></div>
+	</div>
+	<div class="row">
+		<div class="col-ds-12"><textarea class="inp-message form-inp" placeholder=".inp-message"></textarea></div>
+	</div>
+	<div class="code">
+		<h5>HTML Code</h5>
 	<pre class="content"><span style="color:#e0c589">&lt;<span style="color:#e0c589">input</span> <span style="color:#e0c589">type</span>=<span style="color:#8f9d6a">"text"</span> <span style="color:#e0c589">class</span>=<span style="color:#8f9d6a">"inp-user"</span>/></span>
 </pre>
-</div>
+	</div>
 
-<h3 class="category">Other Style</h3>
-<div class="row">
-	<div class="col-ds-4">
-		<div class="box-inp">
-			<input type="text" class="form-inp" placeholder="Username"/>
-			<i class="ion-android-person"></i>
+	<h3 class="category">Other Style</h3>
+	<div class="row">
+		<div class="col-ds-4">
+			<div class="box-inp">
+				<input type="text" class="form-inp" placeholder="Username"/>
+				<i class="ion-android-person"></i>
+			</div>
+		</div>
+		<div class="col-ds-4">
+			<div class="box-inp">
+				<input type="password" class="form-inp" placeholder="Password"/>
+				<i class="ion-android-lock"></i>
+			</div>
+		</div>
+		<div class="col-ds-4">
+			<div class="box-inp">
+				<input type="text" class="form-inp" placeholder="Phone"/>
+				<i class="ion-android-call"></i>
+			</div>
 		</div>
 	</div>
-	<div class="col-ds-4">
-		<div class="box-inp">
-			<input type="password" class="form-inp" placeholder="Password"/>
-			<i class="ion-android-lock"></i>
+	<div class="row">
+		<div class="col-ds-4">
+			<div class="box-inp">
+				<input type="text" class="form-inp" placeholder="Email"/>
+				<i class="ion-android-mail"></i>
+			</div>
+		</div>
+		<div class="col-ds-4">
+			<div class="box-inp">
+				<select class="form-inp">
+					<option>.box-inp-list</option>
+					<option>.box-inp-list (second)</option>
+				</select>
+				<i class="ion-android-list"></i>
+			</div>
+		</div>
+		<div class="col-ds-4">
+			<div class="box-inp">
+				<input type="text" class="error form-inp" placeholder=".error"/>
+				<i class="ion-android-bookmark"></i>
+			</div>
 		</div>
 	</div>
-	<div class="col-ds-4">
-		<div class="box-inp">
-			<input type="text" class="form-inp" placeholder="Phone"/>
-			<i class="ion-android-call"></i>
+	<div class="row">
+		<div class="col-ds-12">
+			<div class="box-inp">
+				<textarea class="form-inp"></textarea>
+				<i class="ion-android-textsms"></i>
+			</div>
 		</div>
 	</div>
-</div>
-<div class="row">
-	<div class="col-ds-4">
-		<div class="box-inp">
-			<input type="text" class="form-inp" placeholder="Email"/>
-			<i class="ion-android-mail"></i>
-		</div>
-	</div>
-	<div class="col-ds-4">
-		<div class="box-inp">
-			<select class="form-inp">
-				<option>.box-inp-list</option>
-				<option>.box-inp-list (second)</option>
-			</select>
-			<i class="ion-android-list"></i>
-		</div>
-	</div>
-	<div class="col-ds-4">
-		<div class="box-inp">
-			<input type="text" class="error form-inp" placeholder=".error"/>
-			<i class="ion-android-bookmark"></i>
-		</div>
-	</div>
-</div>
-<div class="row">
-	<div class="col-ds-12">
-		<div class="box-inp">
-			<textarea class="form-inp"></textarea>
-			<i class="ion-android-textsms"></i>
-		</div>
-	</div>
-</div>
-<div class="code">
-	<h5>HTML Code</h5>
+	<div class="code">
+		<h5>HTML Code</h5>
 	<pre class="content"><span style="color:#ac885b">&lt;<span style="color:#ac885b">div</span> <span style="color:#ac885b">class</span>=<span style="color:#8f9d6a">"box-inp"</span>></span>
    <span style="color:#e0c589">&lt;<span style="color:#e0c589">input</span> <span style="color:#e0c589">type</span>=<span style="color:#8f9d6a">"text"</span>/></span>
    <span style="color:#ac885b">&lt;<span style="color:#ac885b">i</span> <span style="color:#ac885b">class</span>=<span style="color:#8f9d6a">"ion-android-person"</span>>&lt;/<span style="color:#ac885b">i</span>></span>
 <span style="color:#ac885b">&lt;/<span style="color:#ac885b">div</span>></span>
 </pre>
-</div>
+	</div>
+</section>
 
 <!-- RADIO BUTTONS & CHECKBOX -->
-<h2 class="subtitle" id="radio-check">Radio Buttons &amp; Checkbox</h2>
-<p class="section-desc">Donec nec justo eget felis facilisis fermentum. Aliquam porttitor mauris sit amet orci. Aenean dignissim pellentesque felis.</p>
+<section>
+	<h2 class="subtitle" id="radio-check">Radio Buttons &amp; Checkbox</h2>
+	<p class="section-desc">Donec nec justo eget felis facilisis fermentum. Aliquam porttitor mauris sit amet orci. Aenean dignissim pellentesque felis.</p>
 
-<h3 class="category">Radio Buttons</h3>
-<span class="form-label">¿What's your academic level?</span>
-<label class="form-rdb"><input type="radio" name="educacion"/><span class="elem"></span>Primary</label>
-<label class="form-rdb"><input type="radio" name="educacion"/><span class="elem"></span>Secondary</label>
-<label class="form-rdb"><input type="radio" name="educacion"/><span class="elem"></span>Technical</label>
-<label class="form-rdb"><input type="radio" name="educacion"/><span class="elem"></span>University</label>
+	<h3 class="category">Radio Buttons</h3>
+	<span class="form-label">¿What's your academic level?</span>
+	<label class="form-rdb"><input type="radio" name="educacion"/><span class="elem"></span>Primary</label>
+	<label class="form-rdb"><input type="radio" name="educacion"/><span class="elem"></span>Secondary</label>
+	<label class="form-rdb"><input type="radio" name="educacion"/><span class="elem"></span>Technical</label>
+	<label class="form-rdb"><input type="radio" name="educacion"/><span class="elem"></span>University</label>
 
-<div class="code">
-	<h5>HTML Code</h5>
+	<div class="code">
+		<h5>HTML Code</h5>
 	<pre class="content"><span style="color:#e0c589">&lt;<span style="color:#e0c589">label</span> <span style="color:#e0c589">class</span>=<span style="color:#8f9d6a">"form-rdb"</span>></span>
    <span style="color:#e0c589">&lt;<span style="color:#e0c589">input</span> <span style="color:#e0c589">type</span>=<span style="color:#8f9d6a">"radio"</span>/></span><span style="color:#ac885b">&lt;<span style="color:#ac885b">span</span> <span style="color:#ac885b">class</span>=<span style="color:#8f9d6a">"elem"</span>>&lt;/<span style="color:#ac885b">span</span>></span>Primaria
 <span style="color:#e0c589">&lt;/<span style="color:#e0c589">label</span>></span>
 </pre>
-</div>
+	</div>
 
-<h3 class="category">Checkbox</h3>
-<span class="form-label">What categories are you interested in?</span>
-<label class="form-chk"><input type="checkbox"/><span class="elem"></span>Sport</label>
-<label class="form-chk"><input type="checkbox"/><span class="elem"></span>Technology</label>
-<label class="form-chk"><input type="checkbox"/><span class="elem"></span>Entertaiment</label>
-<label class="form-chk"><input type="checkbox"/><span class="elem"></span>Travel</label>
+	<h3 class="category">Checkbox</h3>
+	<span class="form-label">What categories are you interested in?</span>
+	<label class="form-chk"><input type="checkbox"/><span class="elem"></span>Sport</label>
+	<label class="form-chk"><input type="checkbox"/><span class="elem"></span>Technology</label>
+	<label class="form-chk"><input type="checkbox"/><span class="elem"></span>Entertaiment</label>
+	<label class="form-chk"><input type="checkbox"/><span class="elem"></span>Travel</label>
 
-<div class="code">
-	<h5>HTML Code</h5>
+	<div class="code">
+		<h5>HTML Code</h5>
 	<pre class="content"><span style="color:#e0c589">&lt;<span style="color:#e0c589">label</span> <span style="color:#e0c589">class</span>=<span style="color:#8f9d6a">"form-chk"</span>></span>
    <span style="color:#e0c589">&lt;<span style="color:#e0c589">input</span> <span style="color:#e0c589">type</span>=<span style="color:#8f9d6a">"checkbox"</span>/></span><span style="color:#ac885b">&lt;<span style="color:#ac885b">span</span> <span style="color:#ac885b">class</span>=<span style="color:#8f9d6a">"elem"</span>>&lt;/<span style="color:#ac885b">span</span>></span>Deportes
 <span style="color:#e0c589">&lt;/<span style="color:#e0c589">label</span>></span>
 </pre>
-</div>
+	</div>
+</section>
 
 <!-- SEARCH -->
-<h2 class="subtitle" id="search">Search</h2>
-<p class="section-desc">Donec nec justo eget felis facilisis fermentum. Aliquam porttitor mauris sit amet orci. Aenean dignissim pellentesque felis.</p>
+<section>
+	<h2 class="subtitle" id="search">Search</h2>
+	<p class="section-desc">Donec nec justo eget felis facilisis fermentum. Aliquam porttitor mauris sit amet orci. Aenean dignissim pellentesque felis.</p>
 
-<div class="row">
-	<div class="col col-ds-6">
-		<div class="search-box form-inp">
-			<input type="text" class="inp-glass" placeholder="Search">
-			<input type="submit" class="submit ds-btn-primary" value="Buscar" />
+	<div class="row">
+		<div class="col col-ds-6">
+			<div class="search-box form-inp">
+				<input type="text" class="inp-glass" placeholder="Search">
+				<input type="submit" class="submit ds-btn-primary" value="Buscar" />
+			</div>
+		</div>
+		<div class="col col-ds-6">
+			<div class="search-box form-inp">
+				<input type="text" placeholder="Search">
+				<buttom class="submit ds-btn-primary"><i class="ion-android-search"></i></buttom>
+			</div>
 		</div>
 	</div>
-	<div class="col col-ds-6">
-		<div class="search-box form-inp">
-			<input type="text" placeholder="Search">
-			<buttom class="submit ds-btn-primary"><i class="ion-android-search"></i></buttom>
-		</div>
+	<div class="code">
+		<h5>HTML Code</h5>
 	</div>
-</div>
-<div class="code">
-	<h5>HTML Code</h5>
-</div>
+</section>
 
 <!-- SWITCH BUTTONS -->
-<h2 class="subtitle" id="switch">Switch</h2>
-<p class="section-desc">Donec nec justo eget felis facilisis fermentum. Aliquam porttitor mauris sit amet orci. Aenean dignissim pellentesque felis.</p>
+<section>
+	<h2 class="subtitle" id="switch">Switch</h2>
+	<p class="section-desc">Donec nec justo eget felis facilisis fermentum. Aliquam porttitor mauris sit amet orci. Aenean dignissim pellentesque felis.</p>
 
-<label class="switch">
-	<input type="checkbox" id="" class="switch-inp" />
-	<span class="switch-label" data-on="Yes" data-off="No"></span>
-	<span class="switch-btn"></span>
-</label>
-<div class="code">
-	<h5>HTML Code</h5>
-</div>
+	<label class="switch">
+		<input type="checkbox" id="" class="switch-inp" />
+		<span class="switch-label" data-on="Yes" data-off="No"></span>
+		<span class="switch-btn"></span>
+	</label>
+	<div class="code">
+		<h5>HTML Code</h5>
+	</div>
+</section>
