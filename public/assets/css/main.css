@@ -18,7 +18,7 @@ a { color: #2980b9; }
 
 .full-width { width: 100% !important; }
 
-.navbar:after, .sidebar:after, .clear:after { content: ''; clear: both; display: block; }
+.navbar:after, .sidebar:after, .clear:after, .search-box:after { content: ''; clear: both; display: block; }
 
 #wrapper { position: relative; }
 
@@ -246,12 +246,13 @@ input:disabled, select:disabled, textarea:disabled { background-color: rgba(204,
 .box-inp .error + i { background-color: rgba(231, 76, 60, 0.9); border-right-color: rgba(231, 76, 60, 0.7); }
 
 /*SEARCH*/
-.search-box { position: relative; margin-bottom: 20px; width: 350px; }
+.search-box { display: table; margin-bottom: 20px; position: relative; width: 350px; }
 .search-box.medium { width: 500px; }
 .search-box.full { width: 100%; }
-.search-box input[type="text"] { margin: 0; width: 100%; }
-.search-box .submit { border-radius: 0 3px 3px 0; font-size: 14px !important; position: absolute; right: 0; top: 0; height: 100%; }
-.search-box .submit i { font-size: 16px !important; }
+.search-box input[type="text"] { border-radius: 4px 0 0 4px; display: table-cell; margin: 0; }
+.search-box .button { display: table-cell; vertical-align: top; }
+.search-box .button .submit { border-radius: 0 3px 3px 0; font-size: 14px !important; height: 40px; padding: 6px 4px; text-align: center; width: 100%; }
+.search-box .button .submit i { font-size: 16px !important; }
 
 /*RADIOBTN & CHECKBOX*/
 .form-chk, .form-rdb { cursor: pointer; position: relative; }
@@ -263,6 +264,11 @@ input:disabled, select:disabled, textarea:disabled { background-color: rgba(204,
 .form-chk.form-rdb span.elem:before, .form-rdb.form-rdb span.elem:before { border-radius: 10px; }
 .form-chk span.elem, .form-rdb span.elem { transition: 0.1s; -webkit-transition: 0.1s; -moz-transition: 0.1s; -ms-transition: 0.1s; -o-transition: 0.1s; background-color: #fafafa; border: 1px solid rgba(53, 53, 53, 0.4); border-radius: 4px; box-shadow: 0 0 6px rgba(53, 53, 53, 0.2) inset; display: block; height: 16px; left: 0; padding: 2px; position: absolute; top: 4px; width: 16px; }
 .form-chk span.elem:before, .form-rdb span.elem:before { transition: 0.1s; -webkit-transition: 0.1s; -moz-transition: 0.1s; -ms-transition: 0.1s; -o-transition: 0.1s; background-color: transparent; border-radius: 1px; display: block; content: ""; height: 100%; width: 100%; }
+
+.inp-check { display: table; position: relative; }
+.inp-check .inp-btn { background-color: #E4E4E4; border: 1px solid #CCC; border-radius: 4px 0 0 4px; box-shadow: 0 1px 0 rgba(250, 250, 250, 0.8) inset; display: table-cell; padding: 0 10px; width: 40px; }
+.inp-check .inp-btn .form-chk, .inp-check .inp-btn .form-rdb, .inp-check .inp-btn input { margin: 0; }
+.inp-check input[type="text"] { border-left: 0; border-radius: 0 4px 4px 0; display: table-cell; margin: 0; }
 
 /*SWITCH BUTTONS*/
 .switch { cursor: pointer; height: 30px; position: relative; width: 75px; }

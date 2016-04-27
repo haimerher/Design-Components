@@ -24,7 +24,7 @@ a { color: $blue; }
 .full-img { height: auto; width: 100% !important }
 .full-width { width: 100% !important; }
 
-.navbar:after, .sidebar:after, .clear:after { 
+.navbar:after, .sidebar:after, .clear:after, .search-box:after { 
 	content: ''; 
 	clear: both; 
 	display: block; 

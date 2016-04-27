@@ -133,24 +133,34 @@ input:disabled, select:disabled, textarea:disabled {
 
 /*SEARCH*/
 .search-box {
-    position: relative;
+    display: table;
     margin-bottom: 20px;
+    position: relative;
     width: 350px; 
 
     &.medium { width: 500px; }
     &.full { width: 100%; }
 
-    input[type="text"] { margin: 0; width: 100%; }
+    input[type="text"] { 
+        border-radius: 4px 0 0 4px;
+        display: table-cell;
+        margin: 0; 
+    }
 
-    .submit {
-        border-radius: 0 3px 3px 0;
-        font-size: 14px !important;
-        position: absolute;
-        right: 0;
-        top: 0;
-        height: 100%;
+    .button {
+        display: table-cell;
+        vertical-align: top;
 
-        & i { font-size: 16px !important; }
+        .submit {
+            border-radius: 0 3px 3px 0;
+            font-size: 14px !important;
+            height: 40px;
+            padding: 6px 4px;
+            text-align: center;
+            width: 100%;
+
+            & i { font-size: 16px !important; }
+        }
     }
 }
 
@@ -201,6 +211,30 @@ input:disabled, select:disabled, textarea:disabled {
             height: 100%;
             width: 100%;
         }
+    }
+}
+
+.inp-check {
+    display: table;
+    position: relative;
+
+    .inp-btn {
+        background-color: #E4E4E4;
+        border: 1px solid $grey;
+        border-radius: 4px 0 0 4px;
+        box-shadow: 0 1px 0 rgba($white, .8) inset;
+        display: table-cell;
+        padding: 0 10px;
+        width: 40px;
+
+        .form-chk, .form-rdb, input { margin: 0; }
+    }
+
+    input[type="text"] { 
+        border-left: 0;
+        border-radius: 0 4px 4px 0;
+        display: table-cell; 
+        margin: 0;
     }
 }
 
