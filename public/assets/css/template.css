@@ -9,7 +9,7 @@ h1 { color: #274058; }
 .head-nav .logo:before { background: #2980b9; left: -28px; }
 .head-nav .logo:after { background: #16a085; left: -22px; }
 .section-desc { margin: 0 0 20px; }
-.section-desc .code-tag { color: #c7254e; }
+.code-tag { color: #c7254e; }
 .section-desc .space { margin-right: 6px; }
 .fixed { position: fixed !important; top: 0; }
 #static-nav .sidebar { background: rgba(255, 255, 255, .25) !important; border-top: 0; box-shadow: none !important; height: auto; margin-bottom: 0 !important;  }
