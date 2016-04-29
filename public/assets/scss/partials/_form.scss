@@ -2,7 +2,8 @@
 =================== FORM ELEMENTS ===================
 ===================================================*/
 label { display: inline-block; margin: 0 15px 15px 0; }
-.form-inp { width: 100% !important; } 
+
+.form-input { display: block; width: 100% !important; }
 .form-label { display: block; font-size: 14px; font-weight: bold; }
 
 input:-webkit-autofill { padding-left: 16px !important; -webkit-box-shadow: 0 0 0px 1000px #fff inset; }
@@ -105,30 +106,48 @@ input:disabled, select:disabled, textarea:disabled {
     padding-left: 45px !important;
 }
 
-.box-inp {
+/*INPUT GROUP*/
+.input-group {
+    display: table;
     margin-bottom: 15px;
     position: relative;
+    width: 100%;
 
-    i {
-        background-color: rgba($black, .8);
+    .form-button, .form-addons { display: table-cell; }
+
+    .form-addons {
+        background-color: #E4E4E4;
+        border: 1px solid $grey;
         border-radius: 4px 0 0 4px;
-        border-right: 1px solid rgba($black, .7);
-        color: $white;
-        font-size: 20px;
-        height: 100%;
-        left: 0;
-        line-height: 40px;
-        position: absolute;
+        box-shadow: 0 1px 0 rgba($white, .8) inset;
+        overflow: hidden;
+        padding: 0 10px;
+        position: relative;
         text-align: center;
-        top: 0;
-        width: 42px;
-        z-index: 1;
+        vertical-align: middle;
+        width: 40px;
+
+        i { color: rgba($black, .6); font-size: 20px; }
+
+        // &.bg-dark { 
+        //     background-color: rgba($black, .8);
+        //     border: rgba($black, .7);
+        //     box-shadow: none; 
+
+        //     i { color: $white; }
+        // }
+
+        input { margin: 0; }
+        .form-chk, .form-rdb { margin: 0 0 0 -2.5px; }
     }
 
-    input, textarea, select { margin-bottom: 0; padding-left: 50px; }
+    .form-input { 
+        border-left: 0;
+        border-radius: 0 4px 4px 0; 
+        margin-bottom: 0; 
+    }
 
     .error + i { background-color: rgba($red, .9); border-right-color: rgba($red, .7); }
-
 }
 
 /*SEARCH*/
@@ -211,30 +230,6 @@ input:disabled, select:disabled, textarea:disabled {
             height: 100%;
             width: 100%;
         }
-    }
-}
-
-.inp-check {
-    display: table;
-    position: relative;
-
-    .inp-btn {
-        background-color: #E4E4E4;
-        border: 1px solid $grey;
-        border-radius: 4px 0 0 4px;
-        box-shadow: 0 1px 0 rgba($white, .8) inset;
-        display: table-cell;
-        padding: 0 10px;
-        width: 40px;
-
-        .form-chk, .form-rdb, input { margin: 0; }
-    }
-
-    input[type="text"] { 
-        border-left: 0;
-        border-radius: 0 4px 4px 0;
-        display: table-cell; 
-        margin: 0;
     }
 }
 
