@@ -82,4 +82,8 @@ routerApp.config(function($stateProvider, $urlRouterProvider) {
             url: '/tooltips',
             templateUrl: 'app/views/js_elements/tooltips.html'
         })
+        .state('js.modal', {
+            url: '/modalbox',
+            templateUrl: 'app/views/js_elements/modal.html'
+        })
 });

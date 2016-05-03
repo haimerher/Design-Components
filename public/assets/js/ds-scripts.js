@@ -35,4 +35,14 @@ $(document).ready(function(){
     $(".sub-sidebar").on('click', function(){
         $(this).children('nav').toggle();
     });
+
+    /*MODALBOX*/
+    $('body').on('click', '.open-modal', function(){
+   		var modalBtn= $(this).data('target');
+   		$('#'+modalBtn).fadeIn('fast');
+   	});
+
+   	$('body').on('click', '.modalbox .close-btn', function(){
+   		$('.modal-wrap').fadeOut('fast');
+   	});
 });

@@ -1,0 +1,57 @@
+/*===================================================
+===================== MODALBOX ======================
+===================================================*/
+.modal-wrap {
+	background-color: rgba(0, 0, 0, .5);
+	display: none;
+	height: 100%;
+	left: 0;
+	overflow-y: auto; 
+	position: fixed;
+	top: 0;
+	width: 100%;
+	z-index: 999;
+
+	.modalbox {
+		@include box-shadow(0 4px 5px 0 rgba(0,0,0,.14));
+		background-color: #FFF;
+		border-top: 4px solid $blue;
+		border-radius: 4px;
+		margin: 5.8% auto;
+		overflow: hidden;
+		position: relative;
+		width: 600px;
+
+		&.success { border-color: $green-sea; }
+		&.warning { border-color: $orange; }
+		&.danger { border-color: $red; }
+
+		.modal-header { 
+			padding: 20px 20px 0 20px;
+
+			h2 { margin: 0; }
+
+			.close-btn {
+				@include transition(.3s);
+				background-color: $black;
+				border: 0;
+				border-radius: 50%;
+				color: $white;
+				font-size: 14px;
+				height: 25px;
+				outline: none;
+				opacity: .2;
+				position: absolute;
+				right: 20px;
+				top: 15px;
+				width: 25px;
+
+				&:hover { opacity: .5; }
+			}
+		}
+
+		.modal-content, .modal-footer { padding: 20px; }
+
+		.modal-footer { background: #F9F9F9; border-top: 1px solid rgba($grey, .5); }
+	}
+}
