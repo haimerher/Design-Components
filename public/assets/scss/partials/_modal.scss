@@ -17,7 +17,7 @@
 		background-color: #FFF;
 		border-top: 4px solid $blue;
 		border-radius: 4px;
-		margin: 5.8% auto;
+		margin: 4% auto;
 		overflow: hidden;
 		position: relative;
 		width: 600px;
@@ -25,6 +25,8 @@
 		&.success { border-color: $green-sea; }
 		&.warning { border-color: $orange; }
 		&.danger { border-color: $red; }
+		&.small { width: 400px; }
+		&.big { width: 980px; }
 
 		.modal-header { 
 			padding: 20px 20px 0 20px;
@@ -52,6 +54,10 @@
 
 		.modal-content, .modal-footer { padding: 20px; }
 
-		.modal-footer { background: #F9F9F9; border-top: 1px solid rgba($grey, .5); }
+		.modal-footer { 
+			background: #F9F9F9; 
+			border-top: 1px solid rgba($grey, .5); 
+			overflow: hidden;
+		}
 	}
 }

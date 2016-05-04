@@ -1,32 +1,74 @@
 <h1>Modalbox</h1>
 <div class="bread-crumbs">
 	<ul>
-		<li><a href="#/css/buttons#icons">Icons</a></li>
-		<li><a href="#/css/buttons#flat">Position</a></li>
+		<li><a href="#/css/modal#icons">Standard</a></li>
+		<li><a href="#/css/modal#size">Sizes</a></li>
 	</ul>
 </div>
 
-<!-- Icons Buttons -->
-<h2 class="subtitle" id="icons">Icons</h2>
-<p class="section-desc">Donec nec justo eget felis facilisis fermentum. Aliquam porttitor mauris sit amet orci. Aenean dignissim pellentesque felis.</p>
+<!-- Standard -->
+<section>
+	<h2 class="subtitle" id="standard">Standard</h2>
+	<p class="section-desc">Donec nec justo eget felis facilisis fermentum. Aliquam porttitor mauris sit amet orci. Aenean dignissim pellentesque felis.</p>
 
-<div id="modal-one" class="modal-wrap">
-	<div class="modalbox">
-		<div class="modal-header">
-			<h2>Modal title</h2>
-			<button class="close-btn"><i class="ion-close"></i></button>
-		</div>
-		<div class="modal-content">
-			<p>Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus.</p>
-		</div>
-		<div class="modal-footer">
-			<button class="ds-btn-primary">Aceptar</button>
+	<div id="modal-one" class="modal-wrap">
+		<div class="modalbox">
+			<div class="modal-header">
+				<h2>Modal title</h2>
+				<button class="close-btn dismiss"><i class="ion-close"></i></button>
+			</div>
+			<div class="modal-content">
+				<p>Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus.</p>
+			</div>
+			<div class="modal-footer">
+				<div class="pull-right">
+					<button class="ds-btn-danger dismiss">Cancel</button>
+					<button class="ds-btn-primary">Accept</button>
+				</div>
+			</div>
 		</div>
 	</div>
-</div>
 
-<button class="ds-btn-primary open-modal" data-target="modal-one">Show Modal</button>
+	<button class="ds-btn-primary open-modal" data-target="modal-one">Show Modal</button>
 
-<div class="code">
-	<h5>HTML Code</h5>
-</div>
+	<div class="code">
+		<h5>HTML Code</h5>
+	</div>
+
+	<div class="dialog-blue">
+		<i class="ion-information-circled"></i> Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus.</p>
+	</div>
+</section>
+
+<!-- Sizes -->
+<section>
+	<h2 class="subtitle" id="standard">Sizes</h2>
+	<p class="section-desc">Donec nec justo eget felis facilisis fermentum. Aliquam porttitor mauris sit amet orci. Aenean dignissim pellentesque felis.</p>
+
+	<div id="small" class="modal-wrap">
+		<div class="modalbox small">
+			<div class="modal-header">
+				<h2>Small Modal</h2>
+				<button class="close-btn dismiss"><i class="ion-close"></i></button>
+			</div>
+			<div class="modal-content">
+				<p>Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus.</p>
+			</div>
+		</div>
+	</div>
+
+	<div id="big" class="modal-wrap">
+		<div class="modalbox big">
+			<div class="modal-header">
+				<h2>Big Modal</h2>
+				<button class="close-btn dismiss"><i class="ion-close"></i></button>
+			</div>
+			<div class="modal-content">
+				<p>Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus.</p>
+			</div>
+		</div>
+	</div>
+
+	<button class="ds-btn-primary open-modal" data-target="small">Small Modal</button>
+	<button class="ds-btn-primary open-modal" data-target="big">Big Modal</button>
+</section>

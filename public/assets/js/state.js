@@ -72,6 +72,10 @@ routerApp.config(function($stateProvider, $urlRouterProvider) {
             url: '/list',
             templateUrl: 'app/views/components/list.html'
         })
+        .state('components.progress', {
+            url: '/progressbar',
+            templateUrl: 'app/views/components/progress.html'
+        })
 
         // JS STATES =========================================
         .state('js', {

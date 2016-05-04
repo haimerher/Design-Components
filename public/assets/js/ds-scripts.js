@@ -42,7 +42,7 @@ $(document).ready(function(){
    		$('#'+modalBtn).fadeIn('fast');
    	});
 
-   	$('body').on('click', '.modalbox .close-btn', function(){
+   	$('body').on('click', '.modalbox .dismiss', function(){
    		$('.modal-wrap').fadeOut('fast');
    	});
 });
