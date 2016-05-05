@@ -117,19 +117,19 @@
 	<div class="row">
 		<div class="col-ds-4">
 			<div class="input-group">
-				<span class="form-addons bg-dark"><i class="ion-android-person"></i></span>
+				<span class="form-addons"><i class="ion-android-person"></i></span>
 				<input type="text" class="form-input" placeholder="Username"/>
 			</div>
 		</div>
 		<div class="col-ds-4">
 			<div class="input-group">
-				<span class="form-addons bg-dark"><i class="ion-android-lock"></i></span>
+				<span class="form-addons"><i class="ion-android-lock"></i></span>
 				<input type="password" class="form-input" placeholder="Password"/>
 			</div>
 		</div>
 		<div class="col-ds-4">
 			<div class="input-group">
-				<span class="form-addons bg-dark"><i class="ion-android-call"></i></span>
+				<span class="form-addons"><i class="ion-android-call"></i></span>
 				<input type="text" class="form-input" placeholder="Phone"/>
 			</div>
 		</div>
@@ -137,13 +137,13 @@
 	<div class="row">
 		<div class="col-ds-4">
 			<div class="input-group">
-				<span class="form-addons bg-dark"><i class="ion-android-mail"></i></span>
+				<span class="form-addons"><i class="ion-android-mail"></i></span>
 				<input type="text" class="form-input" placeholder="Email"/>
 			</div>
 		</div>
 		<div class="col-ds-4">
 			<div class="input-group">
-				<span class="form-addons bg-dark"><i class="ion-android-list"></i></span>
+				<span class="form-addons"><i class="ion-android-list"></i></span>
 				<select class="form-input">
 					<option>.box-inp-list</option>
 					<option>.box-inp-list (second)</option>
@@ -152,7 +152,7 @@
 		</div>
 		<div class="col-ds-4">
 			<div class="input-group">
-				<span class="form-addons bg-dark"><i class="ion-android-bookmark"></i></span>
+				<span class="form-addons"><i class="ion-android-bookmark"></i></span>
 				<input type="text" class="error form-input" placeholder=".error"/>
 			</div>
 		</div>
@@ -160,7 +160,7 @@
 	<div class="row">
 		<div class="col-ds-12">
 			<div class="input-group">
-				<span class="form-addons bg-dark"><i class="ion-android-textsms"></i></span>
+				<span class="form-addons"><i class="ion-android-textsms"></i></span>
 				<textarea class="form-input"></textarea>
 			</div>
 		</div>
@@ -309,3 +309,11 @@
 </pre>
 	</div>
 </section>
+
+<script>
+	$(document).ready(function(){
+		if($('.input-group input[type="text"]').hasClass('error')){
+      		$( '.input-group input.error' ).prev( ".form-addons" ).addClass('error');
+    	}
+	})
+</script>

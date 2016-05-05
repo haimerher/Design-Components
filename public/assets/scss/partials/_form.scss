@@ -38,7 +38,8 @@ textarea {
 
 input:disabled, select:disabled, textarea:disabled { 
     background-color: rgba($grey, .4); 
-    border: 1px solid rgba($regal-blue, .4); 
+    border: 0;
+    border-bottom: 1px solid rgba($regal-blue, .3); 
 }
 
 /*ERROR STYLE*/
@@ -127,15 +128,14 @@ input:disabled, select:disabled, textarea:disabled {
         vertical-align: middle;
         width: 40px;
 
+        &.error { 
+            background-color: rgba($red, .8) !important; 
+            box-shadow: none;
+
+            i { color: $white; }
+        }
+
         i { color: rgba($black, .6); font-size: 20px; }
-
-        // &.bg-dark { 
-        //     background-color: rgba($black, .8);
-        //     border: rgba($black, .7);
-        //     box-shadow: none; 
-
-        //     i { color: $white; }
-        // }
 
         input { margin: 0; }
         .form-chk, .form-rdb { margin: 0 0 0 -2.5px; }
