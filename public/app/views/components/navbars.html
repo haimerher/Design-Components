@@ -40,7 +40,7 @@
 <!-- DARK NAVBAR -->
 <section>
     <h2 class="subtitle" id="dark">Dark</h2>
-    <nav class="navbar darknavbar xample">
+    <nav class="navbar darknav xample">
     	<div class="container">
     		<div class="head-nav"><a href="index.html">Company Name</a></div>
         	<ul>
@@ -62,7 +62,7 @@
     </nav>
     <div class="code">
     	<h5>HTML Code</h5>
-	   <pre class="content"><span style="color:#ac885b">&lt;<span style="color:#ac885b">nav</span> <span style="color:#ac885b">class</span>=<span style="color:#8f9d6a">"navbar darknavbar"</span>></span>
+	   <pre class="content"><span style="color:#ac885b">&lt;<span style="color:#ac885b">nav</span> <span style="color:#ac885b">class</span>=<span style="color:#8f9d6a">"navbar darknav"</span>></span>
    <span style="color:#ac885b">&lt;<span style="color:#ac885b">div</span> <span style="color:#ac885b">class</span>=<span style="color:#8f9d6a">"container"</span>></span>
       <span style="color:#ac885b">&lt;<span style="color:#ac885b">div</span> <span style="color:#ac885b">class</span>=<span style="color:#8f9d6a">"head-nav"</span>></span><span style="color:#e0c589">&lt;<span style="color:#e0c589">a</span> <span style="color:#e0c589">href</span>=<span style="color:#8f9d6a">"index.html"</span>></span>Company Name<span style="color:#e0c589">&lt;/<span style="color:#e0c589">a</span>></span><span style="color:#ac885b">&lt;/<span style="color:#ac885b">div</span>></span>
       <span style="color:#ac885b">&lt;<span style="color:#ac885b">ul</span>></span>
@@ -95,7 +95,7 @@
     <p class="section-desc">Donec nec justo eget felis facilisis fermentum. Aliquam porttitor mauris sit amet orci. Aenean dignissim pellentesque felis.</p>
 
     <div class="testing-area" style="height: 318px">
-        <div class="cont-sidebar">
+        <div class="content-sidebar">
             <button class="burger-sidebar"><i class="ion-navicon-round"></i></button>
             <nav class="navbar sidebar" style="z-index: inherit;">
                 <ul class="nav">
@@ -120,7 +120,7 @@
     </div>
     <div class="code">
         <h5>HTML Code</h5>
-        <pre class="content"><span style="color:#ac885b">&lt;<span style="color:#ac885b">div</span> <span style="color:#ac885b">class</span>=<span style="color:#8f9d6a">"cont-sidebar"</span>></span>
+        <pre class="content"><span style="color:#ac885b">&lt;<span style="color:#ac885b">div</span> <span style="color:#ac885b">class</span>=<span style="color:#8f9d6a">"content-sidebar"</span>></span>
     <span style="color:#ac885b">&lt;<span style="color:#ac885b">nav</span> <span style="color:#ac885b">class</span>=<span style="color:#8f9d6a">"navbar simple-sidebar"</span>></span>
         <span style="color:#ac885b">&lt;<span style="color:#ac885b">ul</span> <span style="color:#ac885b">class</span>=<span style="color:#8f9d6a">"nav"</span>></span>
             <span style="color:#e0c589">&lt;<span style="color:#e0c589">li</span> <span style="color:#e0c589">class</span>=<span style="color:#8f9d6a">"selected"</span>></span><span style="color:#e0c589">&lt;<span style="color:#e0c589">a</span> <span style="color:#e0c589">ui-sref</span>=<span style="color:#8f9d6a">""</span>></span>Books<span style="color:#e0c589">&lt;/<span style="color:#e0c589">a</span>></span><span style="color:#e0c589">&lt;/<span style="color:#e0c589">li</span>></span>
@@ -138,10 +138,10 @@
 <script type="text/javascript">
     $(document).ready(function(){
         $(".burger-sidebar").on('click', function(){ 
-            if($(".cont-sidebar").hasClass("hide")){
-                $(".cont-sidebar").removeClass("hide");
+            if($(".content-sidebar").hasClass("hide")){
+                $(".content-sidebar").removeClass("hide");
             } else {
-                $(".cont-sidebar").addClass("hide");
+                $(".content-sidebar").addClass("hide");
             }
 
             if($('.sub-sidebar').children('nav').is(':visible')){

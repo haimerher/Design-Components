@@ -18,6 +18,6 @@ $column: 12;
 	}
 
 	@for $i from 1 through 12 {
-		.col-ds-#{$i} { @extend %col; width: $i * 100% / $column }
+		.col-w#{$i} { @extend %col; width: $i * 100% / $column }
 	}
 }

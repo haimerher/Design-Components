@@ -50,59 +50,59 @@ input:disabled, select:disabled, textarea:disabled {
 }
 
 /*ESPECIAL FIELDS*/
-.inp-user { 
+.bg-icon-user { 
     background: { image: url('../img/svg/account.svg'); repeat: no-repeat; position: 12px 7px; }
     padding-left: 45px !important; 
 }
-.inp-pass {     
+.bg-icon-pass {     
     background: { image: url('../img/svg/lock.svg'); repeat: no-repeat; position: 12px 7px; }
     padding-left: 45px !important;  
 }
-.inp-phone { 
+.bg-icon-phone { 
     background: { image: url('../img/svg/phone.svg'); repeat: no-repeat; position: 12px 7px; }
     padding-left: 45px !important; 
 }
-.inp-mail { 
+.bg-icon-mail { 
     background: { image: url('../img/svg/mail.svg'); repeat: no-repeat; position: 12px 7px; }
     padding-left: 45px !important; 
 }
-.inp-location { 
+.bg-icon-location { 
     background: { image: url('../img/svg/location.svg'); repeat: no-repeat; position: 12px 7px; }
     padding-left: 45px !important; 
 }
-.inp-job {
+.bg-icon-job {
     background: { image: url('../img/svg/job.svg'); repeat: no-repeat; position: 12px 7px; }
     padding-left: 45px !important; 
 }
-.inp-message { 
+.bg-icon-message { 
     background: { image: url('../img/svg/message.svg'); repeat: no-repeat; position: 12px 7px; }
     padding-left: 45px !important; 
 }
-.inp-edit { 
+.bg-icon-edit { 
     background: { image: url('../img/svg/pencil.svg'); repeat: no-repeat; position: 12px 7px; }
     padding-left: 45px !important; 
 }
-.inp-list { 
+.bg-icon-list { 
     background: { image: url('../img/svg/list.svg'); repeat: no-repeat; position: 12px 7px; }
     padding-left: 45px !important;
 }
-.inp-link { 
+.bg-icon-link { 
     background: { image: url('../img/svg/link.svg'); repeat: no-repeat; position: 12px 7px; }
     padding-left: 45px !important;
 }
-.inp-cloud { 
+.bg-icon-cloud { 
     background: { image: url('../img/svg/cloud.svg'); repeat: no-repeat; position: 12px 7px; }
     padding-left: 45px !important;
 }
-.inp-key { 
+.bg-icon-key { 
     background: { image: url('../img/svg/key.svg'); repeat: no-repeat; position: 12px 7px; } 
     padding-left: 45px !important;
 }
-.inp-bar { 
+.bg-icon-bar { 
     background: { image: url('../img/svg/barcode.svg'); repeat: no-repeat; position: 12px 7px; }
     padding-left: 45px !important;
 }
-.inp-glass { 
+.bg-icon-glass { 
     background: { image: url('../img/svg/glass.svg'); repeat: no-repeat; position: 12px 7px; }
     padding-left: 45px !important;
 }
@@ -281,7 +281,7 @@ input:disabled, select:disabled, textarea:disabled {
         width: 24px;
     }
 
-    .switch-inp { 
+    .switch-input { 
         left: 10px;
         position: absolute; 
         top: 10px;

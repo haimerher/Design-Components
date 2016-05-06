@@ -17,7 +17,7 @@
 	p { margin: 0; padding: 10px 15px; }
 }
 
-.info-alert {
+.blue-alert {
 	@extend %alert;
 	background-color: rgba($blue, .1);
 	border: 1px solid rgba($blue, .6);
@@ -26,7 +26,7 @@
 	h4 { background-color: rgba($blue, .6); }
 }
 
-.success-alert {
+.green-alert {
 	@extend %alert;
 	background-color: rgba($green, .1);
 	border: 1px solid rgba($green, .7);
@@ -35,7 +35,7 @@
 	h4 { background-color: rgba($green, .7); }
 }
 
-.warning-alert {
+.orange-alert {
 	@extend %alert;
 	background-color: rgba($orange, .1);
 	border: 1px solid rgba($orange, .6);
@@ -44,7 +44,7 @@
 	h4 { background-color: rgba($orange, .6); }
 }
 
-.danger-alert {
+.red-alert {
 	@extend %alert;
 	background-color: rgba($red, .1);
 	border: 1px solid rgba($red, .9);
@@ -66,12 +66,12 @@
 	p { margin: 0; }
 }
 
-.dialog-blue { @extend %dialog; border-color: $blue; }
-.dialog-midnight-blue { @extend %dialog; border-color: $midnight-blue; }
-.dialog-green { @extend %dialog; border-color: $green; }
-.dialog-green-sea { @extend %dialog; border-color: $green-sea; }
-.dialog-orange { @extend %dialog; border-color: $orange; }
-.dialog-red { @extend %dialog; border-color: $red; }
-.dialog-silver { @extend %dialog; border-color: $silver; }
-.dialog-violet { @extend %dialog; border-color: $violet; }
-.dialog-yellow { @extend %dialog; border-color: $yellow; }
+.blue-dialog { @extend %dialog; border-color: $blue; }
+.midnight-blue-dialog { @extend %dialog; border-color: $midnight-blue; }
+.green-dialog { @extend %dialog; border-color: $green; }
+.green-sea-dialog { @extend %dialog; border-color: $green-sea; }
+.orange-dialog { @extend %dialog; border-color: $orange; }
+.red-dialog { @extend %dialog; border-color: $red; }
+.silver-dialog { @extend %dialog; border-color: $silver; }
+.violet-dialog { @extend %dialog; border-color: $violet; }
+.yellow-dialog { @extend %dialog; border-color: $yellow; }

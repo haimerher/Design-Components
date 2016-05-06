@@ -1,7 +1,7 @@
 /*===================================================
 ====================== NAVBAR =======================
 ===================================================*/
-.cont-sidebar { 
+.content-sidebar { 
 	@include transition(.3s);
 	background-color: $black;
 	border-top: 30px solid #0B8069;
@@ -136,7 +136,7 @@
 		}
 	}
 
-	&.darknavbar { 
+	&.darknav { 
 		background-color: rgba($black, .9);
 
 		img { 
