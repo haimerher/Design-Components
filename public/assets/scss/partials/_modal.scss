@@ -2,7 +2,7 @@
 ===================== MODALBOX ======================
 ===================================================*/
 .modal-wrap {
-	background-color: rgba(0, 0, 0, .5);
+	background-color: rgba(0, 0, 0, .6);
 	display: none;
 	height: 100%;
 	left: 0;
@@ -17,6 +17,7 @@
 		background-color: #FFF;
 		border-top: 4px solid $blue;
 		border-radius: 4px;
+		display: none;
 		margin: 4% auto;
 		overflow: hidden;
 		position: relative;

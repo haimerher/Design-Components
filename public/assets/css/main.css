@@ -457,8 +457,8 @@ table.table.column tbody tr { border: 0; }
 /*===================================================
 ===================== MODALBOX ======================
 ===================================================*/
-.modal-wrap { background-color: rgba(0, 0, 0, 0.5); display: none; height: 100%; left: 0; overflow-y: auto; position: fixed; top: 0; width: 100%; z-index: 999; }
-.modal-wrap .modalbox { box-shadow: 0 4px 5px 0 rgba(0, 0, 0, 0.14); -webkit-box-shadow: 0 4px 5px 0 rgba(0, 0, 0, 0.14); -moz-box-shadow: 0 4px 5px 0 rgba(0, 0, 0, 0.14); -ms-box-shadow: 0 4px 5px 0 rgba(0, 0, 0, 0.14); -o-box-shadow: 0 4px 5px 0 rgba(0, 0, 0, 0.14); background-color: #FFF; border-top: 4px solid #2980b9; border-radius: 4px; margin: 4% auto; overflow: hidden; position: relative; width: 600px; }
+.modal-wrap { background-color: rgba(0, 0, 0, 0.6); display: none; height: 100%; left: 0; overflow-y: auto; position: fixed; top: 0; width: 100%; z-index: 999; }
+.modal-wrap .modalbox { box-shadow: 0 4px 5px 0 rgba(0, 0, 0, 0.14); -webkit-box-shadow: 0 4px 5px 0 rgba(0, 0, 0, 0.14); -moz-box-shadow: 0 4px 5px 0 rgba(0, 0, 0, 0.14); -ms-box-shadow: 0 4px 5px 0 rgba(0, 0, 0, 0.14); -o-box-shadow: 0 4px 5px 0 rgba(0, 0, 0, 0.14); background-color: #FFF; border-top: 4px solid #2980b9; border-radius: 4px; display: none; margin: 4% auto; overflow: hidden; position: relative; width: 600px; }
 .modal-wrap .modalbox.success { border-color: #16a085; }
 .modal-wrap .modalbox.warning { border-color: #f39c12; }
 .modal-wrap .modalbox.danger { border-color: #e74c3c; }

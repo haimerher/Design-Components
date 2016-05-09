@@ -39,11 +39,13 @@ $(document).ready(function(){
   /*MODALBOX*/
   $('body').on('click', '.open-modal', function(){
  		var modalBtn= $(this).data('target');
- 		$('#'+modalBtn).fadeIn('fast');
+ 		$('#'+modalBtn).fadeIn(350);
+    $('#'+modalBtn).find('.modalbox').slideDown(300);
  	});
 
   $('body').on('click', '.modalbox .dismiss', function(){
- 		$('.modal-wrap').fadeOut('fast');
+ 		$('.modal-wrap').fadeOut(200);
+    $('.modal-wrap .modalbox').slideUp(200);
  	});
 
   /*ADDING ERROR CLASS TO FORM-ADDONS ON INPUT-GROUP*/
