@@ -30,16 +30,15 @@ textarea {
 
 /*DISABLED ELEMENTS*/
 *:disabled {
+    color: #000 !important;
     cursor: not-allowed !important;
     opacity: .6;
-
-    &:hover { opacity: .6; }
 }
 
 input:disabled, select:disabled, textarea:disabled { 
-    background-color: rgba($grey, .4); 
+    background-color: rgba($grey, .5); 
     border: 0;
-    border-bottom: 1px solid rgba($regal-blue, .3); 
+    border-bottom: 1px solid rgba($black, .4); 
 }
 
 /*ERROR STYLE*/
@@ -293,6 +292,6 @@ input:disabled, select:disabled, textarea:disabled {
 
         &:checked + .switch-label:before { opacity: 1; }
         &:checked + .switch-label:after { opacity: 0; }
-        &:checked + .switch-label { background-color: rgba($green-sea, .6); }
+        &:checked + .switch-label { background-color: $green-sea; }
     }
 }

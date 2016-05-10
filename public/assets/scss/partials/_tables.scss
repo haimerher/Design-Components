@@ -2,10 +2,11 @@
 ====================== TABLES =======================
 ===================================================*/
 table.table {
+	line-height: normal;
 	width: 100%; 
 
-	th, td { padding: 5px 15px; }
-	th { font-size: 16px; }
+	th, td { padding: 8px 15px; }
+	th { font-size: 15px; }
 	td { font-size: 14px; }
 	thead { 
 		border-bottom: 2px solid $grey;

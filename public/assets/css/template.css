@@ -36,7 +36,6 @@ section:last-child { margin-bottom: 0; }
 table.striped tbody tr:nth-child(2n){ background-color: #ccc !important; }
 .dialog-message { margin-top: 0 !important; }
 nav.xample { border-radius: 4px; z-index: inherit; }
-nav.xample .head-nav a { padding: 18px 15px !important; }
 .back-page { width: 96% !important; }
 button { vertical-align: bottom; }
 .testing-area { background-color: rgba(255, 255, 255, .5); border: 1px solid #CCC; border-radius: 3px; overflow: hidden; width: 100%; }

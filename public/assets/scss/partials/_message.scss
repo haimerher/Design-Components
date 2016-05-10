@@ -20,10 +20,10 @@
 .blue-alert {
 	@extend %alert;
 	background-color: rgba($blue, .1);
-	border: 1px solid rgba($blue, .6);
+	border: 1px solid rgba($blue, .7);
 	color: $blue;
 
-	h4 { background-color: rgba($blue, .6); }
+	h4 { background-color: rgba($blue, .7); }
 }
 
 .green-alert {
@@ -38,10 +38,10 @@
 .orange-alert {
 	@extend %alert;
 	background-color: rgba($orange, .1);
-	border: 1px solid rgba($orange, .6);
+	border: 1px solid rgba($orange, .7);
 	color: $orange;
 
-	h4 { background-color: rgba($orange, .6); }
+	h4 { background-color: rgba($orange, .7); }
 }
 
 .red-alert {

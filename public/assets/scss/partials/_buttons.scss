@@ -44,7 +44,7 @@
 
 //rounded buttons
 .rounded { 
-	border-radius: 30px; 
+	border-radius: 3em; 
 	padding: 6px 26px; 
 
 	&.sm-btn { padding: 0px 14px; }
@@ -98,7 +98,7 @@
 .lg-btn { font-size: 20px !important; padding: 14px 28px; }
 
 //button group
-.btn-group {
+.group-buttons {
 
 	&.sm-btn, &.lg-btn { padding: 0; }
 	&.sm-btn { button, a, input { font-size: 13px !important; padding: 2px 8px; } }
