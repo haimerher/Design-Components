@@ -30,7 +30,6 @@ textarea {
 
 /*DISABLED ELEMENTS*/
 *:disabled {
-    color: #000 !important;
     cursor: not-allowed !important;
     opacity: .6;
 }
@@ -39,6 +38,7 @@ input:disabled, select:disabled, textarea:disabled {
     background-color: rgba($grey, .5); 
     border: 0;
     border-bottom: 1px solid rgba($black, .4); 
+    color: #000 !important;
 }
 
 /*ERROR STYLE*/

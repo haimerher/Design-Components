@@ -40,12 +40,12 @@ $(document).ready(function(){
   $('body').on('click', '.open-modal', function(){
  		var modalBtn= $(this).data('target');
  		$('#'+modalBtn).fadeIn(350);
-    $('#'+modalBtn).find('.modalbox').slideDown(300);
+    $('#'+modalBtn).find('.modalbox').fadeIn(300);
  	});
 
   $('body').on('click', '.modalbox .dismiss', function(){
  		$('.modal-wrap').fadeOut(200);
-    $('.modal-wrap .modalbox').slideUp(200);
+    $('.modal-wrap .modalbox').fadeOut(200);
  	});
 
   /*ADDING ERROR CLASS TO FORM-ADDONS ON INPUT-GROUP*/

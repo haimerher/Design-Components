@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<link href='https://fonts.googleapis.com/css?family=Lato:400,700' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Roboto:400,700' rel='stylesheet' type='text/css'>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="../assets/css/normalize.css">
+	<link rel="stylesheet" type="text/css" href="../assets/css/main.css">
+    <link rel="stylesheet" type="text/css" href="../assets/css/ionicons.min.css">
+
+    <style type="text/css">
+        body { background: #ECECEC; font-size: 20px; color: rgba(0,0,0, .7); line-height: 1.5em }
+        .content-sidebar { border-top-width: 8px; }
+        .profile-picture { margin: 20px 0 30px; text-align: center; transition: .3s; }
+        .profile-picture span.name { color: #FFF; display: block; }
+        .content-sidebar { padding: 0!important; }
+        .content-sidebar.hide .profile-picture, .content-sidebar.hide .footer { margin-left: -200px; }
+        #wrapper { margin-left: 21%; transition: .3s; }
+        .basic-cont { margin: 30px 0; text-align: justify; }
+        hgroup { color: #518C80; margin-bottom: 40px; }
+        hgroup h1 { font-size: 48px; margin-bottom: 20px }
+        hgroup h3 { font-size: 24px; }
+        .wrap-tags { margin-bottom: 20px; }
+        .tag { color: #353535; font-size: 12px; margin-right: 16px; padding: 3px 14px 3px 12px; }
+        .tag:before { border-width: 10px 0 11px 11px; }
+        .tag:after { top: 8px; }
+        .footer { bottom: 30px; margin: 0 auto; position: absolute; text-align: center; width: 80%; left: -50%; right: -50%; }
+        .footer button { width: 100%; }
+        .navbar.sidebar ul li:hover, .navbar.sidebar ul li.selected { box-shadow: 230px 0 0 rgba(22, 160, 133, 0.9) inset }
+    </style>
+</head>
+<body>
+    <div class="row" style="margin: 0">
+    	<div class="content-sidebar col-w2">
+            <div class="profile-picture">
+                <img src="images/person-flat.png" class="circle border">
+                <span class="name">Haimerher</span>
+            </div>
+            <nav class="navbar sidebar">
+                <ul class="nav">
+                    <li><a href=""> <i class="ion-android-person"></i> About</a></li>
+                    <li><a href=""><i class="ion-android-document"></i> Blog</a></li>
+                    <li><a href=""><i class="ion-briefcase"></i> Portfolio</a>
+                    </li>
+                </ul>
+          </nav>
+          <div class="footer">
+              <button class="green-sea-btn rounded sm-btn"><i class="ion-android-share-alt"></i> Subscribe!</button>
+          </div>
+        </div>
+
+        <div id="wrapper" class="col-w9">
+            <div class="basic-cont">
+                <hgroup>
+                    <h1>StepMania</h1>
+                    <h3>Talk about whatever you want!</h3>
+                </hgroup>
+
+                <!-- <h2>New Blog Title</h2> -->
+                <div class="wrap-tags">
+                    <span class="tag">UX</span><span class="tag">UI</span><span class="tag">Feactures</span>
+                </div>
+                <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec odio. Quisque volutpat mattis eros. Nullam malesuada erat ut turpis. Suspendisse urna nibh, viverra non, semper suscipit, posuere a, pede. Donec nec justo eget felis facilisis fermentum. Aliquam porttitor mauris sit amet orci. Aenean dignissim pellentesque felis.</p>
+                <img src="https://cdn.elegantthemes.com/blog/wp-content/uploads/2015/03/rapid-prototyping-tools-techniques.png" class="border full-img">
+                <p>Praesent dapibus, neque id cursus faucibus, tortor neque egestas augue, eu vulputate magna eros eu erat. Aliquam erat volutpat. Nam dui mi, tincidunt quis, accumsan porttitor, facilisis luctus, metus. Phasellus ultrices nulla quis nibh. Quisque a lectus. Donec consectetuer ligula vulputate sem tristique cursus. Nam nulla quam, gravida non, commodo a, sodales sit amet, nisi.</p>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="../vendors/jquery/jquery-1.11.3.min.js"></script>
+<script src="../assets/js/ds-scripts.js"></script>
+<script type="text/javascript">
+    $(document).ready(function(){
+
+        $(".burger-sidebar").on('click', function(){ 
+            if($(".content-sidebar").hasClass("hide")){
+                $(".content-sidebar").removeClass("hide");
+            } else {
+            	$(".content-sidebar").addClass("hide");
+            }
+
+            if($('.sub-sidebar').children('nav').is(':visible')){
+                $('.sub-sidebar').children('nav').toggle();
+            } else { return false; }
+        }); 
+
+        $(".sub-sidebar").on('click', function(){
+            $(this).children('nav').toggle();
+        });  
+
+    });
+</script>
+</html>

@@ -5,9 +5,10 @@
 	@include transition(.3s);
 	background-color: $black;
 	border-top: 30px solid #0B8069;
+	bottom: 0;
 	margin-left: 0;
-	height: 100vh;
-	position: relative; 
+	position: fixed; 
+	top: 0;
 	width: 200px;
 
 	nav { @include transition(.3s); margin-left: 0; }
