@@ -1,0 +1,40 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <title>DSign Components</title>
+
+    <!-- GOOGLE FONTS -->
+    <link href='https://fonts.googleapis.com/css?family=Lato:400,700' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Roboto:400,700' rel='stylesheet' type='text/css'>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+    <!-- CSS -->
+    <link rel="stylesheet" type="text/css" href="public/assets/css/normalize.css">
+    <link rel="stylesheet" type="text/css" href="public/assets/css/template.css">
+    <link rel="stylesheet" type="text/css" href="public/assets/css/main.css">
+    <link rel="stylesheet" type="text/css" href="public/assets/css/ionicons.min.css">
+</head>
+<body ng-app="routerApp">
+    <nav class="navbar default fixed template-nav">
+    	<div class="container">
+    		<div class="head-nav"><a ui-sref="#"><span class="logo">DS</span>ign Components</a></div>
+	    	<ul>
+	    		<li><a ui-sref="start" ui-sref-active="current">Getting started <span class="bottom-line"></span></a></li>
+                <li><a ui-sref="guide" ui-sref-active="current">Style Guide <span class="bottom-line"></span></a></li>
+	    		<li><a ui-sref="components.buttons" ui-sref-active="current">Components <span class="bottom-line"></span></a></li>
+                <li><a ui-sref="js" ui-sref-active="current">JavaScript <span class="bottom-line"></span></a></li>
+	    	</ul>
+	    </div>
+    </nav>
+    <div id="wrapper">
+    	<div class="container" ui-view autoscroll="true"></div>
+    </div>
+
+    <!-- JS -->
+    <script src="public/vendors/jquery/jquery-1.11.3.min.js"></script>
+    <script src="public/assets/js/ds-scripts.js"></script>
+    <script src="public/vendors/angular/angular.min.js"></script>
+    <script src="public/vendors/angular/angular-ui-router.min.js"></script>
+    <script src="public/assets/js/state.js"></script>
+</body>
+</html> 
