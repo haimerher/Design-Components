@@ -43,3 +43,4 @@ button { vertical-align: bottom; }
 #grid .row { margin: 0 -6px 6px; }
 #grid .col { padding: 0 3px; }
 #grid span { background-color: #bdc3c7; color: #FFF; display: block; font-size: 13px; padding: 5px 0; text-align: center; }
+.content-sidebar { position: relative; }
