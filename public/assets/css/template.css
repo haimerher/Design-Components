@@ -39,6 +39,7 @@ nav.xample { border-radius: 4px; z-index: inherit; }
 .back-page { width: 96% !important; }
 button { vertical-align: bottom; }
 .testing-area { background-color: rgba(255, 255, 255, .5); border: 1px solid #CCC; border-radius: 3px; overflow: hidden; width: 100%; }
+.testing-area .content-sidebar { position: relative !important; }
 .testing-area .navbar.sidebar { margin-bottom: 0; height: 100% !important; }
 #grid .row { margin: 0 -6px 6px; }
 #grid .col { padding: 0 3px; }

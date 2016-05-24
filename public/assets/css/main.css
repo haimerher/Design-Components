@@ -977,16 +977,16 @@ input:disabled, select:disabled, textarea:disabled {
   background-color: #CCC;
   border-radius: 4px 1px 1px 4px;
   display: inline-block;
-  font-size: 13px;
+  font-size: 11px;
   line-height: normal;
   margin: 0 12px 8px 0;
-  padding: 6px 14px 6px 12px;
+  padding: 5px 9px 5px 10px;
   position: relative; }
 .tag:before {
   content: "";
   border-color: transparent transparent transparent #CCC;
   border-style: solid;
-  border-width: 14px 0 14px 11px;
+  border-width: 12px 0 11px 11px;
   position: absolute;
   right: -11px;
   top: 0; }
@@ -995,11 +995,11 @@ input:disabled, select:disabled, textarea:disabled {
   border-radius: 20px;
   content: "";
   display: block;
-  height: 5px;
+  height: 4px;
   position: absolute;
   right: 0;
-  top: 11px;
-  width: 5px; }
+  top: 10px;
+  width: 4px; }
 .tag.blue {
   background-color: rgba(41, 128, 185, 0.8);
   color: #fff; }

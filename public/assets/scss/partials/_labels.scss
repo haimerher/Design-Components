@@ -5,10 +5,10 @@
 	background-color: $grey;
 	border-radius: 4px 1px 1px 4px;
 	display: inline-block;
-	font-size: 13px;
+	font-size: 11px;
 	line-height: normal;
 	margin: 0 12px 8px 0;
-	padding: 6px 14px 6px 12px;
+	padding: 5px 9px 5px 10px;
 	position: relative;
 
 	&:before {
@@ -16,7 +16,7 @@
 		border: {
 			color: transparent transparent transparent $grey;
 			style: solid;
-			width: 14px 0 14px 11px
+			width: 12px 0 11px 11px
 		}
 		position: absolute;
 		right: -11px;
@@ -28,11 +28,11 @@
 		border-radius: 20px;
 		content: "";
 		display: block;
-		height: 5px;
+		height: 4px;
 		position: absolute;
 		right: 0;
-		top: 11px;
-		width: 5px;
+		top: 10px;
+		width: 4px;
 	}
 
 	&.blue { 
